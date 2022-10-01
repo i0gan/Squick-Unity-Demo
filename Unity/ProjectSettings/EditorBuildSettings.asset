@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/AppStart.unity
+    guid: 75b37e565dce4e9468a6bf4bb3cfc8f7
+  - enabled: 1
+    path: Assets/Init.unity
+    guid: 73f345c91023e4a0ea39fc1f7c559b0a
+  - enabled: 1
+    path: Assets/HotUpdateResources/Scene/AppStart.unity
+    guid: c796485ad59f0fa46914ae45fda4cd60
+  - enabled: 1
+    path: Assets/HotUpdateResources/Scene/Home.unity
+    guid: 7c4cee9415fb44542a2f25d934344d7a
+  - enabled: 1
+    path: Assets/HotUpdateResources/Scene/villageScene1.unity
+    guid: aa9590716df964a8888f57f78e19b964
+  - enabled: 1
+    path: Assets/HotUpdateResources/AddOns/AddOn1/Scenes/test.unity
+    guid: d31b04808cf114f9eb8ee32c54d9ac06
+  m_configObjects: {}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<XML>
+	<Class Id="IObject"	Path="config/struct/common/IObject.xml"	InstancePath="config/ini/common/IObject.xml"	>
+		<Class Id="EffectData"	Path="config/struct/common/EffectData.xml"	InstancePath="config/ini/common/EffectData.xml"	/>
+		<Class Id="GM"	Path="config/struct/side/GM.xml"	InstancePath="config/ini/side/GM.xml"	/>
+		<Class Id="Group"	Path="config/struct/Group.xml"	InstancePath="config/ini/Group.xml"	/>
+		<Class Id="InitProperty"	Path="config/struct/InitProperty.xml"	InstancePath="config/ini/InitProperty.xml"	/>
+		<Class Id="Item"	Path="config/struct/Item.xml"	InstancePath="config/ini/Item.xml"	/>
+		<Class Id="Language"	Path="config/struct/side/Language.xml"	InstancePath="config/ini/side/Language.xml"	/>
+		<Class Id="NPC"	Path="config/struct/NPC.xml"	InstancePath="config/ini/NPC.xml"	/>
+		<Class Id="NoSqlServer"	Path="config/struct/side/NoSqlServer.xml"	InstancePath="config/ini/side/NoSqlServer.xml"	/>
+		<Class Id="Player"	Path="config/struct/Player.xml"	InstancePath="config/ini/Player.xml"	/>
+		<Class Id="Scene"	Path="config/struct/Scene.xml"	InstancePath="config/ini/Scene.xml"	/>
+		<Class Id="Security"	Path="config/struct/side/Security.xml"	InstancePath="config/ini/side/Security.xml"	/>
+		<Class Id="Server"	Path="config/struct/Server.xml"	InstancePath="config/ini/Server.xml"	/>
+		<Class Id="Skill"	Path="config/struct/Skill.xml"	InstancePath="config/ini/Skill.xml"	/>
+	</Class>
+</XML>
