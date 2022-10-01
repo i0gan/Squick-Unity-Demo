@@ -6,9 +6,9 @@ using Squick;
 using ECM.Components;
 using ECM.Controllers;
 
-public class NFJumpLandState : NFIState
+public class NFJumpLandState : IState
 {
-    public NFJumpLandState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFJumpLandState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
     }

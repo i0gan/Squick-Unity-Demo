@@ -4,12 +4,12 @@ using UnityEngine;
 using SquickProtocol;
 using Squick;
 
-public class NFHookHoldState : NFIState
+public class NFHookHoldState : IState
 {
 	HeroInput xInput;
 	HeroMotor xHeroMotor;
 
-    public NFHookHoldState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFHookHoldState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
 

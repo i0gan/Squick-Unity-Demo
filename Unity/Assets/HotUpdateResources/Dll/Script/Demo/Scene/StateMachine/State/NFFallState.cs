@@ -3,7 +3,7 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFFallState : NFIState
+public class NFFallState : IState
 {
   
     private HeroMotor xHeroMotor;
@@ -13,7 +13,7 @@ public class NFFallState : NFIState
 
     private Vector3 vector3 = new Vector3();
 
-    public NFFallState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFFallState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         xHeroMotor = gameObject.GetComponent<HeroMotor>();

@@ -3,9 +3,9 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFFreezeState : NFIState
+public class NFFreezeState : IState
 {
-    public NFFreezeState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFFreezeState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
 

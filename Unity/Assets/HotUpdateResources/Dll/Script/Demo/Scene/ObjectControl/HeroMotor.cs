@@ -15,7 +15,7 @@ public sealed class HeroMotor : BaseCharacterController
     private NetModule mNetModule;
     private UIModule mUIModule;
 
-    private NFAnimaStateMachine mAnimaStateMachine;
+    private AnimaStateMachine mAnimaStateMachine;
     private AnimatStateController mAnima;
     private BodyIdent mBodyIdent;
     private Squick.Guid mxGUID;
@@ -308,7 +308,7 @@ public sealed class HeroMotor : BaseCharacterController
     {
         mAnima = GetComponent<AnimatStateController>();
         mBodyIdent = GetComponent<BodyIdent>();
-        mAnimaStateMachine = GetComponent<NFAnimaStateMachine>();
+        mAnimaStateMachine = GetComponent<AnimaStateMachine>();
         mHeroInput = GetComponent<HeroInput>();
         mHeroSync = GetComponent<HeroSync>();
 

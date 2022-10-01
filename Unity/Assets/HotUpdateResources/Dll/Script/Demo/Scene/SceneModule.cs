@@ -178,9 +178,9 @@ namespace Squick
             }
 
             
-            if (!self.GetComponent<NFAnimaStateMachine>())
+            if (!self.GetComponent<AnimaStateMachine>())
             {
-                NFAnimaStateMachine xHeroAnima = self.AddComponent<NFAnimaStateMachine>();
+                AnimaStateMachine xHeroAnima = self.AddComponent<AnimaStateMachine>();
                 xHeroAnima.enabled = true;
             }
 
@@ -356,7 +356,7 @@ namespace Squick
                 GameObject go = GetObject(self);
                 if (go != null)
                 {
-                    NFAnimaStateMachine xStateMachineMng = go.GetComponent<NFAnimaStateMachine>();
+                    AnimaStateMachine xStateMachineMng = go.GetComponent<AnimaStateMachine>();
                     if (xStateMachineMng != null)
                     {
                         xStateMachineMng.ChangeState(AnimaStateType.Dead, -1);
@@ -372,7 +372,7 @@ namespace Squick
                 GameObject go = GetObject(self);
                 if (go != null)
                 {
-                    NFAnimaStateMachine xStateMachineMng = go.GetComponent<NFAnimaStateMachine>();
+                    AnimaStateMachine xStateMachineMng = go.GetComponent<AnimaStateMachine>();
                     if (xStateMachineMng != null)
                     {
                         xStateMachineMng.ChangeState (AnimaStateType.Idle, -1);
@@ -428,14 +428,15 @@ namespace Squick
                     InitPlayerComponent(self, xPlayer, false);
                 }
 
-                if (Camera.main&& self == mLoginModule.mRoleID)
+                
+                if (self == mLoginModule.mRoleID)
                 {
-                    HeroCameraFollow xHeroCameraFollow = Camera.main.GetComponent<HeroCameraFollow>();
+                    GameObject mainCamera = GameObject.Find("SceneMainCamera");
+                    HeroCameraFollow xHeroCameraFollow = mainCamera.GetComponent<HeroCameraFollow>();
                     if (!xHeroCameraFollow)
                     {
-                        xHeroCameraFollow = Camera.main.GetComponentInParent<HeroCameraFollow>();
+                        xHeroCameraFollow = mainCamera.GetComponentInParent<HeroCameraFollow>();
                     }
-
                     xHeroCameraFollow.SetPlayer(xPlayer.transform);
                 }
 
@@ -558,6 +559,7 @@ namespace Squick
         }
 
    
+        // 加载场景完毕
         public void LoadSceneEnd(int nSceneID)
         {
 			if (!mbInitSend)

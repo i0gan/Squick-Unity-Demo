@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using SquickProtocol;
 using Squick;
 
-public class NFIdleState : NFIState
+public class NFIdleState : IState
 {
     private BodyIdent xBodyIdent;
 	private HeroMotor xHeroMotor;
@@ -18,7 +18,7 @@ public class NFIdleState : NFIState
     private LoginModule mLoginModule;
     private SceneModule mSceneModule;
 
-    public NFIdleState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFIdleState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         IPluginManager pluginManager = SquickRoot.Instance().GetPluginManager();

@@ -3,10 +3,10 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFRunState : NFIState
+public class NFRunState : IState
 {
 
-    public NFRunState (GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFRunState (GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base (gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
 	{
 

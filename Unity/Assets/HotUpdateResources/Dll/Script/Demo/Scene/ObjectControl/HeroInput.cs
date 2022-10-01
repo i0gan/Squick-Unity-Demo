@@ -13,7 +13,7 @@ public class HeroInput : MonoBehaviour
     private LoginModule mLoginModule;
     private IKernelModule mKernelModule;
 
-    private NFAnimaStateMachine mStateMachineMng;
+    private AnimaStateMachine mStateMachineMng;
     private AnimatStateController mAnimatStateController;
     private HeroMotor mHeroMotor;
     private BodyIdent mBodyIdent;
@@ -31,7 +31,7 @@ public class HeroInput : MonoBehaviour
 
     void Start()
     {
-        mStateMachineMng = GetComponent<NFAnimaStateMachine>();
+        mStateMachineMng = GetComponent<AnimaStateMachine>();
         mAnimatStateController = GetComponent<AnimatStateController>();
         mBodyIdent = GetComponent<BodyIdent>();
         mHeroMotor = GetComponent<HeroMotor>();

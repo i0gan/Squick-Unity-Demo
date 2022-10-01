@@ -1,9 +1,4 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="SquickConfig.cs">
-//     Copyright (C) 2015-2019 lvsheng.huang <https://github.com/ketoo/SquickProtocol>
-// </copyright>
-//-----------------------------------------------------------------------
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

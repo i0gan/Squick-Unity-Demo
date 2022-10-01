@@ -3,14 +3,14 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFSkillThump : NFIState
+public class NFSkillThump : IState
 {
     private BodyIdent xBodyIdent;
     private HeroInput xInput;
     private HeroMotor xHeroMotor;
     private HeroSync xHeroSync;
 
-    public NFSkillThump(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFSkillThump(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         xBodyIdent = gameObject.GetComponent<BodyIdent>();

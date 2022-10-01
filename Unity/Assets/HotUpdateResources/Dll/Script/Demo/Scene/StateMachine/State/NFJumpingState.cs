@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using SquickProtocol;
 using Squick;
 
-public class NFJumpingState : NFIState
+public class NFJumpingState : IState
 {
-    public NFJumpingState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public NFJumpingState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
     }
