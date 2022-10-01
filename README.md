@@ -4,6 +4,10 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 默认支持Android平台热更，IOS未做测试，不建议采用该框架对PC端进行热更，PC热更完全没必要，我也开发了一个专门更新PC端的工具，你可以采用原生开发的方式，不用管任何的热更框架，都可以实现类热更。项目地址：[QuickUpdater](https://github.com/pwnsky/QuickUpdater)
 
+
+
+讨论QQ群：729054809
+
 ## 特性
 
 使Unity开发的游戏支持热更新的解决方案
