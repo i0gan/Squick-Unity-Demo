@@ -9,7 +9,7 @@ using System;
 using Uquick.Core;
 namespace Squick
 {
-	public class NFSceneModule : IModule
+	public class SceneModule : IModule
 	{
 		private static bool mbInitSend = false;
         private static string mTitleData;
@@ -22,7 +22,7 @@ namespace Squick
 		private HelpModule mHelpModule;
 		private LoginModule mLoginModule;
 
-        private NFUIModule mUIModule;
+        private UIModule mUIModule;
 
 		private Dictionary<Guid, GameObject> mhtObject = new Dictionary<Guid, GameObject>();
 		private int mnScene = 0;
@@ -50,7 +50,7 @@ namespace Squick
 
 
 
-        public NFSceneModule(IPluginManager pluginManager)
+        public SceneModule(IPluginManager pluginManager)
         {
             mPluginManager = pluginManager;
         }
@@ -66,7 +66,7 @@ namespace Squick
 
 			mLoginModule = mPluginManager.FindModule<LoginModule>();
 
-			mUIModule = mPluginManager.FindModule<NFUIModule >();
+			mUIModule = mPluginManager.FindModule<UIModule >();
         }
 
 		public override void Init()
@@ -124,21 +124,21 @@ namespace Squick
                 self.AddComponent<Rigidbody>();
             }
 
-            if (!self.GetComponent<NFHeroSyncBuffer>())
+            if (!self.GetComponent<HeroSyncBuffer>())
             {
-                self.AddComponent<NFHeroSyncBuffer>();
+                self.AddComponent<HeroSyncBuffer>();
             }
 
-            if (!self.GetComponent<NFHeroSync>())
+            if (!self.GetComponent<HeroSync>())
             {
-                self.AddComponent<NFHeroSync>();
+                self.AddComponent<HeroSync>();
             }
 
 
-			NFHeroInput xInput = self.GetComponent<NFHeroInput>();
+			HeroInput xInput = self.GetComponent<HeroInput>();
 			if (!xInput)
             {
-                xInput = self.AddComponent<NFHeroInput>();
+                xInput = self.AddComponent<HeroInput>();
             }
 
 			if (bMainRole)
@@ -165,9 +165,9 @@ namespace Squick
                 characterMovement.enabled = true;
             }
 
-            if (!self.GetComponent<NFHeroMotor>())
+            if (!self.GetComponent<HeroMotor>())
             {
-                NFHeroMotor xHeroMotor = self.AddComponent<NFHeroMotor>();
+                HeroMotor xHeroMotor = self.AddComponent<HeroMotor>();
                 xHeroMotor.enabled = true;
             }
 
@@ -430,10 +430,10 @@ namespace Squick
 
                 if (Camera.main&& self == mLoginModule.mRoleID)
                 {
-                    NFHeroCameraFollow xHeroCameraFollow = Camera.main.GetComponent<NFHeroCameraFollow>();
+                    HeroCameraFollow xHeroCameraFollow = Camera.main.GetComponent<HeroCameraFollow>();
                     if (!xHeroCameraFollow)
                     {
-                        xHeroCameraFollow = Camera.main.GetComponentInParent<NFHeroCameraFollow>();
+                        xHeroCameraFollow = Camera.main.GetComponentInParent<HeroCameraFollow>();
                     }
 
                     xHeroCameraFollow.SetPlayer(xPlayer.transform);
@@ -509,7 +509,7 @@ namespace Squick
             if (mhtObject.ContainsKey(ident))
             {
                 GameObject xGameObject = (GameObject)mhtObject[ident];
-                NFHeroMotor motor = xGameObject.GetComponent<NFHeroMotor>();
+                HeroMotor motor = xGameObject.GetComponent<HeroMotor>();
                 //motor.Stop();
             }
 
@@ -531,7 +531,7 @@ namespace Squick
 			mTitleData = strData;
 
             mUIModule.CloseAllUI();
-            NFUILoading xUILoading = mUIModule.ShowUI<NFUILoading>();
+            UILoading xUILoading = mUIModule.ShowUI<UILoading>();
             xUILoading.LoadLevel(nSceneID, new Vector3(fX, fY, fZ));
 
 			if (!mhtObject.ContainsKey(mLoginModule.mRoleID))
@@ -544,7 +544,7 @@ namespace Squick
         {
             foreach (var v in mhtObject)
             {
-                NFHeroMotor heroMotor = v.Value.GetComponent<NFHeroMotor>();
+                HeroMotor heroMotor = v.Value.GetComponent<HeroMotor>();
                 heroMotor.ResetHeight();
             }
 

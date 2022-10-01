@@ -16,7 +16,7 @@ public class NFDashJumpState : NFIState
     {
         base.Enter(gameObject, index);
 
-		NFHeroMotor xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
+		HeroMotor xHeroMotor = gameObject.GetComponent<HeroMotor>();
     }
 
     public override void Exit(GameObject gameObject)

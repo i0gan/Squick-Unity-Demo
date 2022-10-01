@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using Squick;
 
-public abstract class NFUIDialog : MonoBehaviour 
+public abstract class UIDialog : MonoBehaviour 
 {
     public DataList mUserData = null;
 

@@ -11,13 +11,13 @@ public class NFHookState : NFIState
 
 	}
 
-	NFHeroInput xInput;
-	NFHeroMotor xHeroMotor;
+	HeroInput xInput;
+	HeroMotor xHeroMotor;
 
 	public override void Enter(GameObject gameObject, int index)
 	{
-		xInput = gameObject.GetComponent<NFHeroInput>();
-		xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
+		xInput = gameObject.GetComponent<HeroInput>();
+		xHeroMotor = gameObject.GetComponent<HeroMotor>();
 
 		base.Enter(gameObject, index);
 

@@ -6,10 +6,10 @@ using Squick;
 using ECM.Components;
 using ECM.Controllers;
 
-public class NFHeroSync : MonoBehaviour 
+public class HeroSync : MonoBehaviour 
 {
-	private NFHeroSyncBuffer mxSyncBuffer;
-	private NFHeroMotor mxHeroMotor;
+	private HeroSyncBuffer mxSyncBuffer;
+	private HeroMotor mxHeroMotor;
 
 	private BodyIdent mxBodyIdent;
     private NFAnimaStateMachine mAnimaStateMachine;
@@ -29,16 +29,16 @@ public class NFHeroSync : MonoBehaviour
 
     private void Start()
     {
-        mxHeroMotor = GetComponent<NFHeroMotor>();
-        mxSyncBuffer = GetComponent<NFHeroSyncBuffer>();
+        mxHeroMotor = GetComponent<HeroMotor>();
+        mxSyncBuffer = GetComponent<HeroSyncBuffer>();
         mxBodyIdent = GetComponent<BodyIdent>();
         mAnimaStateMachine = GetComponent<NFAnimaStateMachine>();
         mAnimatStateController = GetComponent<AnimatStateController>();
 
-        mNetModule = NFRoot.Instance().GetPluginManager().FindModule<NetModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mHelpModule = NFRoot.Instance().GetPluginManager().FindModule<HelpModule>();
-        mKernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+        mNetModule = SquickRoot.Instance().GetPluginManager().FindModule<NetModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mHelpModule = SquickRoot.Instance().GetPluginManager().FindModule<HelpModule>();
+        mKernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
     }
 
     bool CheckState()
@@ -65,7 +65,7 @@ public class NFHeroSync : MonoBehaviour
 
         if (mxBodyIdent && mxBodyIdent.GetObjectID() != mLoginModule.mRoleID)
 		{
-            NFHeroSyncBuffer.Keyframe keyframe;
+            HeroSyncBuffer.Keyframe keyframe;
             if (mxSyncBuffer.Size() > 1)
             {
                 keyframe = mxSyncBuffer.LastKeyframe();
@@ -189,7 +189,7 @@ public class NFHeroSync : MonoBehaviour
             dir.z = syncUnit.Orientation.Z;
         }
 
-        var keyframe = new NFHeroSyncBuffer.Keyframe();
+        var keyframe = new HeroSyncBuffer.Keyframe();
         keyframe.Position = pos;
         keyframe.Director = dir;
         keyframe.status = syncUnit.Status;

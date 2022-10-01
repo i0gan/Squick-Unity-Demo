@@ -14,7 +14,7 @@ public class NFAnimaStateMachine : MonoBehaviour
 
     private float mfHeartBeatTime;
     private AnimatStateController mAnimatStateController;
-    private NFHeroMotor xHeroMotor;
+    private HeroMotor xHeroMotor;
     private BodyIdent xBodyIdent;
 
     private AnimaStateType mCurrentState = AnimaStateType.NONE;
@@ -27,7 +27,7 @@ public class NFAnimaStateMachine : MonoBehaviour
 
     public void Awake()
     {
-		IPluginManager pluginManager = NFRoot.Instance().GetPluginManager();
+		IPluginManager pluginManager = SquickRoot.Instance().GetPluginManager();
 
         xBodyIdent = GetComponent<BodyIdent>();
 
@@ -76,7 +76,7 @@ public class NFAnimaStateMachine : MonoBehaviour
 
   
         mAnimatStateController = GetComponent<AnimatStateController>();
-        xHeroMotor = GetComponent<NFHeroMotor>();
+        xHeroMotor = GetComponent<HeroMotor>();
 
         mAnimatStateController.GetAnimationEvent().AddOnDamageDelegation(OnDamageDelegation);
         mAnimatStateController.GetAnimationEvent().AddOnEndAnimaDelegation(OnEndAnimaDelegation);

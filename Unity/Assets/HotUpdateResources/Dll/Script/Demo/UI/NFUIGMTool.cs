@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Squick;
 
-public class NFUIGMTool : NFUIDialog 
+public class NFUIGMTool : UIDialog 
 {
 
     private Guid xTargetIdent = new Guid();
@@ -19,7 +19,7 @@ public class NFUIGMTool : NFUIDialog
 
 	public override void Init()
 	{
-        IPluginManager xPluginManager = NFRoot.Instance().GetPluginManager();
+        IPluginManager xPluginManager = SquickRoot.Instance().GetPluginManager();
         mKernelModule = xPluginManager.FindModule<IKernelModule>();
 	}
 

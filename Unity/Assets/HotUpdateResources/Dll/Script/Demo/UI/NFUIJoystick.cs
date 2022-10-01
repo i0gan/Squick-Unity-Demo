@@ -5,13 +5,13 @@ using UnityEngine.UI;
 using Squick;
 using SquickProtocol;
 
-public class NFUIJoystick : NFUIDialog
+public class NFUIJoystick : UIDialog
 {
     private NetModule mNetModule;
     private LoginModule mLoginModule;
-    private NFUIModule mUIModule;
+    private UIModule mUIModule;
     private HelpModule mHelpModule;
-    private NFSceneModule mSceneModule;
+    private SceneModule mSceneModule;
 
     public Vector3 direction;
 
@@ -154,13 +154,13 @@ public class NFUIJoystick : NFUIDialog
 
     private void Awake()
     {
-        IPluginManager xPluginManager = NFRoot.Instance().GetPluginManager();
+        IPluginManager xPluginManager = SquickRoot.Instance().GetPluginManager();
 
         mLoginModule = xPluginManager.FindModule<LoginModule>();
-        mUIModule = xPluginManager.FindModule<NFUIModule>();
+        mUIModule = xPluginManager.FindModule<UIModule>();
         mNetModule = xPluginManager.FindModule<NetModule>();
         mHelpModule = xPluginManager.FindModule<HelpModule>();
-        mSceneModule = xPluginManager.FindModule<NFSceneModule>();
+        mSceneModule = xPluginManager.FindModule<SceneModule>();
     }
 
     public override void Init()

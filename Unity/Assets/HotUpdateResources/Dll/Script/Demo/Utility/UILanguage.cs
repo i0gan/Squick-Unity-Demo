@@ -4,7 +4,7 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFUILanguage : MonoBehaviour 
+public class UILanguage : MonoBehaviour 
 {
 	//maybe for text, maybe for sprite(sprite_name)
 	public string strText;
@@ -13,7 +13,7 @@ public class NFUILanguage : MonoBehaviour
 
 	void Awake()
 	{
-		mLanguageModule = NFRoot.Instance().GetPluginManager().FindModule<LanguageModule>();
+		mLanguageModule = SquickRoot.Instance().GetPluginManager().FindModule<LanguageModule>();
 		mLanguageModule.AddLanguageUI (this.gameObject);
 	}
 

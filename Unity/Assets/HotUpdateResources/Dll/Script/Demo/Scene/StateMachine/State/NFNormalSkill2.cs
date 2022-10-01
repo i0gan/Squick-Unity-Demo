@@ -6,17 +6,17 @@ using Squick;
 public class NFNormalSkill2 : NFIState
 {
     private BodyIdent xBodyIdent;
-    private NFHeroInput xInput;
-    private NFHeroMotor xHeroMotor;
-    private NFHeroSync xHeroSync;
+    private HeroInput xInput;
+    private HeroMotor xHeroMotor;
+    private HeroSync xHeroSync;
 
     public NFNormalSkill2(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         xBodyIdent = gameObject.GetComponent<BodyIdent>();
-        xInput = gameObject.GetComponent<NFHeroInput>();
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
-        xHeroSync = gameObject.GetComponent<NFHeroSync>();
+        xInput = gameObject.GetComponent<HeroInput>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
+        xHeroSync = gameObject.GetComponent<HeroSync>();
     }
     // Use this for initialization
     public override void Enter(GameObject gameObject, int index)

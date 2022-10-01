@@ -29,10 +29,10 @@ public class PropertyView : MonoBehaviour {
 	// Use this for initialization
 	private void Awake()
 	{
-		mkernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
-		mClassModule = NFRoot.Instance().GetPluginManager().FindModule<IClassModule>();
-		mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-		mElementModule = NFRoot.Instance().GetPluginManager().FindModule<IElementModule>();
+		mkernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+		mClassModule = SquickRoot.Instance().GetPluginManager().FindModule<IClassModule>();
+		mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+		mElementModule = SquickRoot.Instance().GetPluginManager().FindModule<IElementModule>();
 	}
 
     private void OnDestroy()
@@ -124,7 +124,7 @@ public class PropertyView : MonoBehaviour {
 					{
 						string strIconName = mElementModule.QueryPropertyString (data.ToString(), SquickProtocol.Item.Icon);
 						string strIconFileName = mElementModule.QueryPropertyString (data.ToString(), SquickProtocol.Item.SpriteFile);
-						Sprite xSprite = NFTexturePacker.Instance.GetSprit(strIconFileName, strIconName);
+						Sprite xSprite = TexturePacker.Instance.GetSprit(strIconFileName, strIconName);
 						if (xSprite != null)
 						{
 							xImage.overrideSprite = xSprite;
@@ -146,7 +146,7 @@ public class PropertyView : MonoBehaviour {
 							string strCnfID = xRecord.QueryString (nRow, (int)SquickProtocol.Player.PlayerHero.ConfigID);
 							string strIconName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Item.Icon);
 							string strIconFileName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Item.SpriteFile);
-							Sprite xSprite = NFTexturePacker.Instance.GetSprit (strIconFileName, strIconName);
+							Sprite xSprite = TexturePacker.Instance.GetSprit (strIconFileName, strIconName);
 							if (xSprite != null)
 							{
 								xImage.overrideSprite = xSprite;
@@ -168,7 +168,7 @@ public class PropertyView : MonoBehaviour {
 						string strCnfID = data.StringVal ();
 						string strIconName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.NPC.Icon);
 						string strIconFileName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.NPC.SpriteFile);
-						Sprite xSprite = NFTexturePacker.Instance.GetSprit (strIconFileName, strIconName);
+						Sprite xSprite = TexturePacker.Instance.GetSprit (strIconFileName, strIconName);
 						if (xSprite != null)
 						{
 							xImage.overrideSprite = xSprite;
@@ -184,7 +184,7 @@ public class PropertyView : MonoBehaviour {
                         string strCnfID = data.StringVal();
                         string strIconName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Skill.Icon);
 						string strIconFileName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Skill.SpriteFile);
-						Sprite xSprite = NFTexturePacker.Instance.GetSprit (strIconFileName, strIconName);
+						Sprite xSprite = TexturePacker.Instance.GetSprit (strIconFileName, strIconName);
 						if (xSprite != null)
 						{
 							xImage.overrideSprite = xSprite;

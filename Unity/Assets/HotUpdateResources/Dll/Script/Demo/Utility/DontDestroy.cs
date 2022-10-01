@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class NFDontDestroy : MonoBehaviour {
+public class DontDestroy : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{

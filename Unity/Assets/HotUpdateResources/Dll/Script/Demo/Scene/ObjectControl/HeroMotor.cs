@@ -7,13 +7,13 @@ using ECM.Common;
 using ECM.Components;
 using System;
 
-public sealed class NFHeroMotor : BaseCharacterController
+public sealed class HeroMotor : BaseCharacterController
 {
     private IKernelModule mKernelModule;
-    private NFSceneModule mSceneModule;
+    private SceneModule mSceneModule;
     private LoginModule mLoginModule;
     private NetModule mNetModule;
-    private NFUIModule mUIModule;
+    private UIModule mUIModule;
 
     private NFAnimaStateMachine mAnimaStateMachine;
     private AnimatStateController mAnima;
@@ -26,8 +26,8 @@ public sealed class NFHeroMotor : BaseCharacterController
 
     public Vector3 moveToPos = Vector3.zero;
 
-    private NFHeroInput mHeroInput;
-    private NFHeroSync mHeroSync;
+    private HeroInput mHeroInput;
+    private HeroSync mHeroSync;
 
     public delegate bool MeetGoalCalllBack();
     MeetGoalCalllBack meetGoalCasllBack;
@@ -262,13 +262,13 @@ public sealed class NFHeroMotor : BaseCharacterController
         _walkSpeed = 1.5f;
         angularSpeed = 0f;
 
-        mKernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+        mKernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
 
-        mSceneModule = NFRoot.Instance().GetPluginManager().FindModule<NFSceneModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mNetModule = NFRoot.Instance().GetPluginManager().FindModule<NetModule>();
+        mSceneModule = SquickRoot.Instance().GetPluginManager().FindModule<SceneModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mNetModule = SquickRoot.Instance().GetPluginManager().FindModule<NetModule>();
 
-        mUIModule = NFRoot.Instance().GetPluginManager().FindModule<NFUIModule>();
+        mUIModule = SquickRoot.Instance().GetPluginManager().FindModule<UIModule>();
 
         mAnima = GetComponent<AnimatStateController>();
     }
@@ -279,7 +279,7 @@ public sealed class NFHeroMotor : BaseCharacterController
 
         if (mLoginModule.mRoleID == mxGUID)
         {
-            //NFDrawTool.DrawCircle(this.transform, moveToPos, 0.5f, Color.blue);
+            //DrawTool.DrawCircle(this.transform, moveToPos, 0.5f, Color.blue);
         }
 
         mBodyIdent.SetShadowVisible(isGrounded);
@@ -309,8 +309,8 @@ public sealed class NFHeroMotor : BaseCharacterController
         mAnima = GetComponent<AnimatStateController>();
         mBodyIdent = GetComponent<BodyIdent>();
         mAnimaStateMachine = GetComponent<NFAnimaStateMachine>();
-        mHeroInput = GetComponent<NFHeroInput>();
-        mHeroSync = GetComponent<NFHeroSync>();
+        mHeroInput = GetComponent<HeroInput>();
+        mHeroSync = GetComponent<HeroSync>();
 
         mxGUID = mBodyIdent.GetObjectID();
         moveDirection = new Vector3();

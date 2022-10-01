@@ -3,24 +3,24 @@ using System.Collections;
 
 namespace Squick
 {
-    public class NFUIPlugin : IPlugin
+    public class UIPlugin : IPlugin
     {
-        public NFUIPlugin(IPluginManager pluginManager)
+        public UIPlugin(IPluginManager pluginManager)
         {
             mPluginManager = pluginManager;
         }
         public override string GetPluginName()
         {
-			return "NFUIPlugin";
+			return "UIPlugin";
         }
 
         public override void Install()
         {
-            AddModule<NFUIModule>(new NFUIModule(mPluginManager));
+            AddModule<UIModule>(new UIModule(mPluginManager));
         }
         public override void Uninstall()
         {
-			mPluginManager.RemoveModule<NFUIModule>();
+			mPluginManager.RemoveModule<UIModule>();
 
             mModules.Clear();
         }

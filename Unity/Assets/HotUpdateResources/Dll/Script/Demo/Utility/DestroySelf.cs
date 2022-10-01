@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NFDestroySelf : MonoBehaviour {
+public class DestroySelf : MonoBehaviour {
     public float DestroyTime = 0.0f;
 
     void Awake()

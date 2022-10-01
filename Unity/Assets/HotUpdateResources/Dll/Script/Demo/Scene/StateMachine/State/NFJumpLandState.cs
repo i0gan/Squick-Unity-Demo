@@ -14,17 +14,17 @@ public class NFJumpLandState : NFIState
     }
 
     private CharacterMovement mCharacterMovement;
-    private NFHeroInput xInput;
-	private NFHeroMotor xHeroMotor;
+    private HeroInput xInput;
+	private HeroMotor xHeroMotor;
 	private BodyIdent xBodyIdent;
 	private AnimatStateController xHeroAnima;
 
     public override void Enter(GameObject gameObject, int index)
     {
 		xBodyIdent = gameObject.GetComponent<BodyIdent>();
-        xInput = gameObject.GetComponent<NFHeroInput>();
+        xInput = gameObject.GetComponent<HeroInput>();
         xHeroAnima = gameObject.GetComponent<AnimatStateController>();
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
 
         mCharacterMovement = gameObject.GetComponent<CharacterMovement>();
 

@@ -3,24 +3,24 @@ using System.Collections;
 
 namespace Squick
 {
-    public class NFScenePlugin : IPlugin
+    public class ScenePlugin : IPlugin
     {
-		public NFScenePlugin(IPluginManager pluginManager)
+		public ScenePlugin(IPluginManager pluginManager)
         {
             mPluginManager = pluginManager;
         }
         public override string GetPluginName()
         {
-			return "NFScenePlugin";
+			return "ScenePlugin";
         }
 
         public override void Install()
         {
-            AddModule<NFSceneModule>(new NFSceneModule(mPluginManager));
+            AddModule<SceneModule>(new SceneModule(mPluginManager));
         }
         public override void Uninstall()
         {
-            mPluginManager.RemoveModule<NFSceneModule>();
+            mPluginManager.RemoveModule<SceneModule>();
 
             mModules.Clear();
         }

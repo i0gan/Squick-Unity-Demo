@@ -8,7 +8,7 @@ using SquickProtocol;
 using UnityEngine.UI;
 using Uquick.Core;
 
-public class NFUILoading : NFUIDialog
+public class UILoading : UIDialog
 {
 
     private AsyncOperation asy;
@@ -23,17 +23,17 @@ public class NFUILoading : NFUIDialog
     private int mnSceneID = 0;
 
 	private LoginModule mLoginModule;
-    private NFUIModule mUIModule;
-    private NFSceneModule mSceneModule;
+    private UIModule mUIModule;
+    private SceneModule mSceneModule;
 	private ISEventModule mEventModule;
 	private IElementModule mElementModule;
 
     private void Awake()
     {
-        IPluginManager xPluginManager = NFRoot.Instance().GetPluginManager();
+        IPluginManager xPluginManager = SquickRoot.Instance().GetPluginManager();
         mLoginModule = xPluginManager.FindModule<LoginModule>();
-        mUIModule = xPluginManager.FindModule<NFUIModule>();
-        mSceneModule = xPluginManager.FindModule<NFSceneModule>();
+        mUIModule = xPluginManager.FindModule<UIModule>();
+        mSceneModule = xPluginManager.FindModule<SceneModule>();
 
         mEventModule = xPluginManager.FindModule<ISEventModule>();
         mElementModule = xPluginManager.FindModule<IElementModule>();
@@ -195,6 +195,6 @@ public class NFUILoading : NFUIDialog
         //Debug.Log("mnProgress-----3-- " + asy.progress + " " + mnProgress + " " + Time.time);
         */
         mSceneModule.LoadSceneEnd(mnSceneID);
-        mUIModule.CloseUI<NFUILoading>();
+        mUIModule.CloseUI<UILoading>();
     }
 }

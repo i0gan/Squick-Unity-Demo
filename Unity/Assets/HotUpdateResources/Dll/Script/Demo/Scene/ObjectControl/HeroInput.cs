@@ -7,15 +7,15 @@ using ECM.Common;
 using ECM.Components;
 using System;
 
-public class NFHeroInput : MonoBehaviour
+public class HeroInput : MonoBehaviour
 {
-    private NFUIModule mUIModule;
+    private UIModule mUIModule;
     private LoginModule mLoginModule;
     private IKernelModule mKernelModule;
 
     private NFAnimaStateMachine mStateMachineMng;
     private AnimatStateController mAnimatStateController;
-    private NFHeroMotor mHeroMotor;
+    private HeroMotor mHeroMotor;
     private BodyIdent mBodyIdent;
 
     private NFUIJoystick mJoystick;
@@ -34,12 +34,12 @@ public class NFHeroInput : MonoBehaviour
         mStateMachineMng = GetComponent<NFAnimaStateMachine>();
         mAnimatStateController = GetComponent<AnimatStateController>();
         mBodyIdent = GetComponent<BodyIdent>();
-        mHeroMotor = GetComponent<NFHeroMotor>();
+        mHeroMotor = GetComponent<HeroMotor>();
 
-        mUIModule = NFRoot.Instance().GetPluginManager().FindModule<NFUIModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mUIModule = SquickRoot.Instance().GetPluginManager().FindModule<UIModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
 
-        mKernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+        mKernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
 
         mKernelModule.RegisterPropertyCallback(mBodyIdent.GetObjectID(), SquickProtocol.Player.MOVE_SPEED, PropertyMoveSpeedHandler);
         mKernelModule.RegisterPropertyCallback(mBodyIdent.GetObjectID(), SquickProtocol.Player.ATK_SPEED, PropertyAttackSpeedHandler);

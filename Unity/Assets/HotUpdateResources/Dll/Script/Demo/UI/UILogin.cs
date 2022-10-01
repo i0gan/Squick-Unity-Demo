@@ -5,14 +5,14 @@ using Squick;
 using SquickProtocol;
 using System.Text;
 
-public class NFUILogin : NFUIDialog
+public class UILogin : UIDialog
 {
 	private ISEventModule mEventModule;
 
 
 	private NetModule mNetModule;
 	private LoginModule mLoginModule;
-	private NFUIModule mUIModule;
+	private UIModule mUIModule;
     private HelpModule mHelpModule;
 
 	public InputField mAccount;
@@ -25,12 +25,12 @@ public class NFUILogin : NFUIDialog
 	{
 
         // 查找基本模块
-		mEventModule = NFRoot.Instance().GetPluginManager().FindModule<ISEventModule>();
+		mEventModule = SquickRoot.Instance().GetPluginManager().FindModule<ISEventModule>();
 
-		mNetModule = NFRoot.Instance().GetPluginManager().FindModule<NetModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mUIModule = NFRoot.Instance().GetPluginManager().FindModule<NFUIModule>();
-		mHelpModule = NFRoot.Instance().GetPluginManager().FindModule<HelpModule>();
+		mNetModule = SquickRoot.Instance().GetPluginManager().FindModule<NetModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mUIModule = SquickRoot.Instance().GetPluginManager().FindModule<UIModule>();
+		mHelpModule = SquickRoot.Instance().GetPluginManager().FindModule<HelpModule>();
 
         // 监听登录按钮
         mLogin.onClick.AddListener(OnLoginClick); 
