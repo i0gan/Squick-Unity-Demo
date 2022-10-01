@@ -12,7 +12,7 @@ public class HeroSync : MonoBehaviour
 	private HeroMotor mxHeroMotor;
 
 	private BodyIdent mxBodyIdent;
-    private NFAnimaStateMachine mAnimaStateMachine;
+    private AnimaStateMachine mAnimaStateMachine;
     private AnimatStateController mAnimatStateController;
 
     private NetModule mNetModule;
@@ -32,7 +32,7 @@ public class HeroSync : MonoBehaviour
         mxHeroMotor = GetComponent<HeroMotor>();
         mxSyncBuffer = GetComponent<HeroSyncBuffer>();
         mxBodyIdent = GetComponent<BodyIdent>();
-        mAnimaStateMachine = GetComponent<NFAnimaStateMachine>();
+        mAnimaStateMachine = GetComponent<AnimaStateMachine>();
         mAnimatStateController = GetComponent<AnimatStateController>();
 
         mNetModule = SquickRoot.Instance().GetPluginManager().FindModule<NetModule>();

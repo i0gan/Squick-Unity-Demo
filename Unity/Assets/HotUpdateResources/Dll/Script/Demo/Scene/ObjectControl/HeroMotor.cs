@@ -15,7 +15,7 @@ public sealed class HeroMotor : BaseCharacterController
     private NetModule mNetModule;
     private UIModule mUIModule;
 
-    private NFAnimaStateMachine mAnimaStateMachine;
+    private AnimaStateMachine mAnimaStateMachine;
     private AnimatStateController mAnima;
     private BodyIdent mBodyIdent;
     private Squick.Guid mxGUID;
@@ -40,7 +40,7 @@ public sealed class HeroMotor : BaseCharacterController
 
     [Tooltip("The character's run speed.")]
     [SerializeField]
-    private float _runSpeed = 3.5f;
+    private float _runSpeed = 10.0f;
 
     #endregion
 
@@ -164,17 +164,18 @@ public sealed class HeroMotor : BaseCharacterController
     public void MoveToAttackTarget(Vector3 vPos, Squick.Guid id)
     {
         moveToPos = vPos;
-        moveDirection = (vPos - this.transform.position).normalized;
+        moveDirection = (vPos - this.transform.position);
     }
 
+    // 角色移动
     public void MoveTo(Vector3 vPos, bool fromServer = false, MeetGoalCalllBack callBack = null)
     {
         meetGoalCasllBack = callBack;
 
         vPos.y = this.transform.position.y;
         moveToPos = vPos;
-        moveDirection = (vPos - this.transform.position).normalized;
-
+        moveDirection = (vPos - this.transform.position);
+        //Debug.LogWarning("moveDirection: " + moveDirection);
         if (mLoginModule.mRoleID == mxGUID && !fromServer)
         {
             //mNetModule.RequireMove(mLoginModule.mRoleID, 0, moveToPos);
@@ -298,6 +299,7 @@ public sealed class HeroMotor : BaseCharacterController
             }
             else
             {
+                
                 moveDirection = (moveToPos - this.transform.position).normalized;
                 mBodyIdent.LookAt(moveToPos);
             }
@@ -308,7 +310,7 @@ public sealed class HeroMotor : BaseCharacterController
     {
         mAnima = GetComponent<AnimatStateController>();
         mBodyIdent = GetComponent<BodyIdent>();
-        mAnimaStateMachine = GetComponent<NFAnimaStateMachine>();
+        mAnimaStateMachine = GetComponent<AnimaStateMachine>();
         mHeroInput = GetComponent<HeroInput>();
         mHeroSync = GetComponent<HeroSync>();
 
