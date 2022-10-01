@@ -26,6 +26,8 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 
 
+**安卓版Demo在线下载：**http://tflash.pwnsky.com:22220/dlc/application.apk
+
 ## 将来要做
 
 采用更快速的UDP协议做帧同步
