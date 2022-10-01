@@ -60,9 +60,9 @@ public class HeroCameraFollow : MonoBehaviour
             cameraRotation.x += Input.GetAxis("Mouse X") * sensitivity * 4 * Time.deltaTime;
             cameraRotation.y -= Input.GetAxis("Mouse Y") * sensitivity * 4 * Time.deltaTime;
 
-            if (cameraRotation.y < 15)
+            if (cameraRotation.y < -45)
             {
-                cameraRotation.y = 15;
+                cameraRotation.y = -45;
             }
             if (cameraRotation.y > 75)
             {
