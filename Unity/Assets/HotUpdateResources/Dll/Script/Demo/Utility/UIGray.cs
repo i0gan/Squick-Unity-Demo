@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NFUIGray
+public class UIGray
 {
     private static Material grayMat;
 

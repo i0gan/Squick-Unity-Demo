@@ -6,8 +6,8 @@ using Squick;
 
 public class NFHookHoldState : NFIState
 {
-	NFHeroInput xInput;
-	NFHeroMotor xHeroMotor;
+	HeroInput xInput;
+	HeroMotor xHeroMotor;
 
     public NFHookHoldState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)

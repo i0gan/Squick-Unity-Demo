@@ -41,10 +41,10 @@ public class RecordController : MonoBehaviour
 	// Use this for initialization
 	private void Awake()
 	{
-		mkernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
-		mClassModule = NFRoot.Instance().GetPluginManager().FindModule<IClassModule>();
-		mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-		mElementModule = NFRoot.Instance().GetPluginManager().FindModule<IElementModule>();
+		mkernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+		mClassModule = SquickRoot.Instance().GetPluginManager().FindModule<IClassModule>();
+		mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+		mElementModule = SquickRoot.Instance().GetPluginManager().FindModule<IElementModule>();
 	}
 
     void Start()
@@ -380,7 +380,7 @@ public class RecordController : MonoBehaviour
 					_data.Add (rowData);
 
 
-                    NFRoot.Instance().StartCoroutine(CreateObject(self, rowViewItem, rowData));
+                    SquickRoot.Instance().StartCoroutine(CreateObject(self, rowViewItem, rowData));
 
 				}
 				break;
@@ -443,7 +443,7 @@ public class RecordController : MonoBehaviour
                                 _data.Add(rowData);
 
 
-                                NFRoot.Instance().StartCoroutine(CreateObject(self, rowViewItem, rowData));
+                                SquickRoot.Instance().StartCoroutine(CreateObject(self, rowViewItem, rowData));
                             }
                             
                         }

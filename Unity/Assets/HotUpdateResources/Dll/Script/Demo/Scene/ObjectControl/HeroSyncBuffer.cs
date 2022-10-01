@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NFHeroSyncBuffer : MonoBehaviour
+public class HeroSyncBuffer : MonoBehaviour
 {
     protected List<Keyframe> _keyframes = new List<Keyframe>();
     //pool manager

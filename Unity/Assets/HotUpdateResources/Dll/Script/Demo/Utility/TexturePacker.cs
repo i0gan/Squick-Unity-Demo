@@ -4,12 +4,12 @@ using System.Xml;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class NFTexturePacker
+public class TexturePacker
 {
     #region Instance
-    private static NFTexturePacker _Instance = null;
+    private static TexturePacker _Instance = null;
     private static readonly object _syncLock = new object();
-    public static NFTexturePacker Instance
+    public static TexturePacker Instance
     {
         get
         {
@@ -17,7 +17,7 @@ public class NFTexturePacker
             {
                 if (_Instance == null)
                 {
-                    _Instance = new NFTexturePacker();
+                    _Instance = new TexturePacker();
                 }
                 return _Instance;
             }

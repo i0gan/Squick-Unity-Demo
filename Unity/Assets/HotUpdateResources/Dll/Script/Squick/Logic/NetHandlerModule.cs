@@ -39,9 +39,9 @@ namespace Squick
         private HelpModule mHelpModule;
         private NetModule mNetModule;
         private NetEventModule mNetEventModule;
-        private NFSceneModule mSceneModule;
+        private SceneModule mSceneModule;
         private LoginModule mLoginModule;
-        private NFUIModule mUIModule;
+        private UIModule mUIModule;
 
         private NetHandlerModule mxNetListener = null;
 
@@ -87,11 +87,11 @@ namespace Squick
             mEventModule = mPluginManager.FindModule<ISEventModule>();
             
             mLanguageModule = mPluginManager.FindModule<LanguageModule>();
-            mSceneModule = mPluginManager.FindModule<NFSceneModule>();
+            mSceneModule = mPluginManager.FindModule<SceneModule>();
             mNetModule = mPluginManager.FindModule<NetModule>();
             mHelpModule = mPluginManager.FindModule<HelpModule>();
             mNetEventModule = mPluginManager.FindModule<NetEventModule>();
-            mUIModule = mPluginManager.FindModule<NFUIModule>();
+            mUIModule = mPluginManager.FindModule<UIModule>();
             mLoginModule = mPluginManager.FindModule<LoginModule>();
 
         }
@@ -1099,14 +1099,14 @@ namespace Squick
                     return;
                 }
 
-                NFHeroMotor xHeroMotor = xGameObject.GetComponent<NFHeroMotor>();
+                HeroMotor xHeroMotor = xGameObject.GetComponent<HeroMotor>();
                 if (!xHeroMotor)
                 {
                     Debug.LogError("xHeroSync " + Time.time);
                     return;
                 }
 
-                NFHeroSync xHeroSync = xGameObject.GetComponent<NFHeroSync>();
+                HeroSync xHeroSync = xGameObject.GetComponent<HeroSync>();
                 if (!xHeroSync)
                 {
                     Debug.LogError("xHeroSync " + Time.time);
@@ -1145,7 +1145,7 @@ namespace Squick
             GameObject xGameObject = mSceneModule.GetObject(xUser);
             if (xGameObject)
             {
-                NFHeroSync xHeroSync = xGameObject.GetComponent<NFHeroSync>();
+                HeroSync xHeroSync = xGameObject.GetComponent<HeroSync>();
                 if (!xHeroSync)
                 {
                     Debug.LogError("xHeroSync " + Time.time);

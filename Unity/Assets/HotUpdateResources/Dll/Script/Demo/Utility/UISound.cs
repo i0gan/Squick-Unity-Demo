@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Squick;
 
-public class NFUISound : MonoBehaviour,IPointerDownHandler
+public class UISound : MonoBehaviour,IPointerDownHandler
 {
 	public AudioClip[] audioClip;
 	// Use this for initialization

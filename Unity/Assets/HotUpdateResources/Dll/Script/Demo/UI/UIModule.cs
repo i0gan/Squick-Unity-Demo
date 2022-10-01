@@ -9,11 +9,11 @@ using UnityEngine;
 
 namespace Squick
 {
-	public class NFUIModule : IModule
+	public class UIModule : IModule
     {
         private Dictionary<string, GameObject> mAllUIs = new Dictionary<string, GameObject>();
-        private Queue<NFUIDialog> mDialogs = new Queue<NFUIDialog>();
-        private NFUIDialog mCurrentDialog = null;
+        private Queue<UIDialog> mDialogs = new Queue<UIDialog>();
+        private UIDialog mCurrentDialog = null;
 
         public override void Awake() {}
         public override void AfterInit() {}
@@ -21,7 +21,7 @@ namespace Squick
         public override void BeforeShut() {}
         public override void Shut() { }
 
-        public NFUIModule(IPluginManager pluginManager)
+        public UIModule(IPluginManager pluginManager)
         {
             mPluginManager = pluginManager;
 		}
@@ -30,7 +30,7 @@ namespace Squick
         { 
         }
 
-		public T ShowUI<T>(bool bCloseLastOne = true, bool bPushHistory = true, DataList varList = null) where T : NFUIDialog
+		public T ShowUI<T>(bool bCloseLastOne = true, bool bPushHistory = true, DataList varList = null) where T : UIDialog
         {
             /*
             if (mCurrentDialog != null && bCloseLastOne)
@@ -67,7 +67,7 @@ namespace Squick
                 uiObject = GameObject.Instantiate(perfb);
                 uiObject.name = name;
 
-                uiObject.transform.SetParent(NFRoot.Instance().transform);
+                uiObject.transform.SetParent(SquickRoot.Instance().transform);
 
                 mAllUIs.Add(name, uiObject);
 
@@ -104,7 +104,7 @@ namespace Squick
 			return null;
         }
 
-        public T GetUI<T>() where T : NFUIDialog
+        public T GetUI<T>() where T : UIDialog
         {
             string name = typeof(T).ToString();
             GameObject uiObject;
@@ -116,7 +116,7 @@ namespace Squick
             return null;
         }
 
-        public void CloseUI<T>() where T : NFUIDialog
+        public void CloseUI<T>() where T : UIDialog
         {
             string name = typeof(T).ToString();
             GameObject uiObject;

@@ -37,8 +37,8 @@ public class NFIState
     private AnimaStateType meState;
     protected NFAnimaStateMachine mStateMachine;
     protected AnimatStateController mAnimatStateController;
-    protected NFHeroMotor mHeroMotor;
-    protected NFHeroInput mHeroInput;
+    protected HeroMotor mHeroMotor;
+    protected HeroInput mHeroInput;
 
     protected GameObject mGameObject;
     protected GameObject mRenderObject;
@@ -57,8 +57,8 @@ public class NFIState
         mAnimatStateController = gameObject.GetComponent<AnimatStateController>();
         mRenderObject = gameObject.GetComponent<BodyIdent>().xRenderObject.gameObject;
 
-        mHeroMotor = gameObject.GetComponent<NFHeroMotor>();
-        mHeroInput = gameObject.GetComponent<NFHeroInput>();
+        mHeroMotor = gameObject.GetComponent<HeroMotor>();
+        mHeroInput = gameObject.GetComponent<HeroInput>();
     }
 
     public AnimaStateType GetState()

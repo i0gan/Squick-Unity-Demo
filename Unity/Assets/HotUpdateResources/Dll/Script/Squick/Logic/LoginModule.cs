@@ -47,7 +47,7 @@ namespace Squick
 		private MemoryStream mxBody = new MemoryStream();
 
         private NetModule mNetModule;
-        private NFUIModule mUIModule;
+        private UIModule mUIModule;
         private ISEventModule mEventModule;
         private IKernelModule mKernelModule;
         private HelpModule mHelpModule;
@@ -60,7 +60,7 @@ namespace Squick
         public override void Awake()
 		{
             mNetModule = mPluginManager.FindModule<NetModule>();
-            mUIModule = mPluginManager.FindModule<NFUIModule>();
+            mUIModule = mPluginManager.FindModule<UIModule>();
             mEventModule = mPluginManager.FindModule<ISEventModule>();
             mKernelModule = mPluginManager.FindModule<IKernelModule>();
             mHelpModule = mPluginManager.FindModule<HelpModule>();
@@ -136,7 +136,7 @@ namespace Squick
                 }
 
                 //mUIModule.DestroyAllUI();
-                //mUIModule.ShowUI<NFUILogin>();
+                //mUIModule.ShowUI<UILogin>();
             }
         }
         

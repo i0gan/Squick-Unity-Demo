@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="NFConfig.cs">
+// <copyright file="SquickConfig.cs">
 //     Copyright (C) 2015-2019 lvsheng.huang <https://github.com/ketoo/SquickProtocol>
 // </copyright>
 //-----------------------------------------------------------------------
@@ -16,7 +16,7 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class NFConfig
+public class SquickConfig
 {
 	public struct Server
 	{

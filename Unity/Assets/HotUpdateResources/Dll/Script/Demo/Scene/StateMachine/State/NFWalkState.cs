@@ -6,12 +6,12 @@ using Squick;
 public class NFWalkState : NFIState
 {
     private float fStartTime = 0;
-    private NFHeroMotor xHeroMotor;
+    private HeroMotor xHeroMotor;
 
     public NFWalkState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
     }
 
     public override void Enter(GameObject gameObject, int index)

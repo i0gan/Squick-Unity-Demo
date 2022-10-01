@@ -6,16 +6,16 @@ using Squick;
 
 public class NFDeadState : NFIState
 {
-    private NFHeroMotor xHeroMotor;
+    private HeroMotor xHeroMotor;
     private float fStartTime = 0f;
     private bool bShowUI = false;
 
-    NFUIModule mUIModule;
+    UIModule mUIModule;
 
     public NFDeadState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
-        mUIModule = NFRoot.Instance().GetPluginManager().FindModule<NFUIModule>();
+        mUIModule = SquickRoot.Instance().GetPluginManager().FindModule<UIModule>();
     }
 
     public override void Enter(GameObject gameObject, int index)
@@ -25,7 +25,7 @@ public class NFDeadState : NFIState
         fStartTime = Time.time;
         bShowUI = false;
 
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
         xHeroMotor.Stop();
     }
 

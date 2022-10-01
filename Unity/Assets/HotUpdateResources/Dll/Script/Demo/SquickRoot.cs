@@ -15,7 +15,7 @@ public enum GAME_MODE
     GAME_MODE_3D,
 };
 
-public class NFRoot : MonoBehaviour 
+public class SquickRoot : MonoBehaviour 
 {
     public bool mbShowCMDGUI = false;
     public int port = 14001;
@@ -29,14 +29,14 @@ public class NFRoot : MonoBehaviour
 	private IClassModule mClassModule;
 	private IKernelModule mKernelModule;
 	private NetModule mNetModule;
-	private NFUIModule mUIModule;
+	private UIModule mUIModule;
 	private LogModule mLogModule;
 
-	private NFConfig mConfig = new NFConfig();
+	private SquickConfig mConfig = new SquickConfig();
 
     private PluginManager mPluginManager;
-    private static NFRoot _instance = null;
-	public static NFRoot Instance()
+    private static SquickRoot _instance = null;
+	public static SquickRoot Instance()
     {
         return _instance;
     }
@@ -72,14 +72,14 @@ public class NFRoot : MonoBehaviour
 
 
         mPluginManager.Registered(new SquickPlugin(mPluginManager));   // 注册SDK插件
-		mPluginManager.Registered(new NFUIPlugin(mPluginManager));    // 注册UI插件
-		mPluginManager.Registered(new NFScenePlugin(mPluginManager)); // 注册场景插件
+		mPluginManager.Registered(new UIPlugin(mPluginManager));    // 注册UI插件
+		mPluginManager.Registered(new ScenePlugin(mPluginManager)); // 注册场景插件
 
         // 获取基本模块
 		mKernelModule = mPluginManager.FindModule<IKernelModule>();
 		mClassModule = mPluginManager.FindModule<IClassModule>();
 		mNetModule = mPluginManager.FindModule<NetModule>();
-		mUIModule = mPluginManager.FindModule<NFUIModule>();
+		mUIModule = mPluginManager.FindModule<UIModule>();
 		mLogModule = mPluginManager.FindModule<LogModule>();
 
         // 设置类模块路径
@@ -89,7 +89,7 @@ public class NFRoot : MonoBehaviour
         mPluginManager.Init();
         mPluginManager.AfterInit();
 
-		mUIModule.ShowUI<NFUILogin>(); // 显示登录UI界面
+		mUIModule.ShowUI<UILogin>(); // 显示登录UI界面
 
 		if (mConfig.GetServerList().Count > 1)
 		{
@@ -139,7 +139,7 @@ public class NFRoot : MonoBehaviour
             //all object
             for (int i = 0; i < arrayList.Count; i++)
             {
-                NFConfig.Server server = (NFConfig.Server)arrayList[i];
+                SquickConfig.Server server = (SquickConfig.Server)arrayList[i];
 
                 if (GUI.Button(new Rect(0, i * 100, 400, 100), server.strName + " " + server.strIP))
                 {

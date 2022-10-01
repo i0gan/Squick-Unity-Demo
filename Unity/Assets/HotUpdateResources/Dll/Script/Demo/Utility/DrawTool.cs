@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
  
-public class NFDrawTool : MonoBehaviour {
+public class DrawTool : MonoBehaviour {
  
     private static LineRenderer GetLineRenderer(Transform t)
     {

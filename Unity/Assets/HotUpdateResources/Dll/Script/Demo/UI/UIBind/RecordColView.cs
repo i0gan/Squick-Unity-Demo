@@ -28,10 +28,10 @@ public class RecordColView : MonoBehaviour
     // Use this for initialization
     private void Awake()
     {
-        mkernelModule = NFRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
-        mClassModule = NFRoot.Instance().GetPluginManager().FindModule<IClassModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mElementModule = NFRoot.Instance().GetPluginManager().FindModule<IElementModule>();
+        mkernelModule = SquickRoot.Instance().GetPluginManager().FindModule<IKernelModule>();
+        mClassModule = SquickRoot.Instance().GetPluginManager().FindModule<IClassModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mElementModule = SquickRoot.Instance().GetPluginManager().FindModule<IElementModule>();
 
 		int iNum = 0;
 		Transform tParent = this.transform.parent;
@@ -72,7 +72,7 @@ public class RecordColView : MonoBehaviour
                         /*
 						string strIconName = mElementModule.QueryPropertyString (data.ToString(), SquickProtocol.Item.Icon);
 						string strIconFileName = mElementModule.QueryPropertyString (data.ToString(), SquickProtocol.Item.SpriteFile);
-						Sprite xSprite = NFTexturePacker.Instance.GetSprit(strIconFileName, strIconName);
+						Sprite xSprite = TexturePacker.Instance.GetSprit(strIconFileName, strIconName);
 						if (xSprite != null)
 						{
 							xImage.overrideSprite = xSprite;
@@ -102,7 +102,7 @@ public class RecordColView : MonoBehaviour
 							string strCnfID = xRecord.QueryString (nRow, (int)SquickProtocol.Player.PlayerHero.ConfigID);
 							string strIconName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Item.Icon);
 							string strIconFileName = mElementModule.QueryPropertyString (strCnfID, SquickProtocol.Item.SpriteFile);
-							Sprite xSprite = NFTexturePacker.Instance.GetSprit (strIconFileName, strIconName);
+							Sprite xSprite = TexturePacker.Instance.GetSprit (strIconFileName, strIconName);
 							if (xSprite != null)
 							{
 								xImage.overrideSprite = xSprite;

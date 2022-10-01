@@ -6,19 +6,19 @@ using Squick;
 public class NFFallState : NFIState
 {
   
-    private NFHeroMotor xHeroMotor;
+    private HeroMotor xHeroMotor;
 
     private LoginModule mLoginModule;
-    private NFSceneModule mSceneModule;
+    private SceneModule mSceneModule;
 
     private Vector3 vector3 = new Vector3();
 
     public NFFallState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mSceneModule = NFRoot.Instance().GetPluginManager().FindModule<NFSceneModule>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mSceneModule = SquickRoot.Instance().GetPluginManager().FindModule<SceneModule>();
     }
 
 

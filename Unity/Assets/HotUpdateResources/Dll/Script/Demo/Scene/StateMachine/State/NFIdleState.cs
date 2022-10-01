@@ -7,8 +7,8 @@ using Squick;
 public class NFIdleState : NFIState
 {
     private BodyIdent xBodyIdent;
-	private NFHeroMotor xHeroMotor;
-    private NFHeroSync xHeroSync;
+	private HeroMotor xHeroMotor;
+    private HeroSync xHeroSync;
 
     private Vector3 vector3 = new Vector3();
 
@@ -16,16 +16,16 @@ public class NFIdleState : NFIState
     private IKernelModule mKernelModule;
 
     private LoginModule mLoginModule;
-    private NFSceneModule mSceneModule;
+    private SceneModule mSceneModule;
 
     public NFIdleState(GameObject gameObject, AnimaStateType eState, NFAnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
-        IPluginManager pluginManager = NFRoot.Instance().GetPluginManager();
+        IPluginManager pluginManager = SquickRoot.Instance().GetPluginManager();
 
         mKernelModule = pluginManager.FindModule<IKernelModule>();
-        mLoginModule = NFRoot.Instance().GetPluginManager().FindModule<LoginModule>();
-        mSceneModule = NFRoot.Instance().GetPluginManager().FindModule<NFSceneModule>();
+        mLoginModule = SquickRoot.Instance().GetPluginManager().FindModule<LoginModule>();
+        mSceneModule = SquickRoot.Instance().GetPluginManager().FindModule<SceneModule>();
     }
 
     private bool Fall()
@@ -36,8 +36,8 @@ public class NFIdleState : NFIState
     public override void Enter(GameObject gameObject, int index)
     {
         xBodyIdent = gameObject.GetComponent<BodyIdent>();
-        xHeroMotor = gameObject.GetComponent<NFHeroMotor>();
-        xHeroSync = gameObject.GetComponent<NFHeroSync>();
+        xHeroMotor = gameObject.GetComponent<HeroMotor>();
+        xHeroSync = gameObject.GetComponent<HeroSync>();
 
         base.Enter(gameObject, index);
 
@@ -82,7 +82,7 @@ public class NFIdleState : NFIState
                 return;
             }
 
-            if (NFRoot.Instance().GetGameMode() == GAME_MODE.GAME_MODE_2D)
+            if (SquickRoot.Instance().GetGameMode() == GAME_MODE.GAME_MODE_2D)
             {
                 bool left = false;
                 bool right = false;

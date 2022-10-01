@@ -3,7 +3,7 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFHeroCameraFollow : MonoBehaviour 
+public class HeroCameraFollow : MonoBehaviour 
 {
     [Header("Camera")]
     [Tooltip("Reference to the target GameObject.")]

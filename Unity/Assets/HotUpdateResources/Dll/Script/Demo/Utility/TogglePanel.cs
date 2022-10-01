@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class NFTogglePanel : MonoBehaviour {
+public class TogglePanel : MonoBehaviour {
     public Text text;
     public string messageHandler;
     public Transform[] xPanelObject;
@@ -42,7 +42,7 @@ public class NFTogglePanel : MonoBehaviour {
             {
                 if (toggles[i])
                 {
-                    NFTogglePanel togglePanel = toggles[i].GetComponent<NFTogglePanel>();
+                    TogglePanel togglePanel = toggles[i].GetComponent<TogglePanel>();
                     if (togglePanel != null && togglePanel.text != null)
                     {
                         togglePanel.text.fontStyle = FontStyle.Normal;

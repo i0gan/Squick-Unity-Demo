@@ -13,7 +13,7 @@ public class NFRunState : NFIState
 	}
 	BodyIdent xBodyIdent;
     AnimatStateController xHeroAnima;
-	NFHeroMotor xHeroMotor;
+	HeroMotor xHeroMotor;
 
     private int standCount = 0;
     private Vector3 lastPos = new Vector3();
@@ -22,7 +22,7 @@ public class NFRunState : NFIState
 	{
 		xBodyIdent = gameObject.GetComponent<BodyIdent> ();
         xHeroAnima = gameObject.GetComponent<AnimatStateController> ();
-		xHeroMotor = gameObject.GetComponent<NFHeroMotor> ();
+		xHeroMotor = gameObject.GetComponent<HeroMotor> ();
 
 		base.Enter (gameObject, index);
 

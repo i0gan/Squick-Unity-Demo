@@ -58,7 +58,7 @@ namespace Squick
 			foreach (var x in mxUIGO)
 			{
 				GameObject go = x.Key;
-				NFUILanguage xLanguage = go.GetComponent<NFUILanguage>();
+				UILanguage xLanguage = go.GetComponent<UILanguage>();
 				if (xLanguage)
 				{
 					xLanguage.RefreshUIData();
