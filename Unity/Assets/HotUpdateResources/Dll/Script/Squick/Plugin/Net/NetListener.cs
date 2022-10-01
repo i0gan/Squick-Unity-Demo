@@ -206,7 +206,7 @@ namespace Squick
 		// 接受消息
 		private void OnMessageEvent(MsgHead head, MemoryStream ms)
         {
-			Debug.Log("接受到消息：" + head.unMsgID + "  " + ((SquickStruct.EGameMsgID)(head.unMsgID)).ToString());
+			//Debug.Log("接受到消息：" + head.unMsgID + "  " + ((SquickStruct.EGameMsgID)(head.unMsgID)).ToString());
             if (mhtMsgDelegation.ContainsKey(head.unMsgID))
             {
                 MsgDelegation myDelegationHandler = (MsgDelegation)mhtMsgDelegation[head.unMsgID];

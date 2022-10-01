@@ -3,15 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using SquickProtocol;
 using Squick;
+using ECM.Components;
+using ECM.Controllers;
 
-public class NFJumpingState : IState
+public class JumpLandState : IState
 {
-    public NFJumpingState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public JumpLandState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
     }
-    
-	private HeroInput xInput;
+
+    private CharacterMovement mCharacterMovement;
+    private HeroInput xInput;
 	private HeroMotor xHeroMotor;
 	private BodyIdent xBodyIdent;
 	private AnimatStateController xHeroAnima;
@@ -23,32 +26,34 @@ public class NFJumpingState : IState
         xHeroAnima = gameObject.GetComponent<AnimatStateController>();
         xHeroMotor = gameObject.GetComponent<HeroMotor>();
 
+        mCharacterMovement = gameObject.GetComponent<CharacterMovement>();
 
         base.Enter(gameObject, index);
-  
+
+        Vector3 v = new Vector3(gameObject.transform.position.x, mCharacterMovement.groundHit.groundPoint.y, gameObject.transform.position.z);
+        gameObject.transform.position = v;
     }
 
     public override void Execute(GameObject gameObject)
     {
 		base.Execute(gameObject);
-  
-        if (xHeroMotor.isOnGround)
-		{
-            mAnimatStateController.PlayAnimaState(AnimaStateType.JumpLand, -1);
-		}
-	}
+
+        mAnimatStateController.PlayAnimaState(AnimaStateType.Idle, -1);
+    }
 
     public override void Exit(GameObject gameObject)
     {
         base.Exit(gameObject);
 
+        //判断是需要idle还是run
+        if (mStateMachine.IsMainRole())
+        {
+       
+        }
     }
 
     public override void OnCheckInput(GameObject gameObject)
     {
-        if (mStateMachine.IsMainRole())
-        {
-
-        }
+ 
     }
 }

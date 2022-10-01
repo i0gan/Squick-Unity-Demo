@@ -84,6 +84,7 @@ public class HeroInput : MonoBehaviour
 
     void MoveEvent(Vector3 direction)
     {
+        //Debug.Log("direction :" + direction);
         if (mLoginModule.mRoleID == mBodyIdent.GetObjectID())
         {
             // Handle your custom input here...
@@ -102,6 +103,7 @@ public class HeroInput : MonoBehaviour
                             {
                                 Vector3 vDirection = direction.relativeTo(Camera.main.transform);
                                 mHeroMotor.MoveTo(this.transform.position + vDirection.normalized * 0.5f);
+                                //mHeroMotor.MoveTo(this.transform.position + vDirection);
                             }
                         }
                     }
@@ -110,6 +112,7 @@ public class HeroInput : MonoBehaviour
         }   
     }
 
+    // 获取到操控方向
     void JoyOnPointerDownHandler(Vector3 direction)
     {
         MoveEvent(direction);
@@ -136,6 +139,7 @@ public class HeroInput : MonoBehaviour
     Vector3 fLastEventdirection;
     public void FixedUpdate()
     {
+        // 摇杆操控
         if (mJoystick == null)
         {
             mJoystick = mUIModule.GetUI<NFUIJoystick>();

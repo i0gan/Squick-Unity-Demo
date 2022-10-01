@@ -33,11 +33,11 @@ MonoBehaviour:
     CameraStructList: []
   - IsFoldout: 1
     Type: 1
-    fTime: 0.59333324
+    fTime: 1.1866665
     NextType: 0
     AnimationClip: {fileID: 7400000, guid: 1cb8ed3cbba15f0479fbae54e0a963df, type: 3}
     fCurTime: 0
-    fSpeed: 1
+    fSpeed: 0.5
     visible: 1
     EffectStructList: []
     AudioStructList: []
@@ -422,7 +422,7 @@ MonoBehaviour:
     MovementStructList: []
     CameraStructList: []
   - IsFoldout: 1
-    Type: 100
+    Type: 90
     fTime: 1
     NextType: 0
     AnimationClip: {fileID: 0}
@@ -437,10 +437,10 @@ MonoBehaviour:
     MovementStructList: []
     CameraStructList: []
   - IsFoldout: 1
-    Type: 90
-    fTime: 2.4000006
+    Type: 91
+    fTime: 1
     NextType: 0
-    AnimationClip: {fileID: 7400000, guid: dffa50cfe77e0434bbfa71245b3dd529, type: 3}
+    AnimationClip: {fileID: 0}
     fCurTime: 0
     fSpeed: 1
     visible: 1
@@ -452,10 +452,10 @@ MonoBehaviour:
     MovementStructList: []
     CameraStructList: []
   - IsFoldout: 1
-    Type: 91
-    fTime: 2.4000006
+    Type: 100
+    fTime: 1
     NextType: 0
-    AnimationClip: {fileID: 7400000, guid: dffa50cfe77e0434bbfa71245b3dd529, type: 3}
+    AnimationClip: {fileID: 0}
     fCurTime: 0
     fSpeed: 1
     visible: 1

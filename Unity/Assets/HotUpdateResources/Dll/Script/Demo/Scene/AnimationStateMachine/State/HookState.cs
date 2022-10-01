@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using SquickProtocol;
 
-public class NFHookState : IState
+public class HookState : IState
 {
-    public NFHookState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public HookState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
 

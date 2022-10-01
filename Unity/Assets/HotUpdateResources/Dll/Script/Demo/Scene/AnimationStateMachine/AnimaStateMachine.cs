@@ -35,20 +35,20 @@ public class AnimaStateMachine : MonoBehaviour
 		mElementModule = pluginManager.FindModule<IElementModule>();
 		mLoginModule = pluginManager.FindModule<LoginModule>();
 
-        AddState(AnimaStateType.Idle, new NFIdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
-        AddState(AnimaStateType.Idle1, new NFIdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
-        AddState(AnimaStateType.Idle2, new NFIdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
+        AddState(AnimaStateType.Idle, new IdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
+        AddState(AnimaStateType.Idle1, new IdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
+        AddState(AnimaStateType.Idle2, new IdleState(this.gameObject, AnimaStateType.Idle, this, 1f, 0f, true));
 
-        AddState(AnimaStateType.Run, new NFRunState(this.gameObject, AnimaStateType.Run, this, 1f, 0f, true));
+        AddState(AnimaStateType.Run, new RunState(this.gameObject, AnimaStateType.Run, this, 1f, 0f, true));
         AddState(AnimaStateType.Walk, new WalkState(this.gameObject, AnimaStateType.Walk, this, 1f, 0f, true));
-        AddState(AnimaStateType.Dizzy, new NFDizzyState(this.gameObject, AnimaStateType.Dizzy, this, 1f, 0f));
-        AddState(AnimaStateType.Freeze, new NFFreezeState(this.gameObject, AnimaStateType.Freeze, this, 1f, 0f));
+        AddState(AnimaStateType.Dizzy, new DizzyState(this.gameObject, AnimaStateType.Dizzy, this, 1f, 0f));
+        AddState(AnimaStateType.Freeze, new FreezeState(this.gameObject, AnimaStateType.Freeze, this, 1f, 0f));
         AddState(AnimaStateType.Block, new BlockState(this.gameObject, AnimaStateType.Block, this, 1f, 0f));
-        AddState(AnimaStateType.Fall, new NFFallState(this.gameObject, AnimaStateType.Fall, this, 1f, 0f));
-        AddState(AnimaStateType.Dead, new NFDeadState(this.gameObject, AnimaStateType.Dead, this, 1f, 0f));
+        AddState(AnimaStateType.Fall, new FallState(this.gameObject, AnimaStateType.Fall, this, 1f, 0f));
+        AddState(AnimaStateType.Dead, new DeadState(this.gameObject, AnimaStateType.Dead, this, 1f, 0f));
         AddState(AnimaStateType.JumpStart, new NFJumpStartState(this.gameObject, AnimaStateType.JumpStart, this, 1f, 0f));
-        AddState(AnimaStateType.Jumping, new NFJumpingState(this.gameObject, AnimaStateType.Jumping, this, 1f, 0f));
-        AddState(AnimaStateType.JumpLand, new NFJumpLandState(this.gameObject, AnimaStateType.JumpLand, this, 0.1f, 0.4f));
+        AddState(AnimaStateType.Jumping, new JumpingState(this.gameObject, AnimaStateType.Jumping, this, 1f, 0f));
+        AddState(AnimaStateType.JumpLand, new JumpLandState(this.gameObject, AnimaStateType.JumpLand, this, 0.1f, 0.4f));
         AddState(AnimaStateType.BeHit1, new BeHitState(this.gameObject, AnimaStateType.BeHit1, this, 1f, 0f));
         AddState(AnimaStateType.BeHit2, new BeHitState(this.gameObject, AnimaStateType.BeHit2, this, 1f, 0f));
         AddState(AnimaStateType.HitFly, new NFHitFlyState(this.gameObject, AnimaStateType.HitFly, this, 1f, 0f));
@@ -59,15 +59,15 @@ public class AnimaStateMachine : MonoBehaviour
 
         AddState(AnimaStateType.Buff1, new Buff1(this.gameObject, AnimaStateType.Buff1, this, 1f, 0f));
 
-        AddState(AnimaStateType.NormalSkill1, new NFNormalSkill1(this.gameObject, AnimaStateType.NormalSkill1, this, 1f, 0f));
-        AddState(AnimaStateType.NormalSkill2, new NFNormalSkill2(this.gameObject, AnimaStateType.NormalSkill2, this, 1f, 0f));
-        AddState(AnimaStateType.NormalSkill3, new NFNormalSkill3(this.gameObject, AnimaStateType.NormalSkill3, this, 1f, 0f));
-        AddState(AnimaStateType.NormalSkill4, new NFNormalSkill4(this.gameObject, AnimaStateType.NormalSkill4, this, 1f, 0f));
+        AddState(AnimaStateType.NormalSkill1, new NormalSkill1(this.gameObject, AnimaStateType.NormalSkill1, this, 1f, 0f));
+        AddState(AnimaStateType.NormalSkill2, new NormalSkill2(this.gameObject, AnimaStateType.NormalSkill2, this, 1f, 0f));
+        AddState(AnimaStateType.NormalSkill3, new NormalSkill3(this.gameObject, AnimaStateType.NormalSkill3, this, 1f, 0f));
+        AddState(AnimaStateType.NormalSkill4, new NormalSkill4(this.gameObject, AnimaStateType.NormalSkill4, this, 1f, 0f));
         AddState(AnimaStateType.NormalSkill5, new NFNormalSkill5(this.gameObject, AnimaStateType.NormalSkill5, this, 1f, 0f));
 
         AddState(AnimaStateType.SpecialSkill1, new NFSpecialSkill1(this.gameObject, AnimaStateType.SpecialSkill1, this, 1f, 0f));
         AddState(AnimaStateType.SpecialSkill2, new SpecialSkill2(this.gameObject, AnimaStateType.SpecialSkill2, this, 1f, 0f));
-        AddState(AnimaStateType.SkillThump, new NFSkillThump(this.gameObject, AnimaStateType.SkillThump, this, 1f, 0f));
+        AddState(AnimaStateType.SkillThump, new SkillThump(this.gameObject, AnimaStateType.SkillThump, this, 1f, 0f));
 
     }
 

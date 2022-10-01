@@ -4,7 +4,7 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFDeadState : IState
+public class DeadState : IState
 {
     private HeroMotor xHeroMotor;
     private float fStartTime = 0f;
@@ -12,7 +12,7 @@ public class NFDeadState : IState
 
     UIModule mUIModule;
 
-    public NFDeadState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public DeadState(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         mUIModule = SquickRoot.Instance().GetPluginManager().FindModule<UIModule>();

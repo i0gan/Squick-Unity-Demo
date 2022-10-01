@@ -3,14 +3,14 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class NFNormalSkill2 : IState
+public class SkillThump : IState
 {
     private BodyIdent xBodyIdent;
     private HeroInput xInput;
     private HeroMotor xHeroMotor;
     private HeroSync xHeroSync;
 
-    public NFNormalSkill2(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
+    public SkillThump(GameObject gameObject, AnimaStateType eState, AnimaStateMachine xStateMachine, float fHeartBeatTime, float fExitTime, bool input = false)
         : base(gameObject, eState, xStateMachine, fHeartBeatTime, fExitTime, input)
     {
         xBodyIdent = gameObject.GetComponent<BodyIdent>();
@@ -23,7 +23,7 @@ public class NFNormalSkill2 : IState
     {
         base.Enter(gameObject, index);
 
-        //mAnimatStateController.PlayAnimaState(AnimaStateType.NormalSkill2);
+        //mAnimatStateController.PlayAnimaState(AnimaStateType.SkillThump);
     }
 
     public override void Execute(GameObject gameObject)

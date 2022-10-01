@@ -43,6 +43,7 @@ public class NFUIJoystick : UIDialog
         mOnPointerDragHandler = handler;
     }
 
+    // 标准化方向
     Vector3 NormalizeDirection(Vector3 direction)
     {
         if (direction.x < 0.35 && direction.x > -0.35)
@@ -121,7 +122,7 @@ public class NFUIJoystick : UIDialog
 
     private void OnPointerDown(Vector3 direction)
     {
-        direction = NormalizeDirection(direction);
+        //direction = NormalizeDirection(direction);
 
         mOnPointerDownHandler?.Invoke(direction);
 
@@ -130,7 +131,7 @@ public class NFUIJoystick : UIDialog
 
     private void OnPointerUp(Vector3 direction)
     {
-        direction = NormalizeDirection(direction);
+        //direction = NormalizeDirection(direction);
 
         mOnPointerUpHandler?.Invoke(direction);
 
@@ -140,7 +141,7 @@ public class NFUIJoystick : UIDialog
     static Vector3 lastDirection;
     private void OnDrag(Vector3 direction)
     {
-        direction = NormalizeDirection(direction);
+        //direction = NormalizeDirection(direction);
        
         if (Vector3.Distance(lastDirection, direction) > 0.1)
         {
