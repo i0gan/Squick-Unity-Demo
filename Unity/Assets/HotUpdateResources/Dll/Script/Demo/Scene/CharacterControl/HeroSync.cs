@@ -20,7 +20,7 @@ public class HeroSync : MonoBehaviour
     private HelpModule mHelpModule;
     private IKernelModule mKernelModule;
 
-    private float SYNC_TIME = 0.05f;
+    private float SYNC_TIME = 0.05f; // 多久同步一次 20 fps
 
     void Awake () 
 	{

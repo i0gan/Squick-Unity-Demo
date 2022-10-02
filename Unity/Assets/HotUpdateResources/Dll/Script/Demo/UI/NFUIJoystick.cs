@@ -166,6 +166,7 @@ public class NFUIJoystick : UIDialog
 
     public override void Init()
     {
+
     }
 
     private void Update()

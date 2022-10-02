@@ -86,14 +86,12 @@ public class SquickRoot : MonoBehaviour
 
 
 
-        // 连接代理服务器 127.0.0.1 15001
-        string strTargetIP = "1.14.123.62";
-        Debug.Log("连接服务器: ..." + strTargetIP + ":" + port);
+        string strTargetIP = "";        
         if (mConfig.GetSelectServer(ref strTargetIP))
         {
+            Debug.Log("连接服务器: ..." + strTargetIP + ":" + port);
             mNetModule.StartConnect(strTargetIP, port);
         }
-
         DontDestroyOnLoad(gameObject);
     }
 

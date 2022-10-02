@@ -64,6 +64,7 @@ public class HeroInput : MonoBehaviour
         //normally attack5
     }
 
+    // 检查当前状态是否可以移动
     bool CheckMove()
     {
         //idle
@@ -102,8 +103,8 @@ public class HeroInput : MonoBehaviour
                             if (CheckMove())
                             {
                                 Vector3 vDirection = direction.relativeTo(Camera.main.transform);
-                                mHeroMotor.MoveTo(this.transform.position + vDirection.normalized * 0.5f);
-                                //mHeroMotor.MoveTo(this.transform.position + vDirection);
+                                //mHeroMotor.MoveTo(this.transform.position + vDirection.normalized * 0.5f);
+                                mHeroMotor.MoveTo(this.transform.position + vDirection); //
                             }
                         }
                     }

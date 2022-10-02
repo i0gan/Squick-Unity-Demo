@@ -42,8 +42,9 @@ namespace SquickProtocol
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-
-            mASC = target as AnimatStateController;
+			//Debug.Log("okkkk");
+			
+			mASC = target as AnimatStateController;
             if (mASC.GetComponent<BodyIdent>().xRenderObject)
             {
                 mAnimator = mASC.GetComponent<BodyIdent>().xRenderObject.GetComponent<Animator>();
@@ -80,13 +81,16 @@ namespace SquickProtocol
 
                 EditorGUILayout.HelpBox("Please specify a \"AnimationSkillData\" data .", MessageType.Error);
             }
+			
+			if(GUI.changed)
+            {
+				EditorUtility.SetDirty(mASC);
+				if (mData != null)
+					EditorUtility.SetDirty(mData);
+			}
+			
 
-            EditorUtility.SetDirty(mASC);
-            if (mData != null)
-                EditorUtility.SetDirty(mData);
-
-
-            if (GUILayout.Button("Fix All particles"))
+			if (GUILayout.Button("Fix All particles"))
             {
                 FixParticles(mAnimator.avatar.name.Substring(0, 7));
             }
@@ -164,8 +168,11 @@ namespace SquickProtocol
 
         void FixAllAnims()
 		{
-            //remove all animation event
+			//remove all animation event
 
+			GameObject Character = Selection.activeGameObject.transform.Find("Character").gameObject;
+			Character.transform.position = new Vector3(0, 0, 0);
+			Character.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 
 			foreach (AnimaStateType myCode in Enum.GetValues(typeof(AnimaStateType)))
 			{
@@ -241,7 +248,7 @@ namespace SquickProtocol
                 {
                     if (o is AnimationClip && _ass.AnimationClip.name == o.name)
                     {
-                        Debug.Log(o.name + " is clip " + _ass.AnimationClip.name);
+                        //Debug.Log(o.name + " is clip " + _ass.AnimationClip.name);
                         anim = o as AnimationClip;
                     }
                 }
@@ -292,7 +299,7 @@ namespace SquickProtocol
                 }
             }
 
-            /*
+			/*
 			AnimatorState[] intArray2 = new AnimatorState[100];
 
 			foreach (AnimaStateType myCode in Enum.GetValues(typeof(AnimaStateType)))
@@ -310,9 +317,12 @@ namespace SquickProtocol
             IdleState.AddTransition(runState);
             */
 
-            string prefabPath = "/Prefabs/Object" + mASC.gameObject.name;
-			PrefabUtility.ApplyObjectOverride(mASC.gameObject, prefabPath, InteractionMode.AutomatedAction);
-        }
+
+			//EditorUtility.SetDirty(mASC.gameObject);
+			//string prefabPath = "Assets/HotUpdateResources/Prefab/Object/" + mASC.gameObject.name + ".prefab";
+			//Debug.Log("ApplyObjectOverride prefabPath: " + prefabPath);
+			//PrefabUtility.ApplyObjectOverride(mASC.gameObject, prefabPath, InteractionMode.AutomatedAction);
+		}
 
         void DrawAnimation()
         {
@@ -379,7 +389,7 @@ namespace SquickProtocol
                         }
                     }
 
-					if (GUILayout.Button("FIX ANIM"))
+					if (GUILayout.Button("Reset"))
 					{
 						FixAllAnims();
 					}

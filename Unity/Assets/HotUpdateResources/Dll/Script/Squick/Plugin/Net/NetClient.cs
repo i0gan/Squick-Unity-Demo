@@ -301,7 +301,7 @@ namespace Squick
 
         private void SendBytes(byte[] bytes, int offset, int size)
         {
-            Debug.Log("NetClient.cs:303, Send Bytes: " + size + "  " + bytes.ToString());
+            //Debug.Log("NetClient.cs:303, Send Bytes: " + size + "  " + bytes.ToString());
             if (!IsConnected())
                 return;
             try

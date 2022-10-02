@@ -36,11 +36,11 @@ public sealed class HeroMotor : BaseCharacterController
 
     [Tooltip("The character's walk speed.")]
     [SerializeField]
-    private float _walkSpeed = 1.5f;
+    private float _walkSpeed = 3.0f;
 
     [Tooltip("The character's run speed.")]
     [SerializeField]
-    private float _runSpeed = 10.0f;
+    private float _runSpeed = 6.0f;
 
     #endregion
 
@@ -79,10 +79,10 @@ public sealed class HeroMotor : BaseCharacterController
     /// <summary>
     /// Get target speed based on character state (eg: running, walking, etc).
     /// </summary>
-
+    private float walkTime = 0.0f;
     private float GetTargetSpeed()
     {
-        return walk ? walkSpeed : runSpeed;
+        return speed;
     }
 
     /// <summary>
@@ -170,19 +170,46 @@ public sealed class HeroMotor : BaseCharacterController
     // 角色移动
     public void MoveTo(Vector3 vPos, bool fromServer = false, MeetGoalCalllBack callBack = null)
     {
+        //Debug.Log("sssss");
         meetGoalCasllBack = callBack;
 
         vPos.y = this.transform.position.y;
         moveToPos = vPos;
         moveDirection = (vPos - this.transform.position);
         //Debug.LogWarning("moveDirection: " + moveDirection);
-        if (mLoginModule.mRoleID == mxGUID && !fromServer)
+        if (mLoginModule.mRoleID == mxGUID && !fromServer) // 本地移动
         {
             //mNetModule.RequireMove(mLoginModule.mRoleID, 0, moveToPos);
         }
 
+        if(fromServer)
+        {
+            Debug.Log("来自服务器的移动");
+        }
+        // 远程移动
 
-        mAnima.PlayAnimaState(AnimaStateType.Run, -1);
+        
+        // 播放移动动画
+        if(mAnima.GetLastState() == AnimaStateType.Idle || mAnima.GetLastState() == AnimaStateType.NONE)
+        {
+            if (mAnima.GetLastState() != AnimaStateType.Walk)
+            {
+                walkTime = Time.time;
+                walkSpeed = 2.0f;
+                _runSpeed = 6.0f; // 跑起来的速度
+            }
+            walk = true;
+            mAnima.PlayAnimaState(AnimaStateType.Walk, -1);
+            //walkSpeed = 1.5f;
+            speed = walkSpeed + (Time.time - walkTime) * (runSpeed - walkSpeed); // 提速
+
+        } else if(mAnima.GetLastState() == AnimaStateType.Walk && Time.time - walkTime > 1.0f) // 2秒后开始跑
+        {
+            walk = false;
+            mAnima.PlayAnimaState(AnimaStateType.Run, -1);
+            
+        }
+        
     }
 
     public void MoveToImmune(Vector3 vPos, bool bFaceToPos = true)
@@ -289,18 +316,12 @@ public sealed class HeroMotor : BaseCharacterController
         {
             if (Mathf.Abs(moveToPos.x - this.transform.position.x) < 0.1f && Mathf.Abs(moveToPos.z - this.transform.position.z) < 0.1f)
             {
-                //now running
-                //if (mAnimaStateMachine.CurState() == AnimaStateType.Run
-                //    || mAnimaStateMachine.CurState() == AnimaStateType.Walk)
-                {
-                    //sometimes, the object will swap to skill animation from running animation before we swap to idle
-                    Stop();
-                }
+                Stop();
             }
             else
             {
                 
-                moveDirection = (moveToPos - this.transform.position).normalized;
+                moveDirection = (moveToPos - this.transform.position);
                 mBodyIdent.LookAt(moveToPos);
             }
         }
@@ -323,7 +344,9 @@ public sealed class HeroMotor : BaseCharacterController
 
     void PropertyEventHandler(Squick.Guid self, string strProperty, DataList.TData oldVar, DataList.TData newVar, Int64 reason)
     {
+        
         this.runSpeed = newVar.IntVal() / 100.0f;
+        Debug.Log("PropertyEventHandler: runSpeed: " + runSpeed);
     }
 
     void OnDestroy()

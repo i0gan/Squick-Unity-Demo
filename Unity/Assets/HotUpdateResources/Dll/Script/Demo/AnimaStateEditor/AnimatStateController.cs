@@ -14,7 +14,8 @@ namespace SquickProtocol
 		private BodyIdent mBodyIdent;
 		private Animator mAnimator;
 		private AnimationEvent mxAnimationEvent = new AnimationEvent();
-		private AnimaStateType meLastPlayID = AnimaStateType.NONE;
+		private AnimaStateType meLastPlayState = AnimaStateType.NONE;
+		//private AnimaStateType meNextPlayID = AnimaStateType.NONE;
 
 		private List<GameObject> effectList = new List<GameObject>();
 
@@ -50,9 +51,9 @@ namespace SquickProtocol
             mAnimator = animator;
         }
 
-        public AnimaStateType GetCurState()
+        public AnimaStateType GetLastState()
 		{
-			return meLastPlayID;
+			return meLastPlayState;
 		}
 
         public AnimationEvent GetAnimationEvent()
@@ -74,8 +75,10 @@ namespace SquickProtocol
 			PlayAnimaState(AnimaStateType.Idle, -1);
 		}
 
+		// 播放移动动画
 		public int PlayAnimaState(AnimaStateType eAnimaType, int index, bool force = false)
 		{
+			Debug.Log("PlayAnimaState: " + eAnimaType);
             foreach (GameObject go in effectList)
             {
                 if (go != null)
@@ -122,7 +125,7 @@ namespace SquickProtocol
 			}
 			else
             {
-				if (eAnimaType == meLastPlayID && !force)
+				if (eAnimaType == meLastPlayState && !force)
                 {
 					return - 1;
                 }
@@ -137,9 +140,9 @@ namespace SquickProtocol
                 }
             }
 
-			mxAnimationEvent.OnEndAnimaEvent(this.gameObject, meLastPlayID, index);
+			mxAnimationEvent.OnEndAnimaEvent(this.gameObject, meLastPlayState, index);
 
-			meLastPlayID = eAnimaType;
+			meLastPlayState = eAnimaType;
 
 			mxAnimationEvent.OnStartAnimaEvent(this.gameObject, eAnimaType, index);
 

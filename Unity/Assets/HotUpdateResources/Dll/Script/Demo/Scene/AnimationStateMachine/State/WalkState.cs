@@ -24,9 +24,9 @@ public class WalkState : IState
     {
         base.Execute(gameObject);
 
-        if (Time.time - 1 > fStartTime)
+        /*
+        if (Time.time - 3 > fStartTime) // 3秒后才开始跑
         {
-
             mAnimatStateController.PlayAnimaState(AnimaStateType.Run, -1);
         }
 
@@ -39,7 +39,7 @@ public class WalkState : IState
         if (xHeroMotor.speed > xHeroMotor.runSpeed)
         {
             xHeroMotor.speed = xHeroMotor.runSpeed;
-        }
+        }*/
     }
 
     public override void Exit(GameObject gameObject)
