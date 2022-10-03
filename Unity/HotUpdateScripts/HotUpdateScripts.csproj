@@ -324,10 +324,6 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>Dlls\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="UniWebView-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dlls\UniWebView-CSharp.dll</HintPath>
-    </Reference>
     <Reference Include="WebSocketSharp">
       <HintPath>..\Library\ScriptAssemblies\WebSocketSharp.dll</HintPath>
     </Reference>

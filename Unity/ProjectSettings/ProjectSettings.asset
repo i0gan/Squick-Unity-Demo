@@ -640,6 +640,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    1: INIT_JE
     7: INIT_JE
   additionalCompilerArguments: {}
   platformArchitecture: {}

@@ -1,8 +1,3 @@
-//-----------------------------------------------------------------------
-// <copyright file="NFILogicClassModule.cs">
-//     Copyright (C) 2015-2019 lvsheng.huang <https://github.com/ketoo/SquickProtocol>
-// </copyright>
-//-----------------------------------------------------------------------
 using System;
 using System.Collections;
 using System.Collections.Generic;

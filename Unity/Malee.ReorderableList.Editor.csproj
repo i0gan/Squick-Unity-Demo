@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="E:\I0gan\Github\Uquick2\Unity\Assets\Plugins\netstandard2.0\Newtonsoft.Json.dll" />
+    <Analyzer Include="E:\I0gan\Github\Uquick\Unity\Assets\Plugins\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Dependencies\Unity-Reorderable-List\Unity-Reorderable-List\Editor\ReorderableDrawer.cs" />
@@ -343,14 +343,14 @@
     <Reference Include="ILRuntime.Mono.Cecil.Pdb">
       <HintPath>Assets\Dependencies\ILRuntime\ILRuntime\Plugins\ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.9.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Plugins\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

@@ -8,7 +8,7 @@ public class AppStart : MonoBehaviour
 {
     private void Awake()
     {
-       Debug.Log("Hello World!");
+       Debug.Log("Hello World! 这里执行的是热更代码");
     }
 
     private void Start()
