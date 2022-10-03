@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class AppStart : MonoBehaviour
 {
     // Start is called before the first frame update
-    public VideoPlayer videoPlayer;
+    //public VideoPlayer videoPlayer;
     void Start()
     {
         //Debug.Log("Video Length");
-        Invoke("LoadScene", (float)videoPlayer.length);
+        Invoke("LoadScene", 2.0f);
         if (UnityEngine.RuntimePlatform.Android == Application.platform)
         {
             KeepScreenOn(); // 不息屏

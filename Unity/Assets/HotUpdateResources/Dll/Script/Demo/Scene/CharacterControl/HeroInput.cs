@@ -18,7 +18,7 @@ public class HeroInput : MonoBehaviour
     private HeroMotor mHeroMotor;
     private BodyIdent mBodyIdent;
 
-    private NFUIJoystick mJoystick;
+    private UIPlayerControl mJoystick;
 
 
     public bool mbInputEnable = false;
@@ -143,7 +143,7 @@ public class HeroInput : MonoBehaviour
         // 摇杆操控
         if (mJoystick == null)
         {
-            mJoystick = mUIModule.GetUI<NFUIJoystick>();
+            mJoystick = mUIModule.GetUI<UIPlayerControl>();
 
             if (mJoystick)
             {

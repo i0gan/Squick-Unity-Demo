@@ -32,7 +32,7 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 ## 将来要做
 
-采用更快速的UDP协议做帧同步
+采用更快速的KCP协议做帧同步
 
 支持更多角色以及动画
 

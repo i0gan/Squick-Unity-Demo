@@ -1086,9 +1086,9 @@ namespace BM
 		public const string Assets_HotUpdateResources_Prefab_Object_DefaultObject__prefab = "Assets/HotUpdateResources/Prefab/Object/DefaultObject.prefab";
 		public const string Assets_HotUpdateResources_ScriptableObject_ScriptableObject__txt = "Assets/HotUpdateResources/ScriptableObject/ScriptableObject.txt";
 		public const string Assets_HotUpdateResources_TextAsset_Localization__csv = "Assets/HotUpdateResources/TextAsset/Localization.csv";
-		public const string Assets_HotUpdateResources_UI_NFUIJoystick__prefab = "Assets/HotUpdateResources/UI/NFUIJoystick.prefab";
 		public const string Assets_HotUpdateResources_UI_UILoading__prefab = "Assets/HotUpdateResources/UI/UILoading.prefab";
 		public const string Assets_HotUpdateResources_UI_UILogin__prefab = "Assets/HotUpdateResources/UI/UILogin.prefab";
+		public const string Assets_HotUpdateResources_UI_UIPlayerControl__prefab = "Assets/HotUpdateResources/UI/UIPlayerControl.prefab";
 		public const string Assets_HotUpdateResources_Scene_AppStart__unity = "Assets/HotUpdateResources/Scene/AppStart.unity";
 		public const string Assets_HotUpdateResources_Scene_Home__unity = "Assets/HotUpdateResources/Scene/Home.unity";
 		public const string Assets_HotUpdateResources_Scene_World__unity = "Assets/HotUpdateResources/Scene/World.unity";

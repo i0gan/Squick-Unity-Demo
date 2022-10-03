@@ -184,7 +184,7 @@ public sealed class HeroMotor : BaseCharacterController
 
         if(fromServer)
         {
-            Debug.Log("来自服务器的移动");
+            //Debug.Log("来自服务器的移动");
         }
         // 远程移动
 

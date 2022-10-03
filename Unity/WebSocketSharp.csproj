@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{e7a871dc-1d99-394b-b89f-058a2220d55d}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>WebSocketSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\WebSocketSharp\</OutputPath>
+    <DefineConstants>UNITY_2022_1_18;UNITY_2022_1;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_QUERY_BUILDER;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_LINUX;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;INIT_JE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169,0649</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/System.Buffers.dll" />
+    <Analyzer Include="/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/System.Runtime.CompilerServices.Unsafe.dll" />
+    <Analyzer Include="/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/Google.Protobuf.dll" />
+    <Analyzer Include="/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/System.Memory.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets/Dependencies/WebsocketSharp/WebSocket.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ChunkedRequestStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListenerResponse.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/CloseStatusCode.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ResponseStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/RequestStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpBasicIdentity.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/Cookie.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/AuthenticationSchemes.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/AuthenticationResponse.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListener.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/HandshakeBase.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ListenerAsyncResult.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/AuthenticationChallenge.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Mask.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/WebSockets/HttpListenerWebSocketContext.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListenerException.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpStreamAsyncResult.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/AuthenticationBase.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/WebSocketException.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/ErrorEventArgs.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/AssemblyInfo.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListenerRequest.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ReadBufferState.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/Security/SslStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpHeaderType.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/MessageEventArgs.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/WebSocketState.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/WebSockets/WebSocketContext.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/LineState.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/HandshakeResponse.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Ext.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/PayloadData.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpConnection.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/EndPointListener.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/NetworkCredential.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/CompressionMethod.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/ByteOrder.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Rsv.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpHeaderInfo.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/LogData.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/QueryStringCollection.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/InputState.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Fin.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpDigestIdentity.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/CookieCollection.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Logger.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpVersion.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/WebSockets/TcpListenerWebSocketContext.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/WebHeaderCollection.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListenerPrefixCollection.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ListenerPrefix.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/HandshakeRequest.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/CloseEventArgs.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Opcode.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/ChunkStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/EndPointManager.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpListenerContext.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/WebSocketFrame.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/CookieException.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/WebSocketStream.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpStatusCode.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/HttpUtility.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/Chunk.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/Net/InputChunkState.cs" />
+     <Compile Include="Assets/Dependencies/WebsocketSharp/LogLevel.cs" />
+     <None Include="Assets/Dependencies/WebsocketSharp/WebSocketSharp.asmdef" />
+     <Reference Include="Unity.Plastic.Newtonsoft.Json">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Plastic.Antlr3.Runtime">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ILRuntime.Mono.Cecil.Mdb">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Assets/Dependencies/ILRuntime/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="ILRuntime.Mono.Cecil">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Assets/Dependencies/ILRuntime/ILRuntime/Plugins/ILRuntime.Mono.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="log4netPlastic">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="ILRuntime.Mono.Cecil.Pdb">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Assets/Dependencies/ILRuntime/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="unityplastic">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Unsafe">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Pdb">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Rocks">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.Protobuf">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/Google.Protobuf.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.CompilerServices.Unsafe">
+     <HintPath>/run/media/i0gan/data/github/Uquick/Unity/Assets/ThirdParty/Protobuf/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Types">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Gradle">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll</HintPath>
+     </Reference>
+     <Reference Include="mscorlib">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/mscorlib.dll</HintPath>
+     </Reference>
+     <Reference Include="System">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Core">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Runtime.Serialization.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.Linq">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Numerics">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Numerics.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Numerics.Vectors">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Numerics.Vectors.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Http">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Net.Http.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.CSharp">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Microsoft.CSharp.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Data">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Data.DataSetExtensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.DataSetExtensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Drawing">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression.FileSystem">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.FileSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.Composition">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Transactions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Win32.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.AppContext">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.AppContext.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Buffers">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Buffers.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.Concurrent">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.Concurrent.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.NonGeneric">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.Specialized">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.Specialized.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.Annotations">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.EventBasedAsync">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel.TypeConverter">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ComponentModel">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Console">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Console.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Data.Common">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Data.Common.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Contracts">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Debug">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.FileVersionInfo">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Process">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Process.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.StackTrace">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.TextWriterTraceListener">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.Tools">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Diagnostics.TraceSource">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Drawing.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Drawing.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Dynamic.Runtime">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization.Calendars">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.Calendars.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization.Extensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Globalization">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Compression.ZipFile">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.DriveInfo">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem.Watcher">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.FileSystem">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.IsolatedStorage">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.MemoryMappedFiles">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Pipes">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.Pipes.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.UnmanagedMemoryStream">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Expressions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Expressions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Parallel">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Parallel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq.Queryable">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Queryable.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Linq">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Memory">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Memory.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Http.Rtc">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.NameResolution">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.NameResolution.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.NetworkInformation">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Ping">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Ping.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Requests">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Requests.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Security">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Security.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.Sockets">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Sockets.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebHeaderCollection">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebSockets.Client">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Net.WebSockets">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebSockets.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ObjectModel">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ObjectModel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.DispatchProxy">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.DispatchProxy.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit.ILGeneration">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit.Lightweight">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Emit">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Extensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Reflection">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.Reader">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.Reader.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.ResourceManager">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Resources.Writer">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.Writer.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.CompilerServices.VisualC">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Extensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Handles">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Handles.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.InteropServices">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Numerics">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Numerics.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Formatters">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Json">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.Serialization.Xml">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Claims">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Claims.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Algorithms">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Csp">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Encoding">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Cryptography.X509Certificates">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.Principal">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Principal.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Security.SecureString">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.SecureString.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.Duplex">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.Http">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Http.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.NetTcp">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.Primitives">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ServiceModel.Security">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Security.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.Encoding.Extensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.Encoding">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.Encoding.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Text.RegularExpressions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Overlapped">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Overlapped.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks.Extensions">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.Extensions.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks.Parallel">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Tasks">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Thread">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Thread.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.ThreadPool">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading.Timer">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Timer.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Threading">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.dll</HintPath>
+     </Reference>
+     <Reference Include="System.ValueTuple">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ValueTuple.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.ReaderWriter">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XDocument">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XPath.XDocument">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XPath">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XPath.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XmlDocument">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Xml.XmlSerializer">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+     </Reference>
+     <Reference Include="netstandard">
+     <HintPath>/run/media/i0gan/data/programs/unity/2022.1.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
+     </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

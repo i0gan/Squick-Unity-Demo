@@ -61,11 +61,11 @@ public class HeroSync : MonoBehaviour
     int lastInterpolationTime = 0;
     private void FixedUpdate()
     {
-        ReportPos();
+        ReportPos(); // 同步位置信息
 
         if (mxBodyIdent && mxBodyIdent.GetObjectID() != mLoginModule.mRoleID)
 		{
-            HeroSyncBuffer.Keyframe keyframe;
+            HeroSyncBuffer.Keyframe keyframe; // 获取到远程缓存的帧序列
             if (mxSyncBuffer.Size() > 1)
             {
                 keyframe = mxSyncBuffer.LastKeyframe();
@@ -123,6 +123,7 @@ public class HeroSync : MonoBehaviour
     }
 
     Vector3 lastPos = Vector3.zero;
+    Vector3 reqPos = Vector3.zero;
     float lastReportTime = 0f;
     bool canFixFrame = true;
     void ReportPos()
@@ -132,28 +133,36 @@ public class HeroSync : MonoBehaviour
             mNetModule.RequireMove(mLoginModule.mRoleID, (int)AnimaStateType.NONE, mxHeroMotor.transform.position);
         }
 
-        if (Time.time > (SYNC_TIME + lastReportTime))
+        if (Time.time > (SYNC_TIME + lastReportTime)) // 至少20fps进行同步
         {
             lastReportTime = Time.time;
 
             if (mLoginModule.mRoleID == mxBodyIdent.GetObjectID())
             {
-                if (lastPos != mxHeroMotor.transform.position)
+                //Debug.Log("ooookkkkk");
+                if (reqPos != mxHeroMotor.transform.position)
                 {
                     if (mxHeroMotor.moveToPos != Vector3.zero)
                     {
                         //是玩家自己移动
-                        lastPos = mxHeroMotor.moveToPos;
+                        reqPos = mxHeroMotor.moveToPos;
                         canFixFrame = false;
                     }
                     else
                     {
                         //是其他技能导致的唯一，比如屠夫的钩子那种
-                        lastPos = mxHeroMotor.transform.position;
+                        reqPos = mxHeroMotor.transform.position;
                         canFixFrame = false;
                     }
-
-                    mNetModule.RequireMove(mLoginModule.mRoleID, (int)mAnimaStateMachine.CurState(), lastPos);
+                    
+                    if(reqPos == lastPos) // 同一个位置请求，就不用同步到服务器
+                    {
+                       return;
+                    }
+                    // 请求移动
+                    lastPos = reqPos;
+                    //Debug.Log("请求移动：" + mxHeroMotor.transform.position + " to " + reqPos);
+                    mNetModule.RequireMove(mLoginModule.mRoleID, (int)mAnimaStateMachine.CurState(), reqPos);
                 }
                 else
                 {
@@ -197,7 +206,7 @@ public class HeroSync : MonoBehaviour
 
         if (mxSyncBuffer)
         {
-            Debug.Log(keyframe.InterpolationTime + " move " + this.transform.position.ToString() + " TO " + keyframe.Position.ToString());
+            //Debug.Log(keyframe.InterpolationTime + " move " + this.transform.position.ToString() + " TO " + keyframe.Position.ToString() + " Sequence: " + sequence) ;
 
             mxSyncBuffer.AddKeyframe(keyframe);
         }
