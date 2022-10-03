@@ -79,11 +79,6 @@ public class SquickConfig
 
     public bool GetSelectServer(ref string strIP)
     {
-		strIP = "1.14.123.62";
-		return true;
-
-
-
         // 获取服务器列表
         ArrayList serverList = GetServerList();
         if (null != serverList && serverList.Count > 0)

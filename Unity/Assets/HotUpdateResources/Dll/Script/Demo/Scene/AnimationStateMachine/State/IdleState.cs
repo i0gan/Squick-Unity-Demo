@@ -49,7 +49,7 @@ public class IdleState : IState
 
 		if (!xHeroMotor.isOnGround)
         {
-            mAnimatStateController.PlayAnimaState(AnimaStateType.Fall, -1);
+            mAnimatStateController.PlayAnimaState(AnimaStateType.Fall, -1); // 播放掉落动画
 		}
     }
 

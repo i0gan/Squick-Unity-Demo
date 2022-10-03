@@ -593,7 +593,7 @@ namespace Squick
             mUIModule.CloseAllUI();
             //mUIModule.ShowUI<NFUIMain>();
             //mUIModule.ShowUI<NFUIEstateBar>();
-            mUIModule.ShowUI<NFUIJoystick>();
+            mUIModule.ShowUI<UIPlayerControl>();
 
             Debug.Log("LoadSceneEnd: " + nSceneID + " " + nType);
 

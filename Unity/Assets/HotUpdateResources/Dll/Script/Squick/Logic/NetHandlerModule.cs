@@ -1060,14 +1060,13 @@ namespace Squick
         }
 
         //////////////////////////////////
-        /// 
+        /// 获取到远程服务器移动帧
         private void EGMI_ACK_MOVE(int id, MemoryStream stream)
         {
      
             SquickStruct.MsgBase xMsg = SquickStruct.MsgBase.Parser.ParseFrom(stream);
-
             SquickStruct.ReqAckPlayerPosSync xData = SquickStruct.ReqAckPlayerPosSync.Parser.ParseFrom(xMsg.MsgData);
-
+            Debug.Log("EGMI_ACK_MOVE: " + xData.SyncUnit.Count);
             if (xData.SyncUnit.Count <= 0)
             {
                 return;
@@ -1088,7 +1087,7 @@ namespace Squick
 
                 if (xMover == mLoginModule.mRoleID && syncUnit.Type == PosSyncUnit.Types.EMoveType.EmtWalk)
                 {
-                    //平常自己行走不需要同步
+                    //平常自己行走不需要同步到自己
                     return;
                 }
 
@@ -1118,12 +1117,14 @@ namespace Squick
                 v.y = syncUnit.Pos.Y;
                 v.z = syncUnit.Pos.Z;
 
-                Debug.Log("Move " + v);
+                //Debug.Log("Move " + v);
 
                 if (syncUnit.Type == PosSyncUnit.Types.EMoveType.EmtWalk)
                 {
+                    // 同步
                     xHeroSync.AddSyncData(xData.Sequence, syncUnit);
                 }
+
                 else if (syncUnit.Type == PosSyncUnit.Types.EMoveType.EetSpeedy)
                 {
                     xHeroMotor.MoveToImmune(v, 0.1f);
