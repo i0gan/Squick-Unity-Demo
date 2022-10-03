@@ -62,9 +62,9 @@ namespace Uquick.Editor
         [MenuItem(KViewDataPath)]
         private static void ViewDataPath()
         {
-            if(Directory.Exists(Directory.GetParent(Application.dataPath).FullName + "/DLC"))
+            if(Directory.Exists(Directory.GetParent(Application.dataPath).FullName + "/Build/"))
             {
-                EditorUtility.OpenWithDefaultApp(Directory.GetParent(Application.dataPath).FullName + "/DLC");
+                EditorUtility.OpenWithDefaultApp(Directory.GetParent(Application.dataPath).FullName + "/Build/");
             }
             else 
             {

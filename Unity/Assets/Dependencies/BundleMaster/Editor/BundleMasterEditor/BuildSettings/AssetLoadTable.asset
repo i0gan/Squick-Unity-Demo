@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e5af2c46a19fb47a6519fd027a3505, type: 3}
   m_Name: AssetLoadTable
   m_EditorClassIdentifier: 
-  BundlePath: DLC
+  BundlePath: Build
   EnableRelativePath: 0
-  RelativePath: G:\UnityProject\Download
+  RelativePath: ~/UnityProject
   EncryptPathFolder: EncryptAssets
   InitScene:
   - {fileID: 102900000, guid: 75b37e565dce4e9468a6bf4bb3cfc8f7, type: 3}

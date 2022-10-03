@@ -72,11 +72,23 @@ AI Boss多玩家对战
 
 
 
-## 开发环境
+## 该项目开发环境
+
+### Windows（推荐）
 
 - Unity版本：2020.3.34f1 （请使用该版本及以上）
-- U3D工程.net环境： .Net Framework 4.x
-- 热更工程.net环境： .Net Framework 6.x
+- Unity工程.net环境： .Net Framework 4.8
+- 热更工程.net环境： .Net Framework 4.8
+
+### Arch linux
+
+* Unity版本：2022.3.34f1 
+
+* Unity工程.net环境： .Net Framework 6.0
+
+* 热更工程.net环境： .Net Framework 6.0
+
+
 
 
 
@@ -153,15 +165,15 @@ AI Boss多玩家对战
 
     每次更新覆盖该目录
 
-## 快速开始
+## 快速开始（安卓项目）
 
-
+这里以安卓项目为例子，其他平台的也类似。
 
 ### 打开项目
 
 1. 将项目的**Unity目录用Unity打开**
 2. 首次打开会生成个**lock文件**到Assets目录下，**请勿删除**
-3. 找到**HotUpdateResources/Scene**, 确保你能找到**Game.unity**，并且**HotUpdateResources/DLL/~Hidden文件夹中有生成的DLL文件（这个文件夹Unity内看不见）**
+3. 找到**HotUpdateResources/Scene**, 确保你能找到**AppStart.unity**，并且**HotUpdateResources/DLL/~Hidden文件夹中有生成的DLL文件（这个文件夹Unity内看不见）**
 4. 第一次导入会出现报错，点击忽略进入项目后，切换平台至安卓即可。
 5. 可直接点击运行Demo
 
@@ -194,14 +206,20 @@ AI Boss多玩家对战
 ### 打包apk
 
 1. 执行CLR绑定（菜单栏，`Uquick/ILRuntime/CLR Bind`），这一步不做的话在IL2CPP出包后必定出问题
-2. 修改热更资源服务器IP，打开Assets/Init.unity场景，选择Updater，属性面板中出现BaseURL，将其填写为你的资源服务器，比如`http://ip:port/DLC/`
-3. 尝试打包游戏（APK）点击`Tools/BuildAsset/Build Android`在Unity项目下的DLC下回出现application.apk，还有些热更资源文件
+2. 修改热更资源服务器IP，打开Assets/Init.unity场景，选择Updater，属性面板中出现BaseURL，将其填写为你的资源服务器，比如`http://ip:port/android/`
+3. 尝试打包游戏（APK）点击`Tools/BuildAsset/Build Android`在Unity项目下的Build目录下会出现application.apk，还有些热更资源文件
 
 
 
 ### 部署热更资源文件
 
-1. 将热更资源文件以及apk文件 (DLC下的所有文件)上传自http服务器，直接上传DLC文件即可。保证http的根目录下有DLC目录。
+
+
+1. 将热更资源文件以及apk文件 (Build下的所有文件)上传自http服务器，直接上传Build中的文件即可。保证http的根目录下有android目录。
+
+tips:
+
+在Unity工程目录下，也提供了一个上传资源的脚本 `upload.sh`，可自行通过nginx或apache搭建好静态服务器后，修改该脚本路径以及域名或ip上传至服务器中，方便以后更新，直接运行脚本即可。
 
 ### 完毕
 
