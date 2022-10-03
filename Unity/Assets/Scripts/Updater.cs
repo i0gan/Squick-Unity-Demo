@@ -75,8 +75,8 @@ public class BaseUpdater : IUpdater
 
 public class Updater : MonoBehaviour
 {
-    [SerializeField] private string baseURL = "http://127.0.0.1:7888/DLC/";
-    [SerializeField] private string gameScene = "Assets/HotUpdateResources/Scene/Game.unity";
+    [SerializeField] private string baseURL = "http://127.0.0.1:7888/dlc/";
+    [SerializeField] private string gameScene = "Assets/HotUpdateResources/Scene/AppStart.unity";
     [SerializeField] private string mainPackageName = "Main";
 
     [Tooltip("主包秘钥，如果加密了的话需要填写")] [SerializeField]

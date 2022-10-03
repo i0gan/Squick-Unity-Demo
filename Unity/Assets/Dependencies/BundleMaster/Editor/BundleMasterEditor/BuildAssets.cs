@@ -140,13 +140,13 @@ namespace BM
             AssetDatabase.SaveAssets();
             //打包结束
             AssetLogHelper.Log("打包结束\n" + assetLoadTable.BuildBundlePath);
-            AssetLogHelper.Log("如果使用了加密，将加密目录内的资源传到资源服务器下载路径即可，例如将生成的EncryptAssets下的子目录存入127.0.0.1/Bundles下，" +
+            AssetLogHelper.Log("如果使用了加密，将加密目录内的资源传到资源服务器下载路径即可，例如将生成的EncryptAssets下的子目录存入127.0.0.1/下，" +
                                "然后Updater的baseUrl写http://127.0.0.1/Bundles即可");
             AssetLogHelper.Log("如果没使用加密，将打包出来的未加密目录内的资源传到资源服务器下载路径即可，例如将生成的BuildBundles下的子目录存入127.0.0.1/Bundles下，" +
-                               "然后Updater的baseUrl写http://127.0.0.1/Bundles即可");
+                               "然后Updater的baseUrl写http://127.0.0.1/即可");
         }
         
-        [MenuItem("Tools/BuildAsset/Copy资源到StreamingAssets")]
+        [MenuItem("Tools/BuildAsset/Copy to StreamingAssets")]
         public static void CopyToStreamingAssets()
         {
             if (!Directory.Exists(Application.streamingAssetsPath))
