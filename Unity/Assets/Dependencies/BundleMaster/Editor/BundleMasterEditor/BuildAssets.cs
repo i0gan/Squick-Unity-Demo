@@ -44,7 +44,7 @@ namespace BM
 
             
             // 获取安卓配置信息
-            AndroidBuildConfigAsset androidBuildConfigAsset = AssetDatabase.LoadAssetAtPath<AndroidBuildConfigAsset>("Assets/Config/Build/AndroidBuildConfig.asset");
+            AndroidBuildConfigAsset androidBuildConfigAsset = AssetDatabase.LoadAssetAtPath<AndroidBuildConfigAsset>("Assets/Config/AndroidBuildConfig.asset");
             // 检测版本
             if (PlayerSettings.Android.bundleVersionCode >= androidBuildConfigAsset.bundleVersionCode)
             {

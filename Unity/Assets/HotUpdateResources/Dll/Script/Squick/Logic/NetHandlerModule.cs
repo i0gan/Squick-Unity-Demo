@@ -1066,7 +1066,7 @@ namespace Squick
      
             SquickStruct.MsgBase xMsg = SquickStruct.MsgBase.Parser.ParseFrom(stream);
             SquickStruct.ReqAckPlayerPosSync xData = SquickStruct.ReqAckPlayerPosSync.Parser.ParseFrom(xMsg.MsgData);
-            Debug.Log("EGMI_ACK_MOVE: " + xData.SyncUnit.Count);
+            //Debug.Log("EGMI_ACK_MOVE: " + xData.SyncUnit.Count);
             if (xData.SyncUnit.Count <= 0)
             {
                 return;

@@ -270,3 +270,15 @@ Uquick可以使用三种模式运行游戏，分别是：开发模式，离线�
       - 如果打了AB后通过菜单栏工具将其复制到了`StreamingAssets`，那么真机模式下会基于`StreamingAssets`内的资源进行增量热更
 
    6. 尝试修改热更代码并编译，或修改热更资源，回到步骤1，尝试实现热更
+
+
+
+
+
+
+
+
+
+## 打包Release版本提示
+
+在打包Release版本时，为了优化性能与减少安装包大小，请将mono改为IL2CPP，架构为armv8，然后做一下执行CLR绑定（菜单栏，`Uquick/ILRuntime/CLR Bind`）。

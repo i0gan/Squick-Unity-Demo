@@ -168,7 +168,7 @@ public sealed class HeroMotor : BaseCharacterController
     }
 
     // 角色移动
-    public void MoveTo(Vector3 vPos, bool fromServer = false, MeetGoalCalllBack callBack = null)
+    public void MoveTo(Vector3 vPos, AnimaStateType anim = AnimaStateType.NONE, bool fromServer = false, MeetGoalCalllBack callBack = null)
     {
         //Debug.Log("sssss");
         meetGoalCasllBack = callBack;
@@ -182,34 +182,58 @@ public sealed class HeroMotor : BaseCharacterController
             //mNetModule.RequireMove(mLoginModule.mRoleID, 0, moveToPos);
         }
 
-        if(fromServer)
+        if (fromServer)
         {
             //Debug.Log("来自服务器的移动");
-        }
-        // 远程移动
-
-        
-        // 播放移动动画
-        if(mAnima.GetLastState() == AnimaStateType.Idle || mAnima.GetLastState() == AnimaStateType.NONE)
-        {
-            if (mAnima.GetLastState() != AnimaStateType.Walk)
+            // 播放移动动画
+            if (anim == AnimaStateType.Idle || anim == AnimaStateType.NONE)
             {
-                walkTime = Time.time;
-                walkSpeed = 2.0f;
-                _runSpeed = 6.0f; // 跑起来的速度
+                if (anim != AnimaStateType.Walk)
+                {
+                    walkTime = Time.time;
+                    walkSpeed = 2.0f;
+                    _runSpeed = 6.0f; // 跑起来的速度
+                }
+                walk = true;
+                //walkSpeed = 1.5f;
+                speed = walkSpeed + (Time.time - walkTime) * (runSpeed - walkSpeed); // 提速
             }
-            walk = true;
-            mAnima.PlayAnimaState(AnimaStateType.Walk, -1);
-            //walkSpeed = 1.5f;
-            speed = walkSpeed + (Time.time - walkTime) * (runSpeed - walkSpeed); // 提速
+            else if (anim == AnimaStateType.Walk && Time.time - walkTime > 1.0f) // 2秒后开始跑
+            {
+                walk = false;
+            }
 
-        } else if(mAnima.GetLastState() == AnimaStateType.Walk && Time.time - walkTime > 1.0f) // 2秒后开始跑
-        {
-            walk = false;
-            mAnima.PlayAnimaState(AnimaStateType.Run, -1);
-            
+            mAnima.PlayAnimaState(anim, -1);
         }
-        
+        else
+        {
+            // 播放移动动画
+            if (mAnima.GetLastState() == AnimaStateType.Idle || mAnima.GetLastState() == AnimaStateType.NONE)
+            {
+                if (mAnima.GetLastState() != AnimaStateType.Walk)
+                {
+                    walkTime = Time.time;
+                    walkSpeed = 2.0f;
+                    _runSpeed = 6.0f; // 跑起来的速度
+                }
+                walk = true;
+                mAnima.PlayAnimaState(AnimaStateType.Walk, -1);
+                //walkSpeed = 1.5f;
+                speed = walkSpeed + (Time.time - walkTime) * (runSpeed - walkSpeed); // 提速
+
+            }
+            else if (mAnima.GetLastState() == AnimaStateType.Walk && Time.time - walkTime > 1.0f) // 2秒后开始跑
+            {
+                walk = false;
+                mAnima.PlayAnimaState(AnimaStateType.Run, -1);
+
+            }
+        }
+
+
+
+
+
     }
 
     public void MoveToImmune(Vector3 vPos, bool bFaceToPos = true)
@@ -240,7 +264,7 @@ public sealed class HeroMotor : BaseCharacterController
 
     protected override void HandleInput()
     {
-      
+
     }
 
     #endregion
@@ -320,7 +344,7 @@ public sealed class HeroMotor : BaseCharacterController
             }
             else
             {
-                
+
                 moveDirection = (moveToPos - this.transform.position);
                 mBodyIdent.LookAt(moveToPos);
             }
@@ -344,15 +368,15 @@ public sealed class HeroMotor : BaseCharacterController
 
     void PropertyEventHandler(Squick.Guid self, string strProperty, DataList.TData oldVar, DataList.TData newVar, Int64 reason)
     {
-        
+
         this.runSpeed = newVar.IntVal() / 100.0f;
         Debug.Log("PropertyEventHandler: runSpeed: " + runSpeed);
     }
 
     void OnDestroy()
-	{
-		int nX = (int)transform.position.x;
-		int nY = (int)transform.position.y;
-	}
+    {
+        int nX = (int)transform.position.x;
+        int nY = (int)transform.position.y;
+    }
 
 }

@@ -6,26 +6,26 @@ using Squick;
 using ECM.Components;
 using ECM.Controllers;
 
-public class HeroSync : MonoBehaviour 
+public class HeroSync : MonoBehaviour
 {
-	private HeroSyncBuffer mxSyncBuffer;
-	private HeroMotor mxHeroMotor;
+    private HeroSyncBuffer mxSyncBuffer;
+    private HeroMotor mxHeroMotor;
 
-	private BodyIdent mxBodyIdent;
+    private BodyIdent mxBodyIdent;
     private AnimaStateMachine mAnimaStateMachine;
     private AnimatStateController mAnimatStateController;
 
     private NetModule mNetModule;
-	private LoginModule mLoginModule;
+    private LoginModule mLoginModule;
     private HelpModule mHelpModule;
     private IKernelModule mKernelModule;
 
     private float SYNC_TIME = 0.05f; // 多久同步一次 20 fps
 
-    void Awake () 
-	{
+    void Awake()
+    {
 
-	}
+    }
 
     private void Start()
     {
@@ -43,8 +43,8 @@ public class HeroSync : MonoBehaviour
 
     bool CheckState()
     {
-		return true;
-	}
+        return true;
+    }
 
     private bool MeetGoalCallBack()
     {
@@ -61,13 +61,18 @@ public class HeroSync : MonoBehaviour
     int lastInterpolationTime = 0;
     private void FixedUpdate()
     {
-        ReportPos(); // 同步位置信息
 
+        ReportPos(); // 自己同步位置信息
+
+
+        // 对方玩家同步信息
         if (mxBodyIdent && mxBodyIdent.GetObjectID() != mLoginModule.mRoleID)
-		{
+        {
+            //
             HeroSyncBuffer.Keyframe keyframe; // 获取到远程缓存的帧序列
             if (mxSyncBuffer.Size() > 1)
             {
+
                 keyframe = mxSyncBuffer.LastKeyframe();
             }
             else
@@ -77,36 +82,36 @@ public class HeroSync : MonoBehaviour
 
             if (keyframe != null)
             {
-                mxHeroMotor.walkSpeed = moveSpeed;
-                mxHeroMotor.runSpeed = moveSpeed;
-
-                float dis = Vector3.Distance(keyframe.Position, mxHeroMotor.transform.position);
-                if (dis > 1f)
-                {
-                    mxHeroMotor.walkSpeed = dis / SYNC_TIME;
-                    mxHeroMotor.runSpeed = dis / SYNC_TIME;
-                }
-
                 lastInterpolationTime = keyframe.InterpolationTime;
 
-
+                Debug.Log("同步中 : " + (SquickProtocol.AnimaStateType)keyframe.status + "   " + keyframe.Position);
                 AnimaStateType stateType = (SquickProtocol.AnimaStateType)keyframe.status;
                 switch (stateType)
                 {
+                    case AnimaStateType.Walk:
+                        if (keyframe.Position != Vector3.zero)
+                        {
+                            mxHeroMotor.MoveTo(keyframe.Position, (AnimaStateType)keyframe.status, true, MeetGoalCallBack);
+                            
+                        }
+                        break;
                     case AnimaStateType.Run:
                         if (keyframe.Position != Vector3.zero)
                         {
-                            mxHeroMotor.MoveTo(keyframe.Position, true, MeetGoalCallBack);
+                            mxHeroMotor.MoveTo(keyframe.Position, (AnimaStateType)keyframe.status, true, MeetGoalCallBack);
+
                         }
                         break;
                     case AnimaStateType.Idle:
-                        if (UnityEngine.Vector3.Distance(keyframe.Position , mxHeroMotor.transform.position) > 0.1f)
+                        if (UnityEngine.Vector3.Distance(keyframe.Position, mxHeroMotor.transform.position) > 0.1f)
                         {
-                            mxHeroMotor.MoveTo(keyframe.Position, true, MeetGoalCallBack);
+                            mxHeroMotor.MoveTo(keyframe.Position, (AnimaStateType)keyframe.status, true, MeetGoalCallBack);
+
                         }
                         else
                         {
                             mxHeroMotor.Stop();
+
                         }
                         break;
                     case AnimaStateType.Stun:
@@ -154,10 +159,10 @@ public class HeroSync : MonoBehaviour
                         reqPos = mxHeroMotor.transform.position;
                         canFixFrame = false;
                     }
-                    
-                    if(reqPos == lastPos) // 同一个位置请求，就不用同步到服务器
+
+                    if (reqPos == lastPos) // 同一个位置请求，就不用同步到服务器
                     {
-                       return;
+                        return;
                     }
                     // 请求移动
                     lastPos = reqPos;

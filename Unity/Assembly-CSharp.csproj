@@ -54,7 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="E:\I0gan\Github\Uquick\Unity\Assets\Plugins\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\io\FilterStream.cs" />
@@ -98,6 +97,7 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\LimitedInputStream.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsDssSigner.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmMultiplier.cs" />
+    <Compile Include="Assets\ThirdParty\Kcp\Kcp.cs" />
     <Compile Include="Assets\Dependencies\BundleMaster\BundleMasterRuntime\Base\LoadDepend.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsCipherFactory.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\Asn1OutputStream.cs" />
@@ -1316,7 +1316,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\MemberSpecifiedDecorator.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\ServiceModel\XmlProtoSerializer.cs" />
-    <Compile Include="Assets\ThirdParty\Kcp\Kcp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Dependencies\JSONObject\readme.txt" />
