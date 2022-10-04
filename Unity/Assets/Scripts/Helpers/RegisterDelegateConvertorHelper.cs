@@ -5,7 +5,6 @@ using System.Timers;
 using ILRuntime.Runtime.Intepreter;
 using LitJson;
 using UnityEngine.Events;
-using WebSocketSharp;
 using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 using Object = System.Object;
 
@@ -39,13 +38,6 @@ namespace Uquick.Helper
                 return new ParameterizedThreadStart(obj =>
                 {
                     ((Action<Object>)act)(obj);
-                });
-            });
-            appdomain.DelegateManager.RegisterDelegateConvertor<EventHandler<MessageEventArgs>>(act =>
-            {
-                return new EventHandler<MessageEventArgs>((sender, e) =>
-                {
-                    ((Action<Object, MessageEventArgs>)act)(sender, e);
                 });
             });
             appdomain.DelegateManager.RegisterDelegateConvertor<UnityAction<String>>(act =>
@@ -168,6 +160,7 @@ namespace Uquick.Helper
                     ((Action<BestHTTP.WebSocket.WebSocket, System.Exception>)act)(webSocket, ex);
                 });
             });
+
             appdomain.DelegateManager.RegisterDelegateConvertor<BestHTTP.WebSocket.OnWebSocketClosedDelegate>((act) =>
             {
                 return new BestHTTP.WebSocket.OnWebSocketClosedDelegate((webSocket, code, message) =>

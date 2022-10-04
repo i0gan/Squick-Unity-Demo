@@ -16,8 +16,6 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 框架进行了集成以及完善的封装，无需关注热更原理即可使用强大的功能。
 
-麻雀虽小五脏俱全，框架只有基础流程需强制遵循，其他功能可按需使用。
-
 动画系统同步
 
 位置、旋转同步
@@ -28,7 +26,23 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 **Demo在线下载**：
 
-[安卓下载](http://tflash.pwnsky.com:22220/dlc/application.apk)
+若无法点击下载，请复制URL到浏览器中进行下载
+
+安卓下载 :  http://tflash.pwnsky.com:22220/dlc/application.apk 
+
+
+
+### 公益软件上线案例
+
+该软件中，使用了热冷更框架，让更新变得简单。
+
+智慧岐黄科普版：https://tflash.pwnsky.com
+
+智慧岐黄专业版：http://tflash.pwnsky.com
+
+
+
+
 
 ## 将来要做
 
@@ -108,19 +122,15 @@ AI Boss多玩家对战
 
 采用Unity打开 Untiy目录即可。模板自带IL2cpp模式，
 
-## 目录结构
-
-> 该结构是UnityProject目录内的结构，非热更工程的目录结构都可以凭个人喜好决定是否遵守
-
-#### Unity工程
+## Unity工程结构
 
 - Assets
 
   \- Unity工程根目录
 
-  - **Dependencies** - JEngine用到的一些第三方插件，更新时替换该目录内相关的插件
+  - **Core** - 核心库
 
-  - HotUpdateResources
+  - HotUpdate
 
     \- 所有热更资源将存放在这里
 
@@ -160,22 +170,19 @@ AI Boss多玩家对战
 
 #### 生成目录
 
-- **DLC** - 生成的客户端资源和热更资源导出的目录
+- **Build** - 生成的客户端资源和热更资源导出的目录
 - **EncryptsAssets** - 加密热更资源导出目录
 
 #### 热更代码目录
 
-- HotUpdateScripts
+- HotScripts
 
   \- 热更代码项目
 
   - **Program.cs** - 启动游戏的代码, **你可以更改里面的东西，但请不要删除或更改该脚本的SetupGame和RunGame方法**
+- Uquick ：Uquick核心代码库
+  
 
-  - Uquick
-
-    请勿删除Uquick部分源码在里面，
-
-    每次更新覆盖该目录
 
 ## 快速开始（安卓项目）
 
@@ -185,7 +192,7 @@ AI Boss多玩家对战
 
 1. 将项目的**Unity目录用Unity打开**
 2. 首次打开会生成个**lock文件**到Assets目录下，**请勿删除**
-3. 找到**HotUpdateResources/Scene**, 确保你能找到**AppStart.unity**，并且**HotUpdateResources/DLL/~Hidden文件夹中有生成的DLL文件（这个文件夹Unity内看不见）**
+3. 找到**HotUpdateResources/Scene**, 确保你能找到**AppStart.unity**，并且**HotUpdate/DLL/~Hidden文件夹中有生成的DLL文件（这个文件夹Unity内看不见）**
 4. 第一次导入会出现报错，点击忽略进入项目后，切换平台至安卓即可。
 5. 可直接点击运行Demo
 
@@ -203,7 +210,7 @@ AI Boss多玩家对战
 
 ### 修改热更脚本
 
-1. 打开热更工程了，也就是`path/to/Uquick/Unity/HotUpdateScripts`目录，用IDE（推荐vs或rider，因为vscode需要自己配dotnet build来编译）打开里面的sln文件，打开Game/AppStart.cs文件，在里面Awake增加你的日志，然后编译。默认该脚本Awake里有个Hello World!，在热更完毕进入`Assets/HotUpdateResources/Scene/AppStart.unity` 场景后会调用该函数，该脚本文件绑定在此场景中的AppStart里，采用Class Bind来进行绑定的。
+1. 打开热更工程了，也就是`path/to/Uquick/Unity/HotScripts`目录，用IDE（推荐vs或rider，因为vscode需要自己配dotnet build来编译）打开里面的sln文件，打开Game/AppStart.cs文件，在里面Awake增加你的日志，然后编译。默认该脚本Awake里有个Hello World!，在热更完毕进入`Assets/HotUpdate/Scene/AppStart.unity` 场景后会调用该函数，该脚本文件绑定在此场景中的AppStart里，采用Class Bind来进行绑定的。
 
 
 
@@ -211,7 +218,7 @@ AI Boss多玩家对战
 
 将热更脚本还有热更资源全部编译为Unity的ab文件。
 
-1. 尝试打包热更资源，记得部署资源，点击`Tools/BuildAsset/构建Assetbundle`
+1. 尝试打包热更资源，记得部署资源，点击`Tools/BuildAsset/Build Asset Bundle`
 
 
 
@@ -235,7 +242,7 @@ tips:
 
 ### 完毕
 
-1. 采用手机安装运行看看效果。之后就可以将自己的热更资源丢入Assets/HotUpdateResources/下对应的目录了，采用热更脚本来实现资源的管理或游戏逻辑。
+1. 采用手机安装运行看看效果。之后就可以将自己的热更资源丢入Assets/HotUpdate/下对应的目录了，采用热更脚本来实现资源的管理或游戏逻辑。
 
 
 
@@ -278,7 +285,7 @@ Uquick可以使用三种模式运行游戏，分别是：开发模式，离线�
       提示
 
       - 资源服务器上创建的目录名字可以随意，但是`Updater`的`BaseURL`的地址必须是服务器上创建的文件夹的名字结尾
-      - 不论资源服务器上创建的目录是什么名字，打包热更资源后都应该根据是否使用加密将`UnityProject/DLC`或`UnityProject/EncryptAssets`下的文件上传上去
+      - 不论资源服务器上创建的目录是什么名字，打包热更资源后都应该根据是否使用加密将`UnityProject/Build`或`UnityProject/EncryptAssets`下的文件上传上去
       - 如果打了AB后通过菜单栏工具将其复制到了`StreamingAssets`，那么真机模式下会基于`StreamingAssets`内的资源进行增量热更
 
    6. 尝试修改热更代码并编译，或修改热更资源，回到步骤1，尝试实现热更

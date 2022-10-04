@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseURL: http://ble.pwnsky.com:22220/dlc/
-  gameScene: Assets/HotUpdateResources/Scene/AppStart.unity
+  gameScene: Assets/HotUpdate/Scene/AppStart.unity
   mainPackageName: Main
   mainPackageKey: 
   mainPackageCheckCRC: 1
