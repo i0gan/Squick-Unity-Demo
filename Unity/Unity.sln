@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILRuntime", "ILRuntime.csproj", "{AF29ACDC-CCC1-7732-751C-DD00BD5BD005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketSharp", "WebSocketSharp.csproj", "{DC71A8E7-991D-4B39-B89F-058A2220D55D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Malee.ReorderableList", "Malee.ReorderableList.csproj", "{05C3C71F-C4E3-E914-0D10-A8310AB3F2BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{6311E6C6-0A20-383B-320B-694068DE37A5}"
@@ -29,10 +27,6 @@ Global
 		{AF29ACDC-CCC1-7732-751C-DD00BD5BD005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF29ACDC-CCC1-7732-751C-DD00BD5BD005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF29ACDC-CCC1-7732-751C-DD00BD5BD005}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC71A8E7-991D-4B39-B89F-058A2220D55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC71A8E7-991D-4B39-B89F-058A2220D55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC71A8E7-991D-4B39-B89F-058A2220D55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC71A8E7-991D-4B39-B89F-058A2220D55D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05C3C71F-C4E3-E914-0D10-A8310AB3F2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{05C3C71F-C4E3-E914-0D10-A8310AB3F2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C3C71F-C4E3-E914-0D10-A8310AB3F2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -76,7 +76,7 @@ public class BaseUpdater : IUpdater
 public class Updater : MonoBehaviour
 {
     [SerializeField] private string baseURL = "http://127.0.0.1:7888/dlc/";
-    [SerializeField] private string gameScene = "Assets/HotUpdateResources/Scene/AppStart.unity";
+    [SerializeField] private string gameScene = "Assets/HotUpdate/Scene/AppStart.unity";
     [SerializeField] private string mainPackageName = "Main";
 
     [Tooltip("主包秘钥，如果加密了的话需要填写")] [SerializeField]
@@ -154,7 +154,7 @@ public class Updater : MonoBehaviour
     {
         // 检查资源包更新
         if (string.IsNullOrEmpty(key)) key = null;
-        MessageBox.Dispose();
+        //MessageBox.Dispose();
         package = package ?? await CheckPackage(bundlePackageName, checkCRC);
         updater.OnVersion("版本:" + Application.version + "RES" +
                           await GetRemotePackageVersion(bundlePackageName, package));
@@ -478,7 +478,7 @@ public class Updater : MonoBehaviour
 
     private void OnDestroy()
     {
-        MessageBox.Dispose();
+        //MessageBox.Dispose();
     }
 
 

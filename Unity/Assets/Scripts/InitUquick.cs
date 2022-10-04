@@ -24,13 +24,13 @@ public class InitUquick : MonoBehaviour
     //编辑器下数据，用于统计分块解密，以及提供dll和pdb的位置
 #if UNITY_EDITOR
     public static long EncryptedCounts => ((JStream)(Instance._fs)).EncryptedCounts;
-    private const string DLLPath = "Assets/HotUpdateResources/Dll/Hidden~/HotUpdateScripts.dll";
-    private const string PdbPath = "Assets/HotUpdateResources/Dll/Hidden~/HotUpdateScripts.pdb";
+    private const string DLLPath = "Assets/HotUpdate/Dll/Hidden~/HotScripts.dll";
+    private const string PdbPath = "Assets/HotUpdate/Dll/Hidden~/HotScripts.pdb";
 #endif
 
     //dll名字，入口函数名字，以及周期方法名
-    private const string DllName = "HotUpdateScripts.bytes";
-    private const string HotMainType = "HotUpdateScripts.Program";
+    private const string DllName = "HotScriptss.bytes";
+    private const string HotMainType = "HotScriptss.Program";
     private const string RunGameMethod = "RunGame";
     private const string SetupGameMethod = "SetupGame";
 
@@ -133,7 +133,7 @@ public class InitUquick : MonoBehaviour
 #endif
         {
             //真机模式解密加载
-            var dllFile = (TextAsset)AssetMgr.Load($"Assets/HotUpdateResources/Dll/{DllName}",
+            var dllFile = (TextAsset)AssetMgr.Load($"Assets/HotUpdate/Dll/{DllName}",
                 AssetComponentConfig.DefaultBundlePackageName);
             if (dllFile == null)
             {
@@ -148,7 +148,7 @@ public class InitUquick : MonoBehaviour
         var buffer = new byte[dll.Length];
         Array.Copy(dll, buffer, dll.Length);
         //卸载dll资源
-        AssetMgr.Unload($"Assets/HotUpdateResources/Dll/{DllName}");
+        AssetMgr.Unload($"Assets/HotUpdate/Dll/{DllName}");
 
         //尝试加载dll
         try
@@ -172,7 +172,7 @@ public class InitUquick : MonoBehaviour
             if (!usePdb)
             {
                 Log.PrintError(
-                    "加载热更DLL失败，请确保HotUpdateResources/Dll里面有HotUpdateScripts.bytes文件，并且Build Bundle后将DLC传入服务器");
+                    "加载热更DLL失败，请确保HotUpdate/Dll里面有HotScriptss.bytes文件，并且Build Bundle后将DLC传入服务器");
                 Log.PrintError("也有可能是密码不匹配或密码包含特殊字符导致的");
             }
             else if (Application.isEditor && usePdb)
