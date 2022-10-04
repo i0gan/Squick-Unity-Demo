@@ -54,7 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="E:\I0gan\Github\Uquick\Unity\Assets\Plugins\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Dependencies\ILRuntime\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.ELDC.cs" />
@@ -423,14 +422,14 @@
     <Reference Include="ILRuntime.Mono.Cecil.Pdb">
       <HintPath>Assets\Dependencies\ILRuntime\ILRuntime\Plugins\ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.9.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
