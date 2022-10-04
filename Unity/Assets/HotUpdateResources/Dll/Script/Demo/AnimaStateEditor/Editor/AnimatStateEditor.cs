@@ -342,7 +342,7 @@ namespace SquickProtocol
                 if (_ass.IsFoldout)
                 {
                     EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-
+					// 调整动画
                     _ass.fCurTime = EditorGUILayout.Slider(_ass.Type.ToString(), _ass.fCurTime, 0f, _ass.fTime);
                     if (_ass.fCurTime > 0)
                     {
@@ -370,7 +370,8 @@ namespace SquickProtocol
                         //mASC.SetAnimator(mASC.GetComponent<Animator>());
                         _ass.fCurTime = 0f;
                         m_CurrentTime = 0f;
-                        mManulPlayType = AnimaStateType.NONE;
+						//mManulPlayType = _ass.Type;
+						mManulPlayType = AnimaStateType.NONE;
                         mPlayType = _ass.Type;
                         mASC.PlayAnimaState(mPlayType, -1);
                     }
@@ -379,7 +380,8 @@ namespace SquickProtocol
                     {
                         _ass.fCurTime = 0f;
                         m_CurrentTime = 0f;
-                        mManulPlayType = AnimaStateType.NONE;
+						//mManulPlayType = _ass.Type;
+						mManulPlayType = AnimaStateType.NONE;
                         mPlayType = AnimaStateType.Idle;
                         mASC.PlayAnimaState(AnimaStateType.Idle, -1);
 

@@ -118,7 +118,6 @@
     <Compile Include="Assets\Scripts\APIs\ExampleAPI.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Point.cs" />
     <Compile Include="Assets\Dependencies\Uquick\Net\JSocket\Parser.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\CustomCharacterController.cs" />
     <Compile Include="Assets\ThirdParty\StandardAssets\Utility\DynamicShadowSettings.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\digests\Sha512Digest.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\ExporterLabel.cs" />
@@ -155,7 +154,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerEnumerated.cs" />
     <Compile Include="Assets\ThirdParty\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\CallbackAttributes.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\BlockState.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Plugin\Kernel\SEventModule.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Point.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x509\DigestInfo.cs" />
@@ -228,7 +226,6 @@
     <Compile Include="Assets\Scripts\UI\ClickEffect.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\security\PublicKeyFactory.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\AnimaStateEditor\BuffType.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\DeadState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\zlib\StaticTree.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsProtocol.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\WebSocket\WebSocket.cs" />
@@ -254,7 +251,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\misc\MiscObjectIdentifiers.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\ExtensionType.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\ByteQueue.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\FallState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Point.cs" />
     <Compile Include="Assets\ThirdParty\StandardAssets\Utility\TimedObjectActivator.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
@@ -319,7 +315,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\signers\RandomDsaKCalculator.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Field.cs" />
     <Compile Include="Assets\Resources\config\proto\MsgPreGame.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\JumpingState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\field\GenericPolynomialExtensionField.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerGeneralString.cs" />
@@ -343,7 +338,6 @@
     <Compile Include="Assets\ThirdParty\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerSet.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\NameType.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\StunState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\Times.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\UI\DUIRayIgnore.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\PType.cs" />
@@ -355,7 +349,6 @@
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\DecimalSerializer.cs" />
     <Compile Include="Assets\Dependencies\ILRuntime\Adapters\IExtensibleAdapter.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Curve.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\HookHoldState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\WebSocket\Extensions\IExtension.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\x509\X509CrlEntry.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\WebSocket\WebSocketStatusCodes.cs" />
@@ -402,7 +395,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\DesEdeEngine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\SupplementalDataEntry.cs" />
     <Compile Include="Assets\Dependencies\LitJson\JsonData.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\NormalSkill5.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x9\X962NamedCurves.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Utility\TogglePanel.cs" />
@@ -446,7 +438,6 @@
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\PluginManager\PluginManager.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x509\SubjectPublicKeyInfo.cs" />
     <Compile Include="Assets\ThirdParty\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Dependencies\Uquick\AntiCheat\JUShort.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\modes\GCMBlockCipher.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Statistics\Statistics.cs" />
@@ -480,7 +471,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\PlatformSupport\IO\FileEnums.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\digests\Sha384Digest.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsECDsaSigner.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\Dependencies\BundleMaster\ETTaskAsync\AsyncETTaskCompletedMethodBuilder.cs" />
     <Compile Include="Assets\ThirdParty\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerBitString.cs" />
@@ -511,7 +501,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x509\X509ObjectIdentifiers.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\WebSocket\Frames\WebSocketFrame.cs" />
     <Compile Include="Assets\ThirdParty\StandardAssets\Utility\AutoMoveAndRotate.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\JumpLandState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\IesWithCipherParameters.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\macs\GOST28147Mac.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponseStatus.cs" />
@@ -542,7 +531,6 @@
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\BclHelpers.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Caching\HTTPCacheMaintananceParams.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\macs\CfbBlockCipherMac.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\SpecialSkill2.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\RC4Engine.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Plugin\Kernel\ISEvent.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\CipherKeyGenerator.cs" />
@@ -602,7 +590,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\endo\GlvEndomorphism.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Decompression\ZTree.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\collections\EmptyEnumerable.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\EthanAgentController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\security\cert\CertificateExpiredException.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerNull.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SignalR\Hubs\IHub.cs" />
@@ -641,7 +628,6 @@
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\PluginManager\Plugin.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163K1Curve.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\Asn1Object.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\DashJumpState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x9\X9FieldElement.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Base\IEventModule.cs" />
     <Compile Include="Assets\Dependencies\Uquick\Net\JSocket\SocketIOException.cs" />
@@ -690,7 +676,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithSBox.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\DsaParameters.cs" />
     <Compile Include="Assets\Dependencies\BundleMaster\BundleMasterRuntime\Helper\DownloadBundleHelper.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\DemoController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\GOST3410KeyParameters.cs" />
     <Compile Include="Assets\ThirdParty\StandardAssets\Utility\FPSCounter.cs" />
     <Compile Include="Assets\ThirdParty\StandardAssets\Utility\SimpleActivatorMenu.cs" />
@@ -726,13 +711,11 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmExponentiator.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Utility\TexturePacker.cs" />
     <Compile Include="Assets\Dependencies\Uquick\Interface\IRegisterHelper.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\generators\DHParametersHelper.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\UI\SoundButton.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\macs\VMPCMac.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Core\Object.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Logger\DefaultLogger.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Common\Utils.cs" />
     <Compile Include="Assets\Scripts\Adapters\GenericExampleAdapter.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\UI\ColorSwapper.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\SquickRoot.cs" />
@@ -744,7 +727,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\Asn1Set.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\NormalSkill3.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\encoders\IEncoder.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Components\KinematicMove.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409K1Curve.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\ChaChaEngine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233Field.cs" />
@@ -781,7 +763,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsBlockCipher.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SignalR\JsonEncoders\DefaultJsonEncoder.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Curve.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\DashForwardState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193Field.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\VMPCEngine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerObjectIdentifier.cs" />
@@ -806,7 +787,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x509\CertificateList.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerUniversalString.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\digests\RipeMD160Digest.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\SkillThump.cs" />
     <Compile Include="Assets\Dependencies\BundleMaster\BundleMasterRuntime\Helper\HandlerIdHelper.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsCipher.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsStream.cs" />
@@ -836,7 +816,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\RSACoreEngine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Connections\WebGLConnection.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\ICipherParameters.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\JumpStartState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\digests\GOST3411Digest.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\security\GeneralSecurityException.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\RC2Parameters.cs" />
@@ -851,7 +830,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerVideotexString.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\IBasicAgreement.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\HitFlyState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\CertChainType.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SignalR\Hubs\Hub.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Point.cs" />
@@ -913,7 +891,6 @@
     <Compile Include="Assets\Dependencies\BundleMaster\ETTaskAsync\AsyncETTaskMethodBuilder.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\ServerName.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Point.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\DizzyState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\HTTPConnection.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Logic\NetEventModule.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\modes\CcmBlockCipher.cs" />
@@ -923,14 +900,12 @@
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Utility\HideAndScroll.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\ContentType.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\digests\NullDigest.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\HookState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\io\PushbackStream.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Core\Guid.cs" />
     <Compile Include="Assets\ThirdParty\Easy Character Movement\Scripts\Components\CharacterMovement.cs" />
     <Compile Include="Assets\Scripts\APIs\GenericExample.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\AesWrapEngine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\HTTPUpdateDelegator.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\RollerBall\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\ASN1StreamParser.cs" />
     <Compile Include="Assets\ThirdParty\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\ISignerWithRecovery.cs" />
@@ -997,11 +972,9 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\zlib\Inflate.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\KeyValuePairProxy.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233K1Curve.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\CustomAgentController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\io\pem\PemObjectGenerator.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsNullCipher.cs" />
     <Compile Include="Assets\Dependencies\Uquick\AntiCheat\JUInt.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Components\KinematicRotate.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Logic\NetModule.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\ISigner.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\Asn1InputStream.cs" />
@@ -1028,14 +1001,12 @@
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\UI\UIBind\RecordRowData.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\prng\IRandomGenerator.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SocketIO\Events\EventDescriptor.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\SpecialSkill1.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\AnimaStateEditor\CameraViewController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SignalR\NegotiationData.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\DefaultValueDecorator.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\SquickConfig.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\Extensions\Extensions.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\EthanPlatformerController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\ElGamalPrivateKeyParameters.cs" />
     <Compile Include="Assets\Dependencies\Uquick\Core\CryptoHelper.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsCredentials.cs" />
@@ -1051,7 +1022,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\MaxBytesExceededException.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\BufferPool.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Point.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\FollowCameraController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\HC128Engine.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Curve.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\generators\ECKeyPairGenerator.cs" />
@@ -1082,7 +1052,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\IesParameters.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DerStringBase.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1FieldElement.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\BeHitState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\io\TeeInputStream.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\RsaPrivateCrtKeyParameters.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\Integers.cs" />
@@ -1137,7 +1106,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\util\io\Streams.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsServerContext.cs" />
     <Compile Include="Assets\Dependencies\Uquick\Net\JSocket\EnginePacketType.cs" />
-    <Compile Include="Assets\ThirdParty\Easy Character Movement\Examples\Scripts\Controllers\EthanCharacterController.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\IBlockCipher.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\engines\GOST28147Engine.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\UriDecorator.cs" />
@@ -1187,7 +1155,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R1Curve.cs" />
     <Compile Include="Assets\Dependencies\LitJson\JsonWriter.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsClientContextImpl.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\FreezeState.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\multiplier\WNafPreCompInfo.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\UInt16Serializer.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsExtensionsUtilities.cs" />
@@ -1237,7 +1204,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\Decompression\GZipStream.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\parameters\ECKeyGenerationParameters.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\x509\X509Name.cs" />
-    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\Buff1.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsServer.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\tls\TlsEccUtilities.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\asn1\DERGenerator.cs" />
@@ -1263,7 +1229,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\raw\Nat320.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SocketIO\Transports\WebSocketTransport.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\ObjectElement.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\signers\DsaSigner.cs" />
     <Compile Include="Assets\Dependencies\BundleMaster\BundleMasterRuntime\AssetComponentUpdate.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Point.cs" />
@@ -1281,7 +1246,6 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Curve.cs" />
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\BufferedIesCipher.cs" />
     <Compile Include="Assets\Resources\config\proto\MsgBase.cs" />
-    <Compile Include="Assets\ThirdParty\StandardAssets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\ThirdParty\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\ProtoReader.cs" />
     <Compile Include="Assets\HotUpdateResources\Dll\Script\Squick\Core\IPropertyManager.cs" />
@@ -1316,12 +1280,12 @@
     <Compile Include="Assets\Scripts\Network\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\MemberSpecifiedDecorator.cs" />
     <Compile Include="Assets\Dependencies\protobuf-net-v2-for-ILRuntime\protobuf-net\ServiceModel\XmlProtoSerializer.cs" />
+    <Compile Include="Assets\HotUpdateResources\Dll\Script\Demo\Scene\AnimationStateMachine\State\JumpState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Dependencies\JSONObject\readme.txt" />
     <None Include="Assets\Resources\config\struct\side\NoSqlServer.xml" />
     <None Include="Assets\Resources\config\ini\Player.xml" />
-    <None Include="Assets\ThirdParty\Easy Character Movement\README.txt" />
     <None Include="Assets\Resources\config\struct\Group.xml" />
     <None Include="Assets\Resources\config\ini\Server.xml" />
     <None Include="Assets\Resources\config\struct\Player.xml" />
@@ -1365,12 +1329,10 @@
     <None Include="Assets\Resources\config\ini\Scene\1.xml" />
     <None Include="Assets\Resources\config\struct\Item.xml" />
     <None Include="Assets\HotUpdateResources\Controller\Controller.txt" />
-    <None Include="Assets\ThirdParty\StandardAssets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Resources\config\ini\Scene\6.xml" />
     <None Include="Assets\Resources\config\ini\Skill.xml" />
     <None Include="Assets\HotUpdateResources\Other\Shaders\EnergyCore.shader" />
     <None Include="Assets\HotUpdateResources\Other\Shaders\SculptedHair.shader" />
-    <None Include="Assets\ThirdParty\StandardAssets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Resources\config\ini\Item.xml" />
     <None Include="Assets\Resources\config\struct\common\CooldownRecord.xml" />
     <None Include="Assets\Resources\config\struct\Skill.xml" />

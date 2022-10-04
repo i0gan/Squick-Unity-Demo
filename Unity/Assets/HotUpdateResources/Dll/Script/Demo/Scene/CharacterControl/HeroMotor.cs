@@ -119,8 +119,7 @@ public sealed class HeroMotor : BaseCharacterController
     }
 
     /// <summary>
-    /// Overrides 'BaseCharacterController' HandleInput,
-    /// to perform custom controller input.
+    /// 帧同步玩家输入
     /// </summary>
     /// 
     public void ProcessInput(bool left, bool right, bool top)
@@ -165,6 +164,15 @@ public sealed class HeroMotor : BaseCharacterController
     {
         moveToPos = vPos;
         moveDirection = (vPos - this.transform.position);
+    }
+
+    public void UseSkill(AnimaStateType anim)
+    {
+        //Debug.Log("播放技能动画：" + anim);
+        // 本地播放动画
+        mAnima.PlayAnimaState(anim, -1);
+
+
     }
 
     // 角色移动
@@ -229,11 +237,6 @@ public sealed class HeroMotor : BaseCharacterController
 
             }
         }
-
-
-
-
-
     }
 
     public void MoveToImmune(Vector3 vPos, bool bFaceToPos = true)

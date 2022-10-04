@@ -91,37 +91,21 @@ namespace SquickProtocol
 
             if (eAnimaType == AnimaStateType.Idle)
 			{
-				float f = Random.Range(0, 100);
-                if (f < 15.0f)
-                {
-					for (int i = 0; i < mxSkillData.AnimationSkillList.Count; ++i)
+				//float f = Random.Range(0, 100); // 随机化
+
+				for (int i = 0; i < mxSkillData.AnimationSkillList.Count; ++i)
 					{
 						AnimationSkillStruct xAnimationSkillStruct = mxSkillData.AnimationSkillList[i];
-					    if (xAnimationSkillStruct.Type == AnimaStateType.Idle1)
+					    if (xAnimationSkillStruct.Type == AnimaStateType.Idle)
 						{
 							if (xAnimationSkillStruct.AnimationClip != null)
 							{
-								eAnimaType = AnimaStateType.Idle1;
+								eAnimaType = AnimaStateType.Idle;
 								break;
 							}
 						}
 					}
-				}
-                else if (f < 30.0f)
-                {
-					for (int i = 0; i < mxSkillData.AnimationSkillList.Count; ++i)
-					{
-						AnimationSkillStruct xAnimationSkillStruct = mxSkillData.AnimationSkillList[i];
-						if (xAnimationSkillStruct.Type == AnimaStateType.Idle1)
-						{
-							if (xAnimationSkillStruct.AnimationClip != null)
-							{
-								eAnimaType = AnimaStateType.Idle2;
-								break;
-							}
-						}
-					}
-				}
+				
 			}
 			else
             {

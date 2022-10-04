@@ -62,9 +62,10 @@ public class HeroSync : MonoBehaviour
     private void FixedUpdate()
     {
 
+
+        #region 位置同步
+
         ReportPos(); // 自己同步位置信息
-
-
         // 对方玩家同步信息
         if (mxBodyIdent && mxBodyIdent.GetObjectID() != mLoginModule.mRoleID)
         {
@@ -114,9 +115,6 @@ public class HeroSync : MonoBehaviour
 
                         }
                         break;
-                    case AnimaStateType.Stun:
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.Stun, 0);
-                        break;
                     case AnimaStateType.NONE:
                         mxHeroMotor.transform.position = keyframe.Position;
                         break;
@@ -125,6 +123,9 @@ public class HeroSync : MonoBehaviour
                 }
             }
         }
+        #endregion
+
+
     }
 
     Vector3 lastPos = Vector3.zero;

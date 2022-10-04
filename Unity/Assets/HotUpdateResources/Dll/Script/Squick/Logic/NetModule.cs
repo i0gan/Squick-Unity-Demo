@@ -613,8 +613,6 @@ namespace Squick
 
             mxBody.SetLength(0);
             xData.WriteTo(mxBody);
-
-
             SendMsg((int)SquickStruct.EGameMsgID.ReqSkillObjectx, mxBody);
         }
 

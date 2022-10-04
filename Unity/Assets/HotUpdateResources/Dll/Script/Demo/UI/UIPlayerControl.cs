@@ -22,9 +22,12 @@ public class UIPlayerControl : UIDialog
     public delegate void JoyOnPointerUpHandler(Vector3 direction);
     public delegate void JoyOnPointerDragHandler(Vector3 direction);
 
+    public delegate void SkillHandler(AnimaStateType anim);
+
     private JoyOnPointerDownHandler mOnPointerDownHandler = null;
     private JoyOnPointerUpHandler mOnPointerUpHandler = null;
     private JoyOnPointerDragHandler mOnPointerDragHandler = null;
+    private SkillHandler skillHandler = null;
 
     private bool bContinuous = false;
 
@@ -41,6 +44,11 @@ public class UIPlayerControl : UIDialog
     public void SetPointerDragHandler(JoyOnPointerDragHandler handler)
     {
         mOnPointerDragHandler = handler;
+    }
+
+    public void SetSkillHandler(SkillHandler handler)
+    {
+        skillHandler = handler;
     }
 
     // 标准化方向
@@ -120,6 +128,12 @@ public class UIPlayerControl : UIDialog
         return direction;
     }
 
+    private void OnSkill(AnimaStateType id)
+    {
+        //Debug.Log("OnSkill:" + id);
+        skillHandler?.Invoke(id);
+    }
+
     private void OnPointerDown(Vector3 direction)
     {
         //direction = NormalizeDirection(direction);
@@ -162,6 +176,30 @@ public class UIPlayerControl : UIDialog
         mNetModule = xPluginManager.FindModule<NetModule>();
         mHelpModule = xPluginManager.FindModule<HelpModule>();
         mSceneModule = xPluginManager.FindModule<SceneModule>();
+
+
+
+        // 按钮绑定
+        GameObject.Find("ButtonSkil_1").GetComponent<Button>().onClick.AddListener(() => {
+            OnSkill(AnimaStateType.NormalSkill1);
+        });
+
+        GameObject.Find("ButtonSkil_2").GetComponent<Button>().onClick.AddListener(() => {
+            OnSkill(AnimaStateType.NormalSkill2);
+        });
+
+        GameObject.Find("ButtonSkil_3").GetComponent<Button>().onClick.AddListener(() => {
+            OnSkill(AnimaStateType.NormalSkill3);
+        });
+
+        GameObject.Find("ButtonSkil_4").GetComponent<Button>().onClick.AddListener(() => {
+            OnSkill(AnimaStateType.NormalSkill4);
+        });
+
+        GameObject.Find("ButtonSkilJump").GetComponent<Button>().onClick.AddListener(() => {
+            OnSkill(AnimaStateType.Jump);
+        });
+
     }
 
     public override void Init()
