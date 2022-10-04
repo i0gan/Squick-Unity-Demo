@@ -49,7 +49,7 @@ public class IdleState : IState
 
 		if (!xHeroMotor.isOnGround)
         {
-            mAnimatStateController.PlayAnimaState(AnimaStateType.Fall, -1); // 播放掉落动画
+            //mAnimatStateController.PlayAnimaState(AnimaStateType.Fall, -1); // 播放掉落动画
 		}
     }
 
@@ -81,60 +81,7 @@ public class IdleState : IState
             {
                 return;
             }
-
-            if (SquickRoot.Instance().GetGameMode() == GAME_MODE.GAME_MODE_2D)
-            {
-                bool left = false;
-                bool right = false;
-                bool top = false;
-
-                if (xHeroMotor.GetMoveDrictor().z > 0)
-                {
-                    top = true;
-                }
-
-                if (xHeroMotor.GetMoveDrictor().x < 0)
-                {
-                    left = true;
-                    xHeroMotor.ProcessInput(left, right, top);
-                    if (top)
-                    {
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.JumpStart, -1);
-                    }
-                    else
-                    {
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.Run, -1);
-                    }
-                }
-                else if (xHeroMotor.GetMoveDrictor().x > 0)
-                {
-                    right = true;
-                    xHeroMotor.ProcessInput(left, right, top);
-                    if (top)
-                    {
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.JumpStart, -1);
-                    }
-                    else
-                    {
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.Run, -1);
-                    }
-                }
-                else
-                {
-                    if (top)
-                    {
-                        xHeroMotor.ProcessInput(left, right, top);
-                        mAnimatStateController.PlayAnimaState(AnimaStateType.JumpStart, -1);
-                    }
-                }
-            }
-            else
-            {
-                if (xHeroMotor.GetMoveDrictor() != Vector3.zero)
-                {
-                
-                }
-            }
+            
         }
 	}
 }

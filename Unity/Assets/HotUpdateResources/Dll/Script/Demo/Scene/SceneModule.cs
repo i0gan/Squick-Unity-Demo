@@ -359,10 +359,10 @@ namespace Squick
                     AnimaStateMachine xStateMachineMng = go.GetComponent<AnimaStateMachine>();
                     if (xStateMachineMng != null)
                     {
-                        xStateMachineMng.ChangeState(AnimaStateType.Dead, -1);
+                        //xStateMachineMng.ChangeState(AnimaStateType.Dead, -1);
 
                         //show ui
-                        //NFUIHeroDie winHeroDie = mUIModule.ShowUI<NFUIHeroDie>();
+                        //player dead
                         //winHeroDie.ShowReliveUI();
                     }
                 }

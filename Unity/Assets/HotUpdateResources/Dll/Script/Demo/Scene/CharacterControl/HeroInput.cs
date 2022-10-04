@@ -6,6 +6,7 @@ using ECM.Controllers;
 using ECM.Common;
 using ECM.Components;
 using System;
+using UnityEngine.UI;
 
 public class HeroInput : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class HeroInput : MonoBehaviour
         mbInputEnable = bEnable;
     }
 
+    private void Awake()
+    {
+        
+    }
+
     void Start()
     {
         mStateMachineMng = GetComponent<AnimaStateMachine>();
@@ -45,6 +51,9 @@ public class HeroInput : MonoBehaviour
         mKernelModule.RegisterPropertyCallback(mBodyIdent.GetObjectID(), SquickProtocol.Player.ATK_SPEED, PropertyAttackSpeedHandler);
 
         mHeroMotor.angularSpeed = 0f;
+
+
+
     }
 
     public void PropertyMoveSpeedHandler(Squick.Guid self, string strProperty, DataList.TData oldVar, DataList.TData newVar, Int64 reason)
@@ -71,8 +80,6 @@ public class HeroInput : MonoBehaviour
         //jumpland
         //run
         if (mStateMachineMng.CurState() != AnimaStateType.Idle
-            && mStateMachineMng.CurState() != AnimaStateType.Idle1
-            && mStateMachineMng.CurState() != AnimaStateType.Idle2
             && mStateMachineMng.CurState() != AnimaStateType.Run
             && mStateMachineMng.CurState() != AnimaStateType.Walk)
         {
@@ -91,9 +98,8 @@ public class HeroInput : MonoBehaviour
             // Handle your custom input here...
             //手动的时候，如果AI在追逐中，是不需要输入的
             {
-                if (mKernelModule.QueryPropertyInt(mBodyIdent.GetObjectID(), SquickProtocol.Player.HP) > 0)
+                if (mKernelModule.QueryPropertyInt(mBodyIdent.GetObjectID(), SquickProtocol.Player.HP) > 0) // 判断血量
                 {
-
                     //人工ui输入的，需要和摄像机进行校正才是世界坐标
                     // Transform moveDirection vector to be relative to camera view direction
                     if (Camera.main)
@@ -112,6 +118,13 @@ public class HeroInput : MonoBehaviour
             }
         }   
     }
+
+    void SkillEvent(AnimaStateType anim)
+    {
+        mHeroMotor.UseSkill(anim);
+    }
+
+
 
     // 获取到操控方向
     void JoyOnPointerDownHandler(Vector3 direction)
@@ -136,11 +149,17 @@ public class HeroInput : MonoBehaviour
         fLastEventdirection = direction;
     }
 
+    void OnSkillHandler(AnimaStateType anim)
+    {
+        SkillEvent(anim);
+
+    }
+
     float fLastEventTime = 0f;
     Vector3 fLastEventdirection;
     public void FixedUpdate()
     {
-        // 摇杆操控
+        // 玩家操控
         if (mJoystick == null)
         {
             mJoystick = mUIModule.GetUI<UIPlayerControl>();
@@ -150,6 +169,7 @@ public class HeroInput : MonoBehaviour
                 mJoystick.SetPointerDownHandler(JoyOnPointerDownHandler);
                 mJoystick.SetPointerDragHandler(JoyOnPointerDragHandler);
                 mJoystick.SetPointerUpHandler(JoyOnPointerUpHandler);
+                mJoystick.SetSkillHandler(OnSkillHandler);
             }
         }
 

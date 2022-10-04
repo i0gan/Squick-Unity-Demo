@@ -6,7 +6,7 @@ Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热�
 
 
 
-讨论QQ群：729054809
+有任何编译问题，请加入讨论QQ群：729054809
 
 ## 特性
 
@@ -62,13 +62,25 @@ AI Boss多玩家对战
 
 下面测试是在安卓手机上测试，完美冷更+热更。
 
+**热更界面**
+
 ![1](./Docs/Images/updater.gif)
 
 ### MMO支持
 
 提供了一个小的MMORPG 运行Demo，服务端采用[Squick](https://github.com/i0gan/Squick)开发的，可以支持多人玩家在线，场景的对象状态同步，帧同步，以及人物动画同步等等，之后更多特性不断更新中。下面例子的服务器是在公网上进行连接MMO测试的，客户端一个运行在编辑器，另一个运行在安卓端。
 
-![img](./Docs/Images/mmo.gif)
+**位置移动同步**
+
+![img](./Docs/Images/mmo_1.gif)
+
+
+
+**技能同步**
+
+![img](./Docs/Images/mmo_2.gif)
+
+
 
 
 
