@@ -3,7 +3,7 @@ using System.Collections;
 using SquickProtocol;
 using Squick;
 
-public class HeroCameraFollow : MonoBehaviour 
+public class HeroCameraFollow : MonoBehaviour
 {
     [Header("Camera")]
     [Tooltip("Reference to the target GameObject.")]
@@ -13,12 +13,13 @@ public class HeroCameraFollow : MonoBehaviour
     private Vector3 offset = new Vector3(0, 1, -10);
     [Tooltip("Minimum relative offset to the target GameObject.")]
     private Vector3 minOffset = new Vector3(0, 0, -17);
-	[Tooltip("Maximum relative offset to the target GameObject.")]
+    [Tooltip("Maximum relative offset to the target GameObject.")]
     private Vector3 maxOffset = new Vector3(0, 0, -4);
 
 
     private Transform cameraTransform;
     private UnityEngine.Vector2 cameraRotation;
+    int lastTouchCount = 0;
 
     void Awake()
     {
@@ -45,7 +46,7 @@ public class HeroCameraFollow : MonoBehaviour
         target = transform;
     }
 
-        // Update is called once per frame
+    // Update is called once per frame
     private void Update()
     {
 
@@ -55,31 +56,46 @@ public class HeroCameraFollow : MonoBehaviour
     private void LateUpdate()
     {
 
-        if (target && Input.GetMouseButton(1))
-        {
-            cameraRotation.x += Input.GetAxis("Mouse X") * sensitivity * 4 * Time.deltaTime;
-            cameraRotation.y -= Input.GetAxis("Mouse Y") * sensitivity * 4 * Time.deltaTime;
+            if (target && Input.GetMouseButton(1))
+            {
 
-            if (cameraRotation.y < -45)
-            {
-                cameraRotation.y = -45;
+                /*
+                if(Application.platform ==  RuntimePlatform.Android)
+                {
+                    if(lastTouchCount != Input.touchCount)
+                    {
+                        return;
+                    }
+                    lastTouchCount = Input.touchCount;
+                }*/
+                //float mouseX = Input.GetAxis("Mouse X");
+                //float mouseY = Input.GetAxis("Mouse Y");
+
+                //Debug.Log("move pos: " + mouseX + "   " + mouseY);
+
+                cameraRotation.x += Input.GetAxis("Mouse X") * sensitivity * 4 * Time.deltaTime;
+                cameraRotation.y -= Input.GetAxis("Mouse Y") * sensitivity * 4 * Time.deltaTime;
+
+                if (cameraRotation.y < -45)
+                {
+                    cameraRotation.y = -45;
+                }
+                if (cameraRotation.y > 75)
+                {
+                    cameraRotation.y = 75;
+                }
             }
-            if (cameraRotation.y > 75)
+            if (target)
             {
-                cameraRotation.y = 75;
+                offset.z += Input.GetAxis("Mouse ScrollWheel") * sensitivity * Time.deltaTime;
+                offset.z = Mathf.Clamp(offset.z, minOffset.z, maxOffset.z);
+
+                Quaternion rotation = Quaternion.Euler(cameraRotation.y, cameraRotation.x, 0);
+                Vector3 position = rotation * new Vector3(offset.x, offset.y, offset.z) + target.position;
+
+                cameraTransform.rotation = rotation;
+                cameraTransform.position = position;
             }
         }
-        if (target)
-        {
-            offset.z += Input.GetAxis("Mouse ScrollWheel") * sensitivity * Time.deltaTime;
-            offset.z = Mathf.Clamp(offset.z, minOffset.z, maxOffset.z);
 
-            Quaternion rotation = Quaternion.Euler(cameraRotation.y, cameraRotation.x, 0);
-            Vector3 position = rotation * new Vector3(offset.x, offset.y, offset.z) + target.position;
-
-            cameraTransform.rotation = rotation;
-            cameraTransform.position = position;
-        }
-
-    }
 }

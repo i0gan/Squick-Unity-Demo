@@ -166,13 +166,24 @@ public sealed class HeroMotor : BaseCharacterController
         moveDirection = (vPos - this.transform.position);
     }
 
-    public void UseSkill(AnimaStateType anim)
+    public void UseSkill(AnimaStateType anim, bool fromServer = false)
     {
-        //Debug.Log("播放技能动画：" + anim);
-        // 本地播放动画
-        mAnima.PlayAnimaState(anim, -1);
+        if(fromServer)
+        {
+            Debug.Log("来自服务端的技能");
+            // 来自服务端的技能
+            mAnima.PlayAnimaState(anim, -1);
+        }
+        else
+        {
+            //Debug.Log("播放技能动画：" + anim);
+            // 本地播放动画
+            mAnima.PlayAnimaState(anim, -1);
 
-
+            // 同步远程动画
+            mHeroSync.ReportSkill(anim);
+            
+        }
     }
 
     // 角色移动

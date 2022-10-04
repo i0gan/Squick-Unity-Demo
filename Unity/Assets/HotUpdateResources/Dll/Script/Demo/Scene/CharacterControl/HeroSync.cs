@@ -118,13 +118,17 @@ public class HeroSync : MonoBehaviour
                     case AnimaStateType.NONE:
                         mxHeroMotor.transform.position = keyframe.Position;
                         break;
+                       
                     default:
+                        mxHeroMotor.UseSkill(stateType, true);
                         break;
                 }
             }
         }
         #endregion
 
+
+        // 动画同步
 
     }
 
@@ -182,6 +186,14 @@ public class HeroSync : MonoBehaviour
             }
         }
     }
+
+    public void ReportSkill(AnimaStateType anim)
+    {
+
+        mNetModule.RequireMove(mLoginModule.mRoleID, (int)anim, lastPos);
+        //mNetModule.RequireUseSkill(mLoginModule.mRoleID, anim.ToString(), 0, null);
+    }
+
 
     public void AddSyncData(int sequence, SquickStruct.PosSyncUnit syncUnit)
     {
