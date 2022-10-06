@@ -79,13 +79,16 @@ public class Updater : MonoBehaviour
     [SerializeField] private string gameScene = "Assets/HotUpdate/Scene/AppStart.unity";
     [SerializeField] private string mainPackageName = "Main";
 
-    [Tooltip("主包秘钥，如果加密了的话需要填写")] [SerializeField]
+    [Tooltip("主包秘钥，如果加密了的话需要填写")]
+    [SerializeField]
     private string mainPackageKey = "";
 
-    [Tooltip("主包是否需要校验CRC")] [SerializeField]
+    [Tooltip("主包是否需要校验CRC")]
+    [SerializeField]
     private bool mainPackageCheckCRC = true;
 
-    [Tooltip("Develop是开发模式，Local是离线模式，Build是真机模式")] [SerializeField]
+    [Tooltip("Develop是开发模式，Local是离线模式，Build是真机模式")]
+    [SerializeField]
     private AssetLoadMode mode;
 
     private float tickTime = 0.0f;
@@ -295,72 +298,79 @@ public class Updater : MonoBehaviour
 
     IEnumerator UpdateApplicationVersion(IUpdater updater)
     {
-        Debug.Log("下载安装包中");
-        string downloadURL = AssetComponentConfig.BundleServerUrl + "/application.apk";
-
-        UnityWebRequest headRequest = UnityWebRequest.Head(downloadURL);
-        //开始与远程服务器通信。
-        yield return headRequest.SendWebRequest();
-
-        if (!string.IsNullOrEmpty(headRequest.error))
+#if UNITY_ANDROID
+        if (Application.platform == RuntimePlatform.Android)
         {
-            Debug.LogError("获取不到资源文件");
-            yield break;
-        }
+            Debug.Log("下载安装包中");
+            string downloadURL = AssetComponentConfig.BundleServerUrl + "/application.apk";
 
-        //获取文件总大小
-        ulong totalLength = ulong.Parse(headRequest.GetResponseHeader("Content-Length"));
-        Debug.Log("获取大小" + totalLength);
-        headRequest.Dispose();
+            UnityWebRequest headRequest = UnityWebRequest.Head(downloadURL);
+            //开始与远程服务器通信。
+            yield return headRequest.SendWebRequest();
 
-
-        using (UnityWebRequest request = UnityWebRequest.Get(downloadURL))
-        {
-            request.SendWebRequest();
-            while (!request.isDone)
+            if (!string.IsNullOrEmpty(headRequest.error))
             {
-                updater.OnMessage(
-                    $"安装包更新中   {Tools.GetDisplaySize((long)request.downloadedBytes)} / {Tools.GetDisplaySize((long)totalLength)}    {Math.Round(request.downloadProgress * 100, 2)}%");
-                updater.OnProgress(request.downloadProgress * 100 / 100f);
-                yield return new WaitForSeconds(0.5f);
+                Debug.LogError("获取不到资源文件");
+                yield break;
             }
 
-            if (request.isNetworkError || request.isHttpError)
-            {
-                updater.OnMessage("网络连接失败");
-                Debug.Log("网络连接失败");
-                StartCoroutine(WaitTimeTodo(1.0f, () =>
-                {
-                    isProcessing = false;
-                    process = Process.UpdateApplication;
-                }));
-            }
-            else
-            {
-                updater.OnMessage("更新完成，正在保存安装包");
-                yield return new WaitForSeconds(0.5f);
-                string path = "/storage/emulated/0" + "/Download/" + Application.productName + "_" +
-                              Application.version + ".apk";
-                Debug.Log("更新完成，请求安装中，保存路径： " + path);
-                DownloadHandler fileHandler = request.downloadHandler;
-                using (MemoryStream memory = new MemoryStream(fileHandler.data))
-                {
-                    byte[] buffer = new byte[1024 * 1024];
-                    FileStream file = File.Open(path, FileMode.OpenOrCreate);
-                    int readBytes;
-                    while ((readBytes = memory.Read(buffer, 0, buffer.Length)) > 0)
-                    {
-                        file.Write(buffer, 0, readBytes);
-                    }
+            //获取文件总大小
+            ulong totalLength = ulong.Parse(headRequest.GetResponseHeader("Content-Length"));
+            Debug.Log("获取大小" + totalLength);
+            headRequest.Dispose();
 
-                    file.Close();
+
+            using (UnityWebRequest request = UnityWebRequest.Get(downloadURL))
+            {
+                request.SendWebRequest();
+                while (!request.isDone)
+                {
+                    updater.OnMessage(
+                        $"安装包更新中   {Tools.GetDisplaySize((long)request.downloadedBytes)} / {Tools.GetDisplaySize((long)totalLength)}    {Math.Round(request.downloadProgress * 100, 2)}%");
+                    updater.OnProgress(request.downloadProgress * 100 / 100f);
+                    yield return new WaitForSeconds(0.5f);
                 }
 
-                updater.OnMessage("正在请求安装");
-                yield return new WaitForSeconds(0.5f);
-                InstallApk(path);
+                if (request.isNetworkError || request.isHttpError)
+                {
+                    updater.OnMessage("网络连接失败");
+                    Debug.Log("网络连接失败");
+                    StartCoroutine(WaitTimeTodo(1.0f, () =>
+                    {
+                        isProcessing = false;
+                        process = Process.UpdateApplication;
+                    }));
+                }
+                else
+                {
+                    updater.OnMessage("更新完成，正在保存安装包");
+                    yield return new WaitForSeconds(0.5f);
+                    string path = "/storage/emulated/0" + "/Download/" + Application.productName + "_" +
+                                  Application.version + ".apk";
+                    Debug.Log("更新完成，请求安装中，保存路径： " + path);
+                    DownloadHandler fileHandler = request.downloadHandler;
+                    using (MemoryStream memory = new MemoryStream(fileHandler.data))
+                    {
+                        byte[] buffer = new byte[1024 * 1024];
+                        FileStream file = File.Open(path, FileMode.OpenOrCreate);
+                        int readBytes;
+                        while ((readBytes = memory.Read(buffer, 0, buffer.Length)) > 0)
+                        {
+                            file.Write(buffer, 0, readBytes);
+                        }
+
+                        file.Close();
+                    }
+
+                    updater.OnMessage("正在请求安装");
+                    yield return new WaitForSeconds(0.5f);
+                    InstallApk(path);
+                }
             }
         }
+#endif
+        yield return new WaitForSeconds(0.5f);
+
     }
 
     // 安装apk
@@ -424,8 +434,8 @@ public class Updater : MonoBehaviour
     private void Awake()
     {
         // 播放背景音乐
-        
-        
+
+
         baseURL = baseURL.EndsWith("/") ? baseURL : baseURL + "/";
         process = Updater.Process.CheckApplicationVersion;
         isProcessing = false;
@@ -433,8 +443,13 @@ public class Updater : MonoBehaviour
 #if UNITY_EDITOR
         AssetComponentConfig.AssetLoadMode = mode;
 #else
-    // 其他平台一律采用Build模式
-    AssetComponentConfig.AssetLoadMode = AssetLoadMode.Build;
+    // 其他平台
+    if(AssetComponentConfig.AssetLoadMode == AssetLoadMode.Local) {
+        AssetComponentConfig.AssetLoadMode = AssetLoadMode.Local;
+    }else {
+        // 其他一律采用Build模式
+        AssetComponentConfig.AssetLoadMode = AssetLoadMode.Build;
+    }
 #endif
         AssetComponentConfig.BundleServerUrl = baseURL;
         AssetComponentConfig.DefaultBundlePackageName = mainPackageName;
@@ -447,10 +462,10 @@ public class Updater : MonoBehaviour
         {
             if (process == Process.CheckApplicationVersion && isProcessing == false) // 检验主程序
             {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE
                 isProcessing = false;
                 process = Process.UpdatePackage;
-#else
+#elif UNITY_ANDROID || UNITY_IOS
             isProcessing = true;
             CheckApplicationVersion(FindObjectOfType<UpdateScreen>());
 #endif
@@ -473,6 +488,7 @@ public class Updater : MonoBehaviour
     private void Start()
     {
         Game.Audio.GetInstance.AB_PlayAudio("UpdateBgm");
+        Application.runInBackground = true;
     }
 
 

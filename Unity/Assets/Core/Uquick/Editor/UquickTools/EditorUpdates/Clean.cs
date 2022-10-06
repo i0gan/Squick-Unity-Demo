@@ -41,7 +41,7 @@ namespace Uquick.Editor
              
              private static bool _isDone = true;
      
-             private static readonly string HotProjectName = "HotScriptss";
+             private static readonly string HotProjectName = "HotScripts";
              
              private static readonly DirectoryInfo LibraryDirectory = new DirectoryInfo(Application.dataPath + "/../Library/ScriptAssemblies");
              private static readonly DirectoryInfo HiddenDirectory = new DirectoryInfo("Assets/HotUpdate/Dll/Hidden~");

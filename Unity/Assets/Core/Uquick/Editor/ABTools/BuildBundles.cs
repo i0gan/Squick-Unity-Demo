@@ -15,13 +15,13 @@ namespace Uquick.Editor
         [MenuItem("Tools/BuildAsset/Build Asset Bundle %#&B")]
         private static void BuildAssetBundles()
         {
-            DLLMgr.Delete("Assets/HotUpdate/Dll/HotScriptss.bytes");
+            DLLMgr.Delete("Assets/HotUpdate/Dll/HotScripts.bytes");
             Action<string> buildAct = async s =>
             {
                 var watch = new Stopwatch();
                 watch.Start();
                 var bytes = DLLMgr.FileToByte(DLLMgr.DllPath);
-                var result = DLLMgr.ByteToFile(CryptoHelper.AesEncrypt(bytes,s), "Assets/HotUpdate/Dll/HotScriptss.bytes");
+                var result = DLLMgr.ByteToFile(CryptoHelper.AesEncrypt(bytes,s), "Assets/HotUpdate/Dll/HotScripts.bytes");
                 watch.Stop();
                 Log.Print("Convert Dlls in: " + watch.ElapsedMilliseconds + " ms.");
                 if (!result)

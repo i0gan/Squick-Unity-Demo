@@ -1,6 +1,6 @@
 # Uquick SDK
 
-Uquick是一款基于[JEngine](https://github.com/JasonXuDeveloper/JEngine)热更的框架二次开发的MMO Unity快速手游开发解决方案，增加了冷更新，IL2CPP的优化，编译插件的优化，提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
+Unity3d快速网络手游开发方案，支持冷更新+热更新、微信登录、帧同步、状态同步。提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
 
 默认支持Android平台热更，IOS未做测试，不建议采用该框架对PC端进行热更，PC热更完全没必要，我也开发了一个专门更新PC端的工具，你可以采用原生开发的方式，不用管任何的热更框架，都可以实现类热更。项目地址：[QuickUpdater](https://github.com/pwnsky/QuickUpdater)
 
