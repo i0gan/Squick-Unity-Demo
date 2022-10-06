@@ -4,7 +4,8 @@ namespace BM
 	public class BPath
 	{
 		public const string Assets_HotUpdate_Controller_Controller__txt = "Assets/HotUpdate/Controller/Controller.txt";
-		public const string Assets_HotUpdate_Dll_HotUpdateScripts__bytes = "Assets/HotUpdate/Dll/HotUpdateScripts.bytes";
+		public const string Assets_HotUpdate_Dll_HotScript__bytes = "Assets/HotUpdate/Dll/HotScript.bytes";
+		public const string Assets_HotUpdate_Dll_HotScripts__bytes = "Assets/HotUpdate/Dll/HotScripts.bytes";
 		public const string Assets_HotUpdate_Material_Material__txt = "Assets/HotUpdate/Material/Material.txt";
 		public const string Assets_HotUpdate_Other_Animation_HeroAnimation__fbx__asset = "Assets/HotUpdate/Other/Animation/HeroAnimation.fbx.asset";
 		public const string Assets_HotUpdate_Other_Animation_HeroController__fbx__controller = "Assets/HotUpdate/Other/Animation/HeroController.fbx.controller";

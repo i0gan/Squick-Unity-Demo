@@ -30,7 +30,7 @@ namespace Uquick.Core
 {
     public class DLLMgr
     {
-        public static string DllPath = "Assets/HotUpdate/Dll/Hidden~/HotScriptss.dll";
+        public static string DllPath = "Assets/HotUpdate/Dll/Hidden~/HotScripts.dll";
         
         /// <summary>
         /// 删除文件或目录

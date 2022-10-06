@@ -29,8 +29,8 @@ public class InitUquick : MonoBehaviour
 #endif
 
     //dll名字，入口函数名字，以及周期方法名
-    private const string DllName = "HotScriptss.bytes";
-    private const string HotMainType = "HotScriptss.Program";
+    private const string DllName = "HotScripts.bytes";
+    private const string HotMainType = "HotScripts.Program";
     private const string RunGameMethod = "RunGame";
     private const string SetupGameMethod = "SetupGame";
 
