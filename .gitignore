@@ -59,5 +59,3 @@ sysinfo.txt
 crashlytics-build.properties
 
 Unity/Assets/HotUpdate/Dll/Hidden~/
-Unity/Assets/HotUpdate/Dll/Hidden~/*
-Unity/Assets/Dependencies/ILRuntime/Generated/

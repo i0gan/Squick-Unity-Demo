@@ -2,34 +2,35 @@
 
 这里以安卓项目为例子，其他平台的也类似。这里例子会编译打包上线整个Demo，如果MMO Demo服务端没有搭建，请查看[服务端快速开始](https://github.com/i0gan/Squick/blob/main/docs/quick_start.md)，如果只想使用冷热更新功能，可以忽略MMO Demo的服务端搭建过程，将其Demo代码，场景还有资源删除即可。
 
-### 打开项目
+### 打开Unity项目
 
-1. 将项目的**Unity目录用Unity打开**
-2. 可直接点击运行Demo，如果出现报错，可能是Unity版本比较新或者比较老，推荐采用Unity 2020.03.x版本进行打开。
+1. 将项目的**Unity目录用Unity打开**，如果出现报错，可能是Unity版本比较新或者比较老，推荐采用Unity 2020.03.x版本进行打开。
 
-![1](./Images/1.png)
+### 打开热更项目
 
-查看控制台，出现打印了Hello World!
-
-![1](./Images/2.png)
-
-这条语句的输出是在热更脚本里输出的。
-
-
-
-### 修改热更脚本
-
-打开热更工程，也就是`Uquick/Unity/HotScripts`目录，用IDE（推荐vs或rider）打开里面的sln文件，打开Game/AppStart.cs文件，在里面Awake增加你的日志，然后编译。默认该脚本Awake里有个`Debug.Log("Hello World! 这里执行的是热更代码");`，在热更完毕进入`Assets/HotUpdate/Scene/AppStart.unity` 场景后会调用该函数，该脚本文件绑定在此场景中的AppStart对象上，采用Class Bind脚本来绑定热更脚本的。如下：
+打开热更工程，也就是`Uquick/Unity/HotScripts`目录，用IDE（推荐vs或rider）打开里面的sln文件，默认.net框架为4.8，如果缺少请到[微软官方下载net4.8](https://support.microsoft.com/zh-cn/topic/%E9%80%82%E7%94%A8%E4%BA%8E-windows-%E7%9A%84-microsoft-net-framework-4-8-%E8%84%B1%E6%9C%BA%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F-9d23f658-3b97-68ab-d013-aa3c3e7495e0)。打开Game/AppStart.cs文件，在里面Awake增加你的日志，然后编译。默认该脚本Awake里有个`Debug.Log("Hello World! 这里执行的是热更代码");`，在热更完毕进入`Assets/HotUpdate/Scene/AppStart.unity` 场景后会调用该函数，该脚本文件绑定在此场景中的AppStart对象上，采用Class Bind脚本来绑定热更脚本的。如下：
 
 ![ing](./Images/Snipaste_2022-10-09_13-50-02.png)
 
-你可以自行在`Uquick/Unity/HotScriptsGame/AppStart.cs`代码里增加打印日志，测试一下热更脚本的执行。
+你可以自行在`Uquick/Unity/HotScriptsGame/AppStart.cs`代码里增加打印日志，测试一下热更脚本的执行。比如增加`Debug.Log("Hello Uquick");`
 
+```c#
+private void Awake()
+{
+	Debug.Log("Hello World! 这里执行的是热更代码");
+	Debug.Log("Hello Uquick");
+}
+```
 
+点击生成
+
+![img](./Images/Snipaste_2022-10-09_14-53-03.png)
+
+生成之后完毕之后，会在Unity/Assets/HotUpdate/Hidden~目录下出现一堆dll文件，这些dll文件就是热更工程生成的文件，用于执行热更代码。
 
 ### 编译热更资源
 
-将热更脚本还有热更资源全部编译为Unity的Asset Bundles文件，这里编译出来的文件是以.so (stream object) 结尾。
+这里回到Unity，需将热更脚本还有热更资源全部编译为Unity的Asset Bundles文件，这里编译出来的文件是以.so (stream object) 结尾。
 
 打包热更资源，点击`Tools/BuildAsset/Build Asset Bundle`
 
@@ -180,6 +181,10 @@ tips:
 部署完毕后可以采用编辑器来看看热更有没有生效，打开Assets/Init.unity场景，选择Updater对象，点击Mode中的选项，改为Build。点击运行，看看有没有出现热更过程。
 
 ![1](./Images/Snipaste_2022-10-09_14-24-06.png)
+
+更新完毕后，控制台打印
+
+![img](./Images/Snipaste_2022-10-09_15-05-38.png)
 
 出现以上界面，说明热更服务配置正确了，如果还有任何问题，请入群讨论。
 
