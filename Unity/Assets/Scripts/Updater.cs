@@ -444,7 +444,7 @@ public class Updater : MonoBehaviour
         AssetComponentConfig.AssetLoadMode = mode;
 #else
     // 其他平台
-    if(AssetComponentConfig.AssetLoadMode == AssetLoadMode.Local) {
+    if(mode == AssetLoadMode.Local) {
         AssetComponentConfig.AssetLoadMode = AssetLoadMode.Local;
     }else {
         // 其他一律采用Build模式
