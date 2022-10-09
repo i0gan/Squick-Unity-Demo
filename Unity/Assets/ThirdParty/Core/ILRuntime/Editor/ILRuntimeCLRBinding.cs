@@ -14,7 +14,7 @@ public class ILRuntimeCLRBinding
     {
         //用新的分析热更dll调用引用来生成绑定代码
         AppDomain domain = new AppDomain();
-        using (FileStream fs = new FileStream("Assets/HotUpdate/Dll/Hidden~/HotScriptss.dll", FileMode.Open, FileAccess.Read))
+        using (FileStream fs = new FileStream("Assets/HotUpdate/Dll/Hidden~/HotScripts.dll", FileMode.Open, FileAccess.Read))
         {
             domain.LoadAssembly(fs);
 
