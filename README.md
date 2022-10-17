@@ -1,6 +1,6 @@
 # Uquick SDK
 
-Unity3d快速网络手游开发方案，支持冷更新+热更新、微信登录、帧同步、状态同步。提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
+Unity3d快速网络手游开发方案，支持冷更新+热更新、微信登录、帧同步、状态同步，其主要思想借鉴与[JEngine](https://github.com/JasonXuDeveloper/JEngine)和[NoahGameFrame](https://github.com/ketoo/NoahGameFrame)。提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
 
 默认支持Android平台热更，IOS未做测试，不建议采用该框架对PC端进行热更，PC热更完全没必要，我也开发了一个专门更新PC端的工具，你可以采用原生开发的方式，不用管任何的热更框架，都可以实现类热更。项目地址：[QuickUpdater](https://github.com/pwnsky/QuickUpdater)
 
@@ -9,6 +9,23 @@ Unity3d快速网络手游开发方案，支持冷更新+热更新、微信登录
 有任何编译问题，请加入讨论QQ群：729054809
 
 介绍视频: https://www.bilibili.com/video/BV1kR4y197Xf
+
+
+---
+
+![GitHub release](https://img.shields.io/github/release/i0gan/Uquick.svg?style=flat-square)
+![GitHub pre-release](https://img.shields.io/github/release-pre/i0gan/Uquick.svg?label=pre-release&style=flat-square)
+[![Platform](https://img.shields.io/badge/Platform-android,ios,windows,linux,macos-green.svg?style=flat-square)](https://github.com/i0gan/Uquick)
+[![License](https://img.shields.io/github/license/i0gan/Uquick.svg?colorB=f48041&style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+![GitHub stars](https://img.shields.io/github/stars/i0gan/Uquick.svg?style=flat-square&label=Stars&style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues-raw/i0gan/Uquick.svg?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/i0gan/Uquick.svg?style=flat-square)
+
+[![Stargazers over time](https://starchart.cc/i0gan/Uquick.svg)](https://starchart.cc/i0gan/Uquick)
+
+
+
+
 
 ## 文档
 
@@ -60,7 +77,7 @@ Unity3d快速网络手游开发方案，支持冷更新+热更新、微信登录
 
 ### 公益软件上线案例
 
-该软件中，使用了热冷更框架，让更新变得简单。
+该软件中，使用了Uqucik的冷热更框架，让其移动App更新变得简单。
 
 智慧岐黄科普版：https://tflash.pwnsky.com
 
@@ -139,3 +156,36 @@ AI Boss多玩家对战
 * Unity工程.net环境： .Net Framework 6.0
 
 * 热更工程.net环境： .Net Framework 6.0
+
+
+
+
+
+## 一些很赞的项目
+
+JEngine
+
+- 作者: ketoo
+- Github:  https://github.com/JasonXuDeveloper/JEngine
+- 描述: 简单轻量的c#脚本热更框架
+
+
+
+ET
+
+- 作者: egametang
+- Github:  https://github.com/egametang/ET
+- 描述: 游戏客户端（基于unity3d）服务端双端框架，服务端是使用C# .net core开发的分布式游戏服务端。
+
+
+
+NoahGameFrame
+
+- 作者: ketoo
+- Github:  https://github.com/ketoo/NoahGameFrame
+- 描述: 基于插件的跨平台网络服务器框架
+
+
+
+
+
