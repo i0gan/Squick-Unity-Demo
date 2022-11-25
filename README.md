@@ -2,17 +2,17 @@
 
 前言：
 
-元宇宙（Metaverse），是人类运用数字技术构建的，由现实世界映射或超越现实世界，可与现实世界交互的虚拟世界，具备新型社会体系的数字生活空间。而目前我们面对的是很多的一种概念型的资本炒作，为了改变这种现状，让概念变成现实，请我们携起手来，共同用代码来改变世界，加油元宇宙的创造者。
+元宇宙，是人类运用数字技术构建由现实世界映射或超越现实世界的一种可与现实世界交互的虚拟世界，它具备了新型社会体系的数字生活空间。而目前我们面对的是很多的一种概念型的资本炒作，为了改变这种现状，让概念变成现实，请我们携起手来，共同用代码来改变世界，加油勇敢的元宇宙的创造者们。
 
 介绍：
 
-Unity3d元宇宙和MMO游戏的快速开发方案，支持冷更新+热更新、微信登录、帧同步、状态同步，其主要思想借鉴于[JEngine](https://github.com/JasonXuDeveloper/JEngine)和[NoahGameFrame](https://github.com/ketoo/NoahGameFrame)。提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
+Unity3d元宇宙和MMO游戏的快速开发方案，支持冷更新+热更新、微信登录、帧同步、状态同步，其主要开发思想源于[JEngine](https://github.com/JasonXuDeveloper/JEngine)和[NoahGameFrame](https://github.com/ketoo/NoahGameFrame)。提供了MMORPG运行的demo，该demo服务端框架: [Squick](https://github.com/i0gan/Squick)
 
 默认支持Android平台热更，IOS未做测试，不建议采用该框架对PC端进行热更，PC热更完全没必要，我也开发了一个专门更新PC端的工具，你可以采用原生开发的方式，不用管任何的热更框架，都可以实现类热更。项目地址：[QuickUpdater](https://github.com/pwnsky/QuickUpdater)
 
 快速入手Uquick，请查看[快速开始](./Docs/QuickStart.md)
 
-有任何编译问题，请加入讨论QQ群：729054809
+有任何编译问题，请加入讨论QQ群：739065686
 
 介绍视频: https://www.bilibili.com/video/BV1kR4y197Xf
 
@@ -173,7 +173,7 @@ Unity3d元宇宙和MMO游戏的快速开发方案，支持冷更新+热更新、
 
 JEngine
 
-- 作者: ketoo
+- 作者: JasonXuDeveloper 
 - Github:  https://github.com/JasonXuDeveloper/JEngine
 - 描述: 简单轻量的c#脚本热更框架
 
