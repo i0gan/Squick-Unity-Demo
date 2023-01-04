@@ -108,7 +108,7 @@ namespace Squick
         {
 			if (mKey != null && mKey.Length > 0)
 			{
-				//verify token
+				//verify token, 连接成功，直接验证key
                 RequireVerifyWorldKey(mAccount, mKey);
 			}
         }
@@ -143,6 +143,7 @@ namespace Squick
         // 请求消息
 	    public void LoginPB(string strAccount, string strPwd, string strKey)
         {
+            Debug.Log("请求登录");
             SquickStruct.ReqAccountLogin xData = new SquickStruct.ReqAccountLogin();
             xData.Account = ByteString.CopyFromUtf8(strAccount);
             xData.Password = ByteString.CopyFromUtf8(strPwd);
@@ -224,7 +225,6 @@ namespace Squick
             Debug.Log("请求服务器列表中");
             SquickStruct.ReqServerList xData = new SquickStruct.ReqServerList();
             xData.Type = SquickStruct.ReqServerListType.RsltGamesErver;
-
             mxBody.SetLength(0);
             xData.WriteTo(mxBody);
 
@@ -233,6 +233,7 @@ namespace Squick
 
 	    public void RequireSelectServer(int nServerID)
         {
+            Debug.Log("选择服务器, " + nServerID.ToString());
             SquickStruct.ReqSelectServer xData = new SquickStruct.ReqSelectServer();
             xData.WorldId = nServerID;
             mServerID = nServerID;
@@ -313,6 +314,7 @@ namespace Squick
 
 
 
+        // 验证key
         private void OnConnectKey(int id, MemoryStream stream)
         {
 	        SquickStruct.MsgBase xMsg = SquickStruct.MsgBase.Parser.ParseFrom(stream); // 解析获取Msg
@@ -493,7 +495,7 @@ namespace Squick
             autoReconnectGameID = 0;
         }
 
-        // Logic Event
+        // 获取到角色列表
         public void OnRoleList(int eventId, DataList valueList)
         {
             ArrayList roleList = mRoleList;
@@ -506,6 +508,8 @@ namespace Squick
 
             OnCreateRoleClick();
         }
+
+        // 点击角色进入游戏
 
         private void OnRoleClick(int nIndex)
         {

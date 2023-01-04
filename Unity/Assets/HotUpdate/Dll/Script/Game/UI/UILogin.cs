@@ -53,7 +53,7 @@ public class UILogin : UIDialog
         // 点击登录
         PlayerPrefs.SetString("account", mAccount.text);
         PlayerPrefs.SetString("password", mPassword.text);
-        //mLoginModule.LoginPB(mAccount.text, mPassword.text, "");
+        mLoginModule.LoginPB(mAccount.text, mPassword.text, "");
        
         mLoginModule.RequireVerifyWorldKey(mAccount.text, mPassword.text);
     }

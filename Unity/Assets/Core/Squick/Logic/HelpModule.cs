@@ -22,6 +22,7 @@ namespace Squick
             SquickStruct.Ident xIdent = new SquickStruct.Ident();
             xIdent.Svrid = xID.nHead64;
             xIdent.Index = xID.nData64;
+            Debug.Log("NFToPB: Guid.Head64 = " + xID.nHead64.ToString() + " / Date64 = " + xID.nHead64.ToString());
             return xIdent;
         }
 
