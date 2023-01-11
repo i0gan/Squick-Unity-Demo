@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/HotUpdate/Scene/Home.unity
     guid: 7c4cee9415fb44542a2f25d934344d7a
   - enabled: 1
+    path: Assets/HotUpdate/Scene/Lobby.unity
+    guid: d90b72db6f3c8a441be3d1be4b67f3cd
+  - enabled: 1
     path: Assets/HotUpdate/Scene/World.unity
     guid: 3dfb37914951e8041be77800be02ec44
   - enabled: 1
