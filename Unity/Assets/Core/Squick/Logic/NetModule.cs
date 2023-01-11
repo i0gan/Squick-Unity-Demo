@@ -15,7 +15,6 @@ namespace Squick
     {
 		private IKernelModule mKernelModule;
 		private HelpModule mHelpModule;
-		private LogModule mLogModule;
 		private LoginModule mLoginModule;
 
 		private NFNetListener mNetListener;
@@ -69,9 +68,7 @@ namespace Squick
 		{
 			mHelpModule = mPluginManager.FindModule<HelpModule>();
 			mKernelModule = mPluginManager.FindModule<IKernelModule>();
-			mLogModule = mPluginManager.FindModule<LogModule>();
 			mLoginModule = mPluginManager.FindModule<LoginModule>();
-
 		}
 
 		public String FirstIP()
@@ -127,7 +124,7 @@ namespace Squick
 
                 mxBody.SetLength(0);
                 mxData.WriteTo(mxBody);
-
+                // 网络字节序，待整改
                 mxHead.unMsgID = (UInt16)unMsgID;
                 mxHead.unDataLen = (UInt32)mxBody.Length + (UInt32)ConstDefine.NF_PACKET_HEAD_SIZE;
 
@@ -505,7 +502,7 @@ namespace Squick
 			xData.Name = ByteString.CopyFromUtf8(mLoginModule.mRoleName);
 			xData.Account = ByteString.CopyFromUtf8(mLoginModule.mAccount);
 			xData.GameId = 0;
-			xData.Id = mHelpModule.NFToPB(mLoginModule.mRoleID);
+			xData.Id = mHelpModule.NFToPB(mLoginModule.mRoleID); 
 			
             mxBody.SetLength(0);
             xData.WriteTo(mxBody);

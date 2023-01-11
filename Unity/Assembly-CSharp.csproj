@@ -78,8 +78,8 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\Sha224Digest.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ProtoIgnoreAttribute.cs" />
     <Compile Include="Assets\ThirdParty\Extend\Easy Character Movement\Scripts\@Obsolete\BoxGroundDetection.cs" />
-    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Cookies\CookieJar.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsClient.cs" />
+    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Cookies\CookieJar.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\operators\Asn1Signature.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\generators\DsaKeyPairGenerator.cs" />
@@ -246,8 +246,8 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\Asn1OctetString.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\Int16Serializer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\ICertificateVerifyer.cs" />
-    <Compile Include="Assets\Core\Uquick\Core\GameStats.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\x509\PEMParser.cs" />
+    <Compile Include="Assets\Core\Uquick\Core\GameStats.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\util\Pack.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\CbcBlockCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410NamedParameters.cs" />
@@ -585,7 +585,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\collections\HashSet.cs" />
     <Compile Include="Assets\Scripts\AppStart.cs" />
     <Compile Include="Assets\Scripts\Adapters\ExampleAPIAdapter.cs" />
-    <Compile Include="Assets\Core\Squick\Core\NFIRecord.cs" />
+    <Compile Include="Assets\Core\Squick\Core\IRecord.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\DiscriminatedUnion.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\HTTPConnectionStates.cs" />
     <Compile Include="Assets\Core\Uquick\Core\BindableProperty.cs" />
@@ -835,8 +835,8 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerNumericString.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\Helper\AssetLogHelper.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x9\DHValidationParms.cs" />
-    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\Deflate.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerApplicationSpecific.cs" />
+    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\Deflate.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Meta\TypeFormatEventArgs.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\ZlibBaseStream.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\cert\CertificateEncodingException.cs" />

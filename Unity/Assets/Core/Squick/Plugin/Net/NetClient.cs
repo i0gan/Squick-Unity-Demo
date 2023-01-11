@@ -8,6 +8,8 @@ using System.Threading;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using System.Drawing;
+using UnityEditor.Experimental.GraphView;
 
 namespace Squick
 {
@@ -72,7 +74,19 @@ namespace Squick
 	
     public class NetClient
     {
-        
+        private string m_hostname;
+        private int m_port;
+        void PrintBytes(string info, byte[] bytesData, int len)
+        {
+            string data = "";
+            int id = bytesData[0] * 15 + bytesData[1];
+            for (int i = 0; i < len; i++)
+            {
+                data += bytesData[0 + i].ToString("X02") + ","; // .toString("x2"); 
+            }
+            string prev = "NetDebug: server " + m_hostname + ":" + m_port + " " + " msgid: " + id + " [" + ((SquickStruct.EGameMsgID)id).ToString() + "]  ";
+            Debug.Log(prev + info + data + "  [" + data.ToString() + " ]");
+        }
 		public NetClient(NFNetListener xNetListener)
         {
 			mxNetListener = xNetListener;
@@ -214,8 +228,14 @@ namespace Squick
                try
                {
                     Array.Clear(tempReadBytes, 0, ConstDefine.NF_PACKET_BUFF_SIZE);
+                    
                     bytesRead = mxStream.Read(tempReadBytes, 0, ConstDefine.NF_PACKET_BUFF_SIZE);
-               }
+
+
+                    PrintBytes("NetClient.cs:231, Recv Bytes: " ,tempReadBytes, bytesRead);
+
+
+                }
                catch (Exception e)
                {
                    e.ToString();
@@ -267,7 +287,8 @@ namespace Squick
 
             mxMessages.Clear();
             mxEvents.Clear();
-
+            m_hostname = hostname;
+            m_port = port;
             mxClient = new TcpClient();
             mxClient.NoDelay = true;
             mxClient.BeginConnect(hostname,
@@ -296,14 +317,8 @@ namespace Squick
 
         private void SendBytes(byte[] bytes, int offset, int size)
         {
-            /*
-            string data = "";
-            for (int i = 0; i < size; i++)
-            {
-                data += bytes[offset + i]; // .toString("x2"); 
-            }
-            Debug.Log("NetClient.cs:303, Send Bytes: " + size + "  [" + data.ToString());
-            */
+            
+            PrintBytes( "NetClient.cs:316, Send Bytes: ", bytes, size);
             if (!IsConnected())
                 return;
             try
