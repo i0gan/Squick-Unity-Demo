@@ -14,23 +14,20 @@ public enum GAME_MODE
 public class SquickRoot : MonoBehaviour
 {
     public bool mbShowCMDGUI = false;
-    public int port = 14001;
+    public int port = 15001;
 
     private GAME_MODE mGameMode = GAME_MODE.GAME_MODE_NONE;
 
     private ObjectElement mxObjectElement;
-    private bool mbShowElement = false;
-    private bool mbShowServer = true;
 
-    private IClassModule mClassModule;
-    private IKernelModule mKernelModule;
-    private NetModule mNetModule;
-    private UIModule mUIModule;
-    private LogModule mLogModule;
+    public IClassModule mClassModule;
+    public IKernelModule mKernelModule;
+    public NetModule mNetModule;
+    public UIModule mUIModule;
+    public LogModule mLogModule;
+    public SquickConfig mConfig = new SquickConfig();
+    public PluginManager mPluginManager;
 
-    private SquickConfig mConfig = new SquickConfig();
-
-    private PluginManager mPluginManager;
     private static SquickRoot _instance = null;
     public static SquickRoot Instance()
     {
@@ -53,7 +50,7 @@ public class SquickRoot : MonoBehaviour
 
     private void Awake()
     {
-        mPluginManager = new PluginManager(); // 创建插件管理器
+        mPluginManager = new PluginManager();  // 创建插件管理器
         mxObjectElement = new ObjectElement(); // 获取对象元素
     }
 
@@ -65,8 +62,8 @@ public class SquickRoot : MonoBehaviour
         mConfig.Load(); // 加载配置文件
 
         mPluginManager.Registered(new SquickPlugin(mPluginManager));   // 注册SDK插件
-        mPluginManager.Registered(new UIPlugin(mPluginManager));    // 注册UI插件
-        mPluginManager.Registered(new ScenePlugin(mPluginManager)); // 注册场景插件
+        mPluginManager.Registered(new UIPlugin(mPluginManager));       // 注册UI插件
+        mPluginManager.Registered(new ScenePlugin(mPluginManager));    // 注册场景插件
 
         // 获取基本模块
         mKernelModule = mPluginManager.FindModule<IKernelModule>();
@@ -82,9 +79,9 @@ public class SquickRoot : MonoBehaviour
         mPluginManager.Init();
         mPluginManager.AfterInit();
 
-        mUIModule.ShowUI<UILogin>(); // 显示登录UI界面
 
-
+        // 显示登录UI界面
+        mUIModule.ShowUI<UILogin>();
 
         string strTargetIP = "";        
         if (mConfig.GetSelectServer(ref strTargetIP))
@@ -106,9 +103,5 @@ public class SquickRoot : MonoBehaviour
     void Update()
     {
         mPluginManager.Execute();
-        //if (mNetModule.GetState() == NetState.Disconnected)
-        //{
-        //mbShowServer = true;
-        //}
     }
 }

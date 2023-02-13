@@ -2,7 +2,7 @@
 
 <XML>
 	<Servers>
-		<Server ID="1" Name="local server" IP = "127.0.0.1" Port="15001"/>
+		<Server ID="1" Name="local server" IP = "192.168.0.142" Port="15001"/>
 		<Server ID="2" Name="public server" IP = "1.14.123.62" Port="15001"/>
 	</Servers>
 	<Evironment>

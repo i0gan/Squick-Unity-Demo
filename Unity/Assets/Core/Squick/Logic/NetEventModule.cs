@@ -60,7 +60,7 @@ namespace Squick
 
 		private void NetEventDelegation(NetEventType eventType)
 		{
-            Debug.Log(Time.realtimeSinceStartup.ToString() + " ·þÎñÆ÷Á¬½Ó³É¹¦" + eventType.ToString());
+            Debug.Log(Time.realtimeSinceStartup.ToString() + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³É¹ï¿½" + eventType.ToString());
 
 			switch (eventType)
 			{
