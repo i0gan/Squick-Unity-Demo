@@ -84,7 +84,7 @@ namespace Squick
 		}
 	};
 
-    public class NFNetListener
+    public class NetListener
     {      
 		private StringRingBuffer mPacket = new StringRingBuffer(ConstDefine.MAX_PACKET_LEN, true);
 
@@ -205,7 +205,6 @@ namespace Squick
 
 		private void OnMessageEvent(MsgHead head, MemoryStream ms)
         {
-			//Debug.Log("���ܵ���Ϣ��" + head.unMsgID + "  " + ((SquickStruct.EGameMsgID)(head.unMsgID)).ToString());
             if (mhtMsgDelegation.ContainsKey(head.unMsgID))
             {
                 MsgDelegation myDelegationHandler = (MsgDelegation)mhtMsgDelegation[head.unMsgID];

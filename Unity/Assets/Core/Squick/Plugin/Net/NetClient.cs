@@ -87,7 +87,7 @@ namespace Squick
             string prev = "NetDebug: server " + m_hostname + ":" + m_port + " " + " msgid: " + id + " [" + ((SquickStruct.EGameMsgID)id).ToString() + "]  ";
             Debug.Log(prev + info + data + "  [" + data.ToString() + " ]");
         }
-		public NetClient(NFNetListener xNetListener)
+		public NetClient(NetListener xNetListener)
         {
 			mxNetListener = xNetListener;
             Init();
@@ -114,7 +114,7 @@ namespace Squick
         private Queue<SocketPacket> mxPackets;
         private Queue<SocketPacket> mxPacketPool;
 
-        private NFNetListener mxNetListener;
+        private NetListener mxNetListener;
 
         private byte[] tempReadBytes = new byte[ConstDefine.NF_PACKET_BUFF_SIZE];
 
@@ -130,7 +130,7 @@ namespace Squick
             return mxState;
         }
 
-        public NFNetListener GetNetListener()
+        public NetListener GetNetListener()
         {
             return mxNetListener;
         }

@@ -17,7 +17,7 @@ namespace Squick
 		private HelpModule mHelpModule;
 		private LoginModule mLoginModule;
 
-		private NFNetListener mNetListener;
+		private NetListener mNetListener;
 		private NetClient mNetClient;
 
 		private string strFirstIP;
@@ -31,7 +31,7 @@ namespace Squick
 
         public NetModule(IPluginManager pluginManager)
         {
-            mNetListener = new NFNetListener();
+            mNetListener = new NetListener();
             mPluginManager = pluginManager;
         }
         
@@ -104,12 +104,12 @@ namespace Squick
             return mNetClient.GetState();
         }
 
-		public void AddReceiveCallBack(int eMsg, Squick.NFNetListener.MsgDelegation netHandler)
+		public void AddReceiveCallBack(int eMsg, Squick.NetListener.MsgDelegation netHandler)
         {
 			mNetListener.RegisteredDelegation(eMsg, netHandler);
         }
   
-		public void AddNetEventCallBack(Squick.NFNetListener.EventDelegation netHandler)
+		public void AddNetEventCallBack(Squick.NetListener.EventDelegation netHandler)
         {
 			mNetListener.RegisteredNetEventHandler(netHandler);
         }

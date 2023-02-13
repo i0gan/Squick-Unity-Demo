@@ -309,7 +309,6 @@ namespace Squick
 				strIP = mNetModule.FirstIP();
 			}
 			mNetModule.StartConnect(strIP, xData.WorldPort);
-
         }
 
 
