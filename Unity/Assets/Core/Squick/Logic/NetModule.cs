@@ -550,12 +550,12 @@ namespace Squick
         {
             SquickStruct.ReqAckPlayerPosSync xData = new SquickStruct.ReqAckPlayerPosSync();
 
-            SquickStruct.PosSyncUnit posSyncUnit = new PosSyncUnit();
+            SquickStruct.TransformSyncUnit posSyncUnit = new TransformSyncUnit();
             posSyncUnit.Mover = mHelpModule.NFToPB(objectID);
-            posSyncUnit.Pos = new SquickStruct.Vector3();
-            posSyncUnit.Pos.X = vPos.x;
-            posSyncUnit.Pos.Y = vPos.y;
-            posSyncUnit.Pos.Z = vPos.z;
+            posSyncUnit.Position = new SquickStruct.Vector3();
+            posSyncUnit.Position.X = vPos.x;
+            posSyncUnit.Position.Y = vPos.y;
+            posSyncUnit.Position.Z = vPos.z;
             posSyncUnit.Status = nType;
             xData.SyncUnit.Add(posSyncUnit);
 
@@ -571,13 +571,13 @@ namespace Squick
         {
             SquickStruct.ReqAckPlayerPosSync xData = new SquickStruct.ReqAckPlayerPosSync();
 
-            SquickStruct.PosSyncUnit posSyncUnit = new PosSyncUnit();
+            SquickStruct.TransformSyncUnit posSyncUnit = new TransformSyncUnit();
             posSyncUnit.Mover = mHelpModule.NFToPB(objectID);
-            posSyncUnit.Pos = new SquickStruct.Vector3();
-            posSyncUnit.Pos.X = vPos.x;
-            posSyncUnit.Pos.Y = vPos.y;
-            posSyncUnit.Pos.Z = vPos.z;
-            posSyncUnit.Type = SquickStruct.PosSyncUnit.Types.EMoveType.EetTeleport;
+            posSyncUnit.Position = new SquickStruct.Vector3();
+            posSyncUnit.Position.X = vPos.x;
+            posSyncUnit.Position.Y = vPos.y;
+            posSyncUnit.Position.Z = vPos.z;
+            posSyncUnit.Type = (int)SquickStruct.TransformSyncUnit.Types.EMoveType.EetTeleport;
             xData.SyncUnit.Add(posSyncUnit);
 
             mxBody.SetLength(0);

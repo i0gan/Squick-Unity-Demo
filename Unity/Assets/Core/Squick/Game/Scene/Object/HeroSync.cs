@@ -195,18 +195,18 @@ public class HeroSync : MonoBehaviour
     }
 
 
-    public void AddSyncData(int sequence, SquickStruct.PosSyncUnit syncUnit)
+    public void AddSyncData(int sequence, SquickStruct.TransformSyncUnit syncUnit)
     {
         Clear();
 
         Vector3 pos = new Vector3();
         Vector3 dir = new Vector3();
 
-        if (syncUnit.Pos != null)
+        if (syncUnit.Position != null)
         {
-            pos.x = syncUnit.Pos.X;
-            pos.y = syncUnit.Pos.Y;
-            pos.z = syncUnit.Pos.Z;
+            pos.x = syncUnit.Position.X;
+            pos.y = syncUnit.Position.Y;
+            pos.z = syncUnit.Position.Z;
         }
 
         if (syncUnit.Orientation != null)

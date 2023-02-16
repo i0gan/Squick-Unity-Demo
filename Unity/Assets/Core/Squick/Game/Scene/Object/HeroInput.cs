@@ -52,8 +52,6 @@ public class HeroInput : MonoBehaviour
 
         mHeroMotor.angularSpeed = 0f;
 
-
-
     }
 
     public void PropertyMoveSpeedHandler(Squick.Guid self, string strProperty, DataList.TData oldVar, DataList.TData newVar, Int64 reason)

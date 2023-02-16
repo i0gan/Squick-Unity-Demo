@@ -694,6 +694,7 @@ namespace SquickProtocol
 		// Property
 		public static readonly String Area = "Area";// int
 		public static readonly String CpuCount = "CpuCount";// int
+		public static readonly String Exe = "Exe";// string
 		public static readonly String IP = "IP";// string
 		public static readonly String MaxOnline = "MaxOnline";// int
 		public static readonly String Port = "Port";// int
