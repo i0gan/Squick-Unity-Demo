@@ -1,0 +1,15 @@
+<XML>
+    <PvpManagerServer>
+		<Plugin Name="core/net" />
+		<Plugin Name="core/kernel" />
+		<Plugin Name="core/config" />
+		<Plugin Name="core/log" />
+		<Plugin Name="core/actor" />
+		<Plugin Name="core/security" />
+        <Plugin Name="core/lua" />
+		
+		<Plugin Name="server/pvp_manager/server" />
+		<Plugin Name="server/pvp_manager/logic" />
+		<Plugin Name="server/pvp_manager/client" />
+    </PvpManagerServer>
+</XML>

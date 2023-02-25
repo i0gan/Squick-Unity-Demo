@@ -186,13 +186,8 @@ namespace Squick
 
             if (bMainRole)
             {
-
-          
-
-
                 CapsuleCollider xHeroCapsuleCollider = self.GetComponent<CapsuleCollider>();
                 xHeroCapsuleCollider.isTrigger = false;
-               
             }
             else
             {

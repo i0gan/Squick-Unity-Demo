@@ -1,0 +1,290 @@
+syntax = "proto3";
+
+package SquickStruct;
+
+//events
+enum EGameEventCode
+{
+	SUCCESS									= 0;        //
+	UNKOWN_ERROR							= 1;		//
+	ACCOUNT_EXIST							= 2;        //
+	ACCOUNTPWD_INVALID						= 3;        //
+	ACCOUNT_USING							= 4;        //
+	ACCOUNT_LOCKED							= 5;        //
+	ACCOUNT_LOGIN_SUCCESS					= 6;        //
+	VERIFY_KEY_SUCCESS						= 7;        //
+	VERIFY_KEY_FAIL							= 8;        //
+	SELECTSERVER_SUCCESS					= 9;        //
+	SELECTSERVER_FAIL						= 10;       //
+	
+	CHARACTER_EXIST							= 110;       //
+	SVRZONEID_INVALID						= 111;       //
+	CHARACTER_NUMOUT						= 112;       //
+	CHARACTER_INVALID						= 113;       //
+	CHARACTER_NOTEXIST						= 114;       //
+	CHARACTER_USING							= 115;       //
+	CHARACTER_LOCKED						= 116;       //
+	ZONE_OVERLOAD							= 117;       //
+	NOT_ONLINE								= 118;       //
+
+	INSUFFICIENT_DIAMOND					= 200;       //
+	INSUFFICIENT_GOLD					    = 201;       //
+	INSUFFICIENT_SP					        = 202;       //
+}
+
+
+// Servers RPC 
+enum ServerMsgId {
+
+	SERVER_MSG_ID_NONE						= 0;
+	WORLD_TO_MASTER_REGISTERED				= 1;
+	WORLD_TO_MASTER_UNREGISTERED			= 2;
+	WORLD_TO_MASTER_REFRESH					= 3;
+
+	LOGIN_TO_MASTER_REGISTERED				= 4;
+	LOGIN_TO_MASTER_UNREGISTERED			= 5;
+	LOGIN_TO_MASTER_REFRESH					= 6;
+
+	PROXY_TO_WORLD_REGISTERED				= 7;
+	PROXY_TO_WORLD_UNREGISTERED				= 8;
+	PROXY_TO_WORLD_REFRESH					= 9;
+
+	PROXY_TO_GAME_REGISTERED				= 10;
+	PROXY_TO_GAME_UNREGISTERED				= 11;
+	PROXY_TO_GAME_REFRESH					= 12;
+
+	GAME_TO_WORLD_REGISTERED				= 13;
+	GAME_TO_WORLD_UNREGISTERED				= 14;
+	GAME_TO_WORLD_REFRESH					= 15;
+
+	DB_TO_WORLD_REGISTERED					= 16;
+	DB_TO_WORLD_UNREGISTERED				= 17;
+	DB_TO_WORLD_REFRESH						= 18;
+
+	PVP_MANAGER_TO_WORLD_REGISTERED         = 19; // 将PVP管理服务器注册到 World 服务器
+	PVP_MANAGER_TO_WORLD_UNREGISTERED       = 20;
+	PVP_MANAGER_TO_WORLD_REFRESH            = 21;
+
+	PVP_MANAGER_TO_GAME_REGISTERED         = 22; // 将PVP管理服务器注册到 GAME 服务器, PVP Manager
+	PVP_MANAGER_TO_GAME_UNREGISTERED       = 23;
+	PVP_MANAGER_TO_GAME_REFRESH            = 24;
+
+
+	// Pvp Manager API
+	// PVP 管理服 接口
+    REQ_PVP_INSTANCE_CREATE                 = 30; // 创建 PVP 对战服实例
+	ACK_PVP_INSTANCE_CREATE                 = 31;
+    REQ_PVP_INSTANCE_DESTROY                = 32;
+	ACK_PVP_INSTANCE_DESTROY                = 33;
+    REQ_PVP_INSTANCE_STATUS                 = 34;
+	ACK_PVP_INSTANCE_STATUS                 = 35;
+    REQ_PVP_INSTANCE_LIST                   = 36; // 
+	ACK_PVP_INSTANCE_LIST                   = 37; 
+
+	// Pvp Manager API
+	// PVP 接口, 由PVP -> PVP Manager -> Game
+	// 在PVP游戏中，以Game服务器为主，PVP服务器只负责当前对局网络同步和数据结算，不做其他逻辑功能
+	REQ_PVP_STATUS                         = 50;
+	ACK_PVP_STATUS                         = 51;
+	REQ_PVP_GAME_INIT                      = 52; // 创建完毕PVP服务器后， PVP服务器向Game服务器初始化对战服数据和各玩家数据
+	ACK_PVP_GAME_INIT                      = 53; 
+	REQ_PLAYER_INFO                        = 54; // 加入玩家，
+	ACK_PLAYER_INFO                        = 55; // 
+	ACK_NEW_PLAYER                         = 56; //
+	
+	REQ_CONNECT_GAME_SERVER                = 60; // PVP请求连接Game Server
+	ACK_CONNECT_GAME_SERVER                = 61; 
+}
+
+// Client RPC 
+enum EGameMsgID
+{
+	UNKNOW									= 0;         //
+	EVENT_RESULT							= 1;         // for events
+	EVENT_TRANSPORT							= 2;         // for events
+	CLOSE_SOCKET							= 3;         // want to close some one
+
+	STS_NET_INFO							= 70;
+	
+	REQ_LAG_TEST							= 80; // LAG_TEST
+	ACK_GATE_LAG_TEST						= 81; // 代理服务器响应
+	ACK_GAME_LAG_TEST						= 82; // 游戏服务器响应
+	
+	STS_SERVER_REPORT						= 90;  // 服务端报告服务状态
+	STS_HEART_BEAT							= 100; // 服务端之间心跳包
+	
+	//////////////////////////////////////////////////////////////////////////////////////
+	REQ_LOGIN								= 101;     	//
+	ACK_LOGIN								= 102;     	//
+	REQ_LOGOUT								= 103;		//
+
+	REQ_WORLD_LIST							= 110;			//
+	ACK_WORLD_LIST							= 111;			//
+	REQ_CONNECT_WORLD						= 112;			//
+	ACK_CONNECT_WORLD						= 113;
+	REQ_KICKED_FROM_WORLD					= 114;			//
+
+	REQ_CONNECT_KEY							= 120;         // 先获取  Connect key 才能建立连接
+	ACK_CONNECT_KEY							= 122;         // 
+
+	REQ_SELECT_SERVER						= 130;			//
+	ACK_SELECT_SERVER						= 131;			//
+	REQ_ROLE_LIST							= 132;			//
+	ACK_ROLE_LIST							= 133;			//
+	REQ_CREATE_ROLE							= 134;			//
+	REQ_DELETE_ROLE							= 135;			//
+	REQ_RECOVER_ROLE						= 136;			//
+
+	REQ_LOAD_ROLE_DATA						= 140;			// 加载玩家数据
+	ACK_LOAD_ROLE_DATA						= 141;			//
+	REQ_SAVE_ROLE_DATA						= 142;			// 请求保存玩家数据
+	ACK_SAVE_ROLE_DATA						= 143;			// 
+
+	REQ_ENTER_GAME							= 150;			// 进入游戏
+	ACK_ENTER_GAME							= 151;			// 
+	REQ_LEAVE_GAME							= 152;			// 离开游戏
+	ACK_LEAVE_GAME							= 153;			// 
+	REQ_ENTER_GAME_FINISH					= 154;			//
+	ACK_ENTER_GAME_FINISH					= 155;			//
+
+	REQ_ENTER_SCENE							= 160;          // 请求加入场景
+	ACK_ENTER_SCENE							= 161;
+	REQ_LEAVE_SCENE							= 162;			// 离开场景
+	ACK_LEAVE_SCENE							= 163;			// 
+	REQ_ENTER_SCENE_FINISH					= 164;			//
+	ACK_ENTER_SCENE_FINISH					= 165;			//
+
+	REQ_SWAP_SCENE							= 170;			// 切换场景
+	ACK_SWAP_SCENE							= 171;			//  
+	REQ_SWAP_HOME_SCENE						= 172;			// 
+	ACK_SWAP_HOME_SCENE						= 173;			// 
+
+/*
+进入游戏后，服务端返回如下：
+LogUnLua: 不存在该Msg, msg id: 200
+LogUnLua: 不存在该Msg, msg id: 202
+LogUnLua: 不存在该Msg, msg id: 203
+LogUnLua: 不存在该Msg, msg id: 260
+LogUnLua: 不存在该Msg, msg id: 217
+LogUnLua: 不存在该Msg, msg id: 250
+LogUnLua: 不存在该Msg, msg id: 171
+LogUnLua: 不存在该Msg, msg id: 301
+LogUnLua: 不存在该Msg, msg id: 202*/
+
+	// 场景对象
+	ACK_OBJECT_ENTRY						= 200;			// 对象在服务端上创建成功
+	ACK_OBJECT_LEAVE						= 201;			// 
+
+	ACK_OBJECT_PROPERTY_ENTRY				= 202;			// 对象属性
+	ACK_OBJECT_RECORD_ENTRY					= 203;			// 对象记录值
+
+	ACK_PROPERTY_INT						= 210;			//
+	ACK_PROPERTY_FLOAT					    = 211;			//
+	ACK_PROPERTY_STRING						= 212;			//
+	//EGMI_ACK_PROPERTY_DOUBLE				= 213;			//
+	ACK_PROPERTY_OBJECT						= 214;			//
+	ACK_PROPERTY_VECTOR2        			= 215;
+	ACK_PROPERTY_VECTOR3        			= 216;
+	ACK_PROPERTY_CLEAR          			= 217;  // 属性清除
+
+	ACK_ADD_ROW								= 220;
+	ACK_REMOVE_ROW							= 221;
+	ACK_SWAP_ROW							= 222;
+	ACK_RECORD_INT							= 223;
+	ACK_RECORD_FLOAT						= 224;
+	//EGMI_ACK_RECORD_DOUBLE				= 225;
+	ACK_RECORD_STRING						= 226;
+	ACK_RECORD_OBJECT						= 227;
+	ACK_RECORD_VECTOR2						= 228;
+	ACK_RECORD_VECTOR3						= 229;
+
+	ACK_RECORD_CLEAR						= 250; // 记录值清除
+	ACK_RECORD_SORT							= 251;
+
+	ACK_DATA_FINISHED						= 260; // 服务端发送对象数据完成
+
+	REQ_MOVE								= 300;
+	ACK_MOVE								= 301; // 移动
+
+	REQ_CHAT								= 350;
+	ACK_CHAT								= 351;
+
+	REQ_SKILL_OBJECTX						= 400;
+	ACK_SKILL_OBJECTX						= 401;
+	REQ_SKILL_POS							= 402;
+	ACK_SKILL_POS							= 403;
+
+	ACK_ONLINE_NOTIFY						= 600;
+	ACK_OFFLINE_NOTIFY						= 601;
+
+	//game logic message id, start from 1000
+
+	// 玩家房间逻辑
+	REQ_ROOM_CREATE                         = 1000;
+	ACK_ROOM_CREATE                         = 1001;
+
+	REQ_ROOM_DETAILS                        = 1002;
+	ACK_ROOM_DETAILS                        = 1003;
+
+	REQ_ROOM_JOIN                           = 1004;
+	ACK_ROOM_JOIN                           = 1005;
+	ACK_ROOM_JOIN_NOTICE                    = 1006;
+	REQ_ROOM_QUIT                           = 1007; // 离开房间
+	ACK_ROOM_QUIT                           = 1008;
+	ACK_ROOM_QUIT_NOTICE                    = 1009;
+	REQ_ROOM_LIST                           = 1010; // 获取房间列表
+	ACK_ROOM_LIST                           = 1011; // 
+
+	REQ_ROOM_PLAYER_EVENT                   = 1020; // 在房间里互动以及事件，广播形式发送给房间内所有玩家
+	ACK_ROOM_PLAYER_EVENT                   = 1021; 
+
+	// 对战逻辑
+	REQ_START_PVP_GAME                   = 1032; // 请求多人在线游戏，需要提前创建好房间
+	ACK_START_PVP_GAME                   = 1033; 
+
+	REQ_JOIN_PVP_GAME                    = 1034; // 请求加入对战中的游戏
+	ACK_JOIN_PVP_GAME                    = 1035;
+
+	REQ_QUIT_PVP_GAME                    = 1036; // 玩家请求退出当前对局，由 Player -> Proxy -> Game -> PvpManager -> Pvp
+	ACK_QUIT_PVP_GAME                    = 1037;
+
+	ACK_PVP_GAME_OVER                    = 1038; // 游戏结束
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+enum EItemType
+{
+	EIT_EQUIP   			= 0; //the equipment which can add props
+	EIT_GEM   				= 1; //the gem ca be embed to the equipment
+	EIT_SUPPLY   			= 2; //expendable items for player, such as a medicine that cures
+	EIT_SCROLL   			= 3; //special items that can call a hero or others, special items can do what you want to do
+}
+
+enum ESkillType
+{
+	BRIEF_SINGLE_SKILL 			= 0;//this kind of skill just can damage one object
+	BRIEF_GROUP_SKILL			= 1;//this kind of skill can damage multiple objects
+	BULLET_SINGLE_SKILL			= 2;//this kind of bullet just can damage one object
+	BULLET_REBOUND_SKILL		= 3;//this kind of bullet can damage multiple objects via rebound
+	BULLET_TARGET_BOMB_SKILL	= 4;//this kind of bullet can damage multiple objects who around the target when the bullet touched the target object
+	BULLET_POS_BOMB_SKILL		= 5;//this kind of bullet can damage multiple objects  who around the target when the bullet arrived the position
+	FUNC_SKILL					= 6;
+};
+
+// 场景形式，玩家进入后，自己开一个独立场景
+enum ESceneType
+{
+	NORMAL_SCENE 			= 0; //public town, only has one group available for players is 1
+	SINGLE_CLONE_SCENE 		= 1; //private room, only has one player per group and it will be destroyed if the player leaved from group.
+	MULTI_CLONE_SCENE 		= 2; //private room, only has more than one player per group and it will be destroyed if all players leaved from group.
+}
+
+enum ENPCType
+{
+    NORMAL_NPC	= 0;			  //
+    HERO_NPC 	= 1;              //
+    TURRET_NPC 	= 2;              //
+    FUNC_NPC 	= 3;              //
+};

@@ -1075,7 +1075,7 @@ namespace Squick
             for (int i = 0; i < xData.SyncUnit.Count; ++i)
             {
 
-                SquickStruct.PosSyncUnit syncUnit = xData.SyncUnit[i];
+                SquickStruct.TransformSyncUnit syncUnit = xData.SyncUnit[i];
 
                 Guid xMover = mHelpModule.PBToNF(syncUnit.Mover);
 
@@ -1085,7 +1085,7 @@ namespace Squick
                     return;
                 }
 
-                if (xMover == mLoginModule.mRoleID && syncUnit.Type == PosSyncUnit.Types.EMoveType.EmtWalk)
+                if (xMover == mLoginModule.mRoleID && syncUnit.Type == (int)TransformSyncUnit.Types.EMoveType.EmtCommon)
                 {
                     //平常自己行走不需要同步到自己
                     return;
@@ -1113,23 +1113,21 @@ namespace Squick
                 }
 
                 UnityEngine.Vector3 v = new UnityEngine.Vector3();
-                v.x = syncUnit.Pos.X;
-                v.y = syncUnit.Pos.Y;
-                v.z = syncUnit.Pos.Z;
+                v.x = syncUnit.Position.X;
+                v.y = syncUnit.Position.Y;
+                v.z = syncUnit.Position.Z;
 
                 //Debug.Log("Move " + v);
-
-                if (syncUnit.Type == PosSyncUnit.Types.EMoveType.EmtWalk)
+                if (syncUnit.Type == (int)TransformSyncUnit.Types.EMoveType.EmtCommon)
                 {
                     // 同步
                     xHeroSync.AddSyncData(xData.Sequence, syncUnit);
                 }
-
-                else if (syncUnit.Type == PosSyncUnit.Types.EMoveType.EetSpeedy)
-                {
-                    xHeroMotor.MoveToImmune(v, 0.1f);
-                }
-                else if (syncUnit.Type == PosSyncUnit.Types.EMoveType.EetTeleport)
+                //else if (syncUnit.Type == (inPosSyncUnit.Types.EMoveType.EetSpeedy)
+                //{
+                //    xHeroMotor.MoveToImmune(v, 0.1f);
+                //}
+                else if (syncUnit.Type == (int)TransformSyncUnit.Types.EMoveType.EetTeleport)
                 {
                     xHeroMotor.MoveToImmune(v);
                 }

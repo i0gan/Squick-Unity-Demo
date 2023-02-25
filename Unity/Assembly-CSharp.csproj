@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_34;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;INIT_JE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_34;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;INIT_JE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -49,7 +49,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.34f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -125,7 +125,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\BlowfishEngine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SocketIO\Events\EventNames.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIBind\RecordController.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIBind\RecordController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\CertificateRequest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\IDigest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\CrossPlatformInput\Scripts\InvectorJoystick.cs" />
@@ -141,7 +141,7 @@
     <Compile Include="Assets\ThirdParty\Extend\StandardAssets\Utility\PlatformSpecificContent.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\BERSequenceGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239K1Point.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIPlayerControl.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIPlayerControl.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerGeneralizedTime.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\DsaKeyGenerationParameters.cs" />
     <Compile Include="Assets\ThirdParty\Extend\LitJson\JsonMapper.cs" />
@@ -184,7 +184,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\X509Extensions.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\Asn1ParsingException.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\DontDestroy.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\DontDestroy.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\ocsp\ResponderID.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\DesEdeParameters.cs" />
     <Compile Include="Assets\Core\Uquick\Core\Localization\LocalizedText.cs" />
@@ -214,7 +214,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\SerpentEngineBase.cs" />
     <Compile Include="Assets\ThirdParty\Core\ETTaskAsync\ETTaskHelper.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\PublicKeyFactory.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\BuffType.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\BuffType.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\zlib\StaticTree.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsProtocol.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\WebSocket\WebSocket.cs" />
@@ -224,11 +224,11 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\BigInteger.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1FieldElement.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIBind\PropertyView.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIBind\PropertyView.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\Sha256Digest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\IAsn1Convertible.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\signers\Iso9796d2Signer.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIPlugin.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIPlugin.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DERExternalParser.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\paddings\X923Padding.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\cert\CertificateParsingException.cs" />
@@ -275,7 +275,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\DesEdeWrapEngine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\StandardAssets\Utility\CameraRefocus.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Curve.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\NormalSkill4.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\NormalSkill4.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SocketIO\JsonEncoders\DefaultJSonEncoder.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\util\FilterStream.cs" />
     <Compile Include="Assets\ThirdParty\Extend\CrossPlatformInput\Scripts\TouchPad.cs" />
@@ -294,14 +294,13 @@
     <Compile Include="Assets\ThirdParty\Extend\Easy Character Movement\Scripts\Controllers\BaseCharacterController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\MacUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\AnimaStateData.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\AnimaStateData.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\Inflate.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\cert\CrlException.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233R1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\GeneralName.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\signers\RandomDsaKCalculator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Field.cs" />
-    <Compile Include="Assets\Resources\config\proto\MsgPreGame.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\field\GenericPolynomialExtensionField.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerGeneralString.cs" />
@@ -318,7 +317,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\IStreamCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113Field.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\UILanguage.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\UILanguage.cs" />
     <Compile Include="Assets\Core\Uquick\Core\Loom.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160K1Point.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\PropertyDecorator.cs" />
@@ -347,7 +346,6 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Field.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\SignatureAlgorithm.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsDsaSigner.cs" />
-    <Compile Include="Assets\Resources\config\ProtocolDefine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\encoders\HexEncoder.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Compiler\CompilerDelegates.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\SEEDWrapEngine.cs" />
@@ -372,7 +370,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\IVerifierFactoryProvider.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\iana\IANAObjectIdentifiers.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerInteger.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\CharacterControl\HeroSyncBuffer.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\Object\HeroSyncBuffer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\SignatureAndHashAlgorithm.cs" />
     <Compile Include="Assets\Core\Squick\Logic\LogModule.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsAuthentication.cs" />
@@ -384,7 +382,7 @@
     <Compile Include="Assets\ThirdParty\Extend\LitJson\JsonData.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x9\X962NamedCurves.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\TogglePanel.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\TogglePanel.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\WNafL2RMultiplier.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\GOST3410PrivateKeyParameters.cs" />
@@ -406,7 +404,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsRsaSigner.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsServerContextImpl.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\encoders\Hex.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\CharacterControl\HeroMotor.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\Object\HeroMotor.cs" />
     <Compile Include="Assets\ThirdParty\Extend\JSONObject\JSONTemplates.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Point.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\pkcs\DHParameter.cs" />
@@ -429,7 +427,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\GCMBlockCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Statistics\Statistics.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerBoolean.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\ScenePlugin.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\ScenePlugin.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\nist\NISTNamedCurves.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\KeyException.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\macs\CMac.cs" />
@@ -443,9 +441,8 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160K1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\WNafUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\AesEngine.cs" />
-    <Compile Include="Assets\Resources\config\proto\MsgShare.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIGMTool.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\UIGray.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIGMTool.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\UIGray.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\IAsymmetricCipherKeyPairGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsDHUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\endo\ECEndomorphism.cs" />
@@ -482,7 +479,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Caching\HTTPCacheFileLock.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\KeyParameter.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsECDheKeyExchange.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIBind\RecordColView.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIBind\RecordColView.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\X509ObjectIdentifiers.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\WebSocket\Frames\WebSocketFrame.cs" />
@@ -517,13 +514,14 @@
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\BclHelpers.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Caching\HTTPCacheMaintananceParams.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\macs\CfbBlockCipherMac.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Server.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\RC4Engine.cs" />
     <Compile Include="Assets\Core\Squick\Plugin\Kernel\ISEvent.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\CipherKeyGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\Transports\WebSocketTransport.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\ElGamalEngine.cs" />
     <Compile Include="Assets\Core\Uquick\AntiCheat\JDouble.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\BuffController.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\BuffController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerSequence.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\AssetComponentInit.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\IMemoable.cs" />
@@ -542,9 +540,8 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\XTEAEngine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Field.cs" />
     <Compile Include="Assets\Core\Squick\Logic\UploadDataModule.cs" />
-    <Compile Include="Assets\Resources\config\proto\Define.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\DHKeyGenerationParameters.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIModule.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIModule.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsClient.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\ServerSentEvents\EventSource.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233FieldElement.cs" />
@@ -592,18 +589,18 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Extensions\KeyValuePairList.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsSigner.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\pkcs\ContentInfo.cs" />
+    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\paddings\ZeroBytePadding.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\cert\CertificateException.cs" />
-    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\paddings\ZeroBytePadding.cs" />
+    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\KeccakDigest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\RC532Engine.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\NetObjectCache.cs" />
     <Compile Include="Assets\ThirdParty\Core\ETTaskAsync\ETTaskCompleted.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\DataLengthException.cs" />
-    <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\KeccakDigest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\ZlibCodec.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\BufferedBlockCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\Easy Character Movement\Scripts\Components\MouseLook.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\NormalSkill1.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\NormalSkill1.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCipherFactory.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\CryptoException.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Meta\CallbackSet.cs" />
@@ -688,9 +685,9 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\Transports\PollingTransport.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsStreamCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmExponentiator.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\TexturePacker.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\TexturePacker.cs" />
     <Compile Include="Assets\Core\Uquick\Interface\IRegisterHelper.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\SquickRoot.cs" />
+    <Compile Include="Assets\Core\Squick\SquickRoot.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\generators\DHParametersHelper.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\macs\VMPCMac.cs" />
     <Compile Include="Assets\Core\Squick\Core\Object.cs" />
@@ -701,7 +698,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\BerOutputStream.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\X509NameEntryConverter.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\Asn1Set.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\NormalSkill3.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\NormalSkill3.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\encoders\IEncoder.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\ChaChaEngine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409K1Curve.cs" />
@@ -746,33 +743,33 @@
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\DoubleSerializer.cs" />
     <Compile Include="Assets\Core\Squick\Plugin\Config\IElement.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\Helper\VerifyHelper.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\TimeScale.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\TimeScale.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Connections\FileConnection.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\x509\X509CertificateParser.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\CharacterControl\HeroSync.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\Object\HeroSync.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBEndomorphism.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\FiniteFieldDheGroup.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCredentials.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\IAsn1Choice.cs" />
     <Compile Include="Assets\Scripts\Adapters\MonoBehaviourAdapter.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\BodyIdent.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\BodyIdent.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\CertificateList.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerUniversalString.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\RipeMD160Digest.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\Helper\HandlerIdHelper.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsStream.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\UISound.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\UISound.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\security\DigestUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\WTauNafPreCompInfo.cs" />
     <Compile Include="Assets\Core\Squick\Base\IKernelModule.cs" />
     <Compile Include="Assets\Core\Uquick\AntiCheat\JInt.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\CharacterControl\HeroCameraFollow.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\Object\HeroCameraFollow.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\Messages\ClientMessage.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Curve.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Meta\MetaType.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\RunState.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\RunState.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\ParseableSerializer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\CompressionMethod.cs" />
     <Compile Include="Assets\Core\Uquick\AntiCheat\JByte.cs" />
@@ -796,8 +793,9 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\Connection.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\net\IPAddress.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\IExtensible.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Base.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Decompression\DeflateStream.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\SceneModule.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\SceneModule.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsSession.cs" />
     <Compile Include="Assets\Scripts\InitUquick.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />
@@ -806,7 +804,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\CertChainType.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\Hubs\Hub.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Point.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\NormalSkill2.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\NormalSkill2.cs" />
     <Compile Include="Assets\Core\Squick\Core\DataList.cs" />
     <Compile Include="Assets\Core\Squick\Plugin\Net\NetClient.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Field.cs" />
@@ -818,7 +816,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Extensions\WWWAuthenticateHeaderParser.cs" />
     <Compile Include="Assets\Core\Squick\Base\IElementModule.cs" />
     <Compile Include="Assets\Core\Uquick\AntiCheat\JString.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\WalkState.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\WalkState.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsDheKeyExchange.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Curve.cs" />
@@ -828,6 +826,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DerPrintableString.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\TimeSpanSerializer.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\BooleanSerializer.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Game.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsSessionImpl.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\SubItemSerializer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\KdfParameters.cs" />
@@ -866,9 +865,9 @@
     <Compile Include="Assets\Core\Squick\Logic\NetEventModule.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\CcmBlockCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410PublicKeyAlgParameters.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\AnimaStateType.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\AnimaStateType.cs" />
     <Compile Include="Assets\ThirdParty\Core\ILRuntime\ValueTypeBinders\Vector2Binder.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\HideAndScroll.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\HideAndScroll.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\ContentType.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\digests\NullDigest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\io\PushbackStream.cs" />
@@ -920,7 +919,7 @@
     <Compile Include="Assets\Core\Squick\Base\IModule.cs" />
     <Compile Include="Assets\Core\Squick\Plugin\Config\ISClass.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\ServerDHParams.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\CharacterControl\HeroInput.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\Object\HeroInput.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\field\GF2Polynomial.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\paddings\ISO10126d2Padding.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163FieldElement.cs" />
@@ -932,7 +931,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\collections\ISet.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\pkcs\RSASSAPSSparams.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\ECPoint.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\IdleState.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\IdleState.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\CRLNumber.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Forms\Implementations\HTTPMultiPartForm.cs" />
     <Compile Include="Assets\ThirdParty\Core\ETTaskAsync\ETTask.cs" />
@@ -967,15 +966,15 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\BerSequence.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ImplicitFields.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\generators\DHBasicKeyPairGenerator.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIBind\RecordRowData.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIBind\RecordRowData.cs" />
     <Compile Include="Assets\Scripts\HttpReuseful.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\prng\IRandomGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SocketIO\Events\EventDescriptor.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\DefaultValueDecorator.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\CameraViewController.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\CameraViewController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SignalR\NegotiationData.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\SquickConfig.cs" />
+    <Compile Include="Assets\Core\Squick\SquickConfig.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Extensions\Extensions.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\ElGamalPrivateKeyParameters.cs" />
     <Compile Include="Assets\Core\Uquick\Core\CryptoHelper.cs" />
@@ -999,6 +998,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1Field.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsContext.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Helpers.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Define.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\RSABlindingParameters.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\HTTPRange.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\signers\PssSigner.cs" />
@@ -1034,9 +1034,9 @@
     <Compile Include="Assets\ThirdParty\Extend\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\DHPublicKeyParameters.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x509\X509Extension.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\BuffData.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\BuffData.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519Field.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UILoading.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UILoading.cs" />
     <Compile Include="Assets\ThirdParty\Extend\StandardAssets\Utility\ForcedReset.cs" />
     <Compile Include="Assets\ThirdParty\Extend\StandardAssets\Utility\ParticleSystemDestroyer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Authentication\Digest.cs" />
@@ -1107,11 +1107,11 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\field\FiniteFields.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Field.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointUtilities.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UILogin.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UILogin.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ProtoConverterAttribute.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\raw\Nat160.cs" />
     <Compile Include="Assets\Scripts\UI\UpdateScreen.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\AnimaStateMachine.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\AnimaStateMachine.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410ParamSetParameters.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\EnumSerializer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\AlwaysValidVerifyer.cs" />
@@ -1125,8 +1125,9 @@
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\UInt16Serializer.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsExtensionsUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\ListDecorator.cs" />
+    <Compile Include="Assets\Resources\config\csharp\ProtocolDefine.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\Base\LoadHandlerFactory.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\IState.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\IState.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Authentication\DigestStore.cs" />
     <Compile Include="Assets\ThirdParty\Extend\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -1142,11 +1143,11 @@
     <Compile Include="Assets\ThirdParty\Extend\StandardAssets\Utility\EventSystemChecker.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\SubItemToken.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ProtoEnumAttribute.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Scene\AnimationStateMachine\State\JumpState.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Scene\AnimationStateMachine\State\JumpState.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\OcspStatusRequest.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\IVerifierFactory.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Point.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIDialog.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIDialog.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\HTTPMethods.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1FieldElement.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Meta\AttributeMap.cs" />
@@ -1174,6 +1175,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsEccUtilities.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DERGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Point.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Share.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163Field.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\abc\SimpleBigDecimal.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\PlatformSupport\IO\FileHelper.cs" />
@@ -1181,7 +1183,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\multiplier\WTauNafMultiplier.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\util\encoders\Base64Encoder.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithRandom.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\AnimationEvent.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\AnimationEvent.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\DERExternal.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\Helper\DeleteHelper.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\AssetComponent.cs" />
@@ -1193,7 +1195,7 @@
     <Compile Include="Assets\ThirdParty\Extend\CrossPlatformInput\Scripts\MobileControlRig.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\raw\Nat320.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SocketIO\Transports\WebSocketTransport.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\ObjectElement.cs" />
+    <Compile Include="Assets\Core\Squick\ObjectElement.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\signers\DsaSigner.cs" />
     <Compile Include="Assets\Core\BundleMaster\BundleMasterRuntime\AssetComponentUpdate.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Point.cs" />
@@ -1203,14 +1205,13 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\TlsEncryptionCredentials.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\tls\Certificate.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Connections\ConnectionBase.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\AnimaStateEditor\AnimatStateController.cs" />
+    <Compile Include="Assets\Core\Squick\Game\AnimaStateEditor\AnimatStateController.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\x509\X509Crl.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables8kGcmMultiplier.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\x9\X9ECPoint.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Meta\ValueMember.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\BufferedIesCipher.cs" />
-    <Compile Include="Assets\Resources\config\proto\MsgBase.cs" />
     <Compile Include="Assets\ThirdParty\Extend\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ProtoReader.cs" />
     <Compile Include="Assets\Core\Squick\Core\IPropertyManager.cs" />
@@ -1218,7 +1219,7 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\modes\OCBBlockCipher.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\signers\GOST3410DigestSigner.cs" />
     <Compile Include="Assets\Scripts\Audio.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\UI\UIBind\RecordRowView.cs" />
+    <Compile Include="Assets\Core\Squick\Game\UI\UIBind\RecordRowView.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571R1Curve.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponse.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\math\ec\ECPointMap.cs" />
@@ -1234,7 +1235,7 @@
     <Compile Include="Assets\Core\Uquick\Core\Mgrs\DLLMgr.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\asn1\nist\NISTObjectIdentifiers.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\BufferedAsymmetricBlockCipher.cs" />
-    <Compile Include="Assets\HotUpdate\Dll\Script\Game\Utility\DestroySelf.cs" />
+    <Compile Include="Assets\Core\Squick\Game\Utility\DestroySelf.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\Extensions\HeartbeatManager.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ServiceModel\ProtoEndpointBehavior.cs" />
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\engines\RFC3394WrapEngine.cs" />
@@ -1245,285 +1246,289 @@
     <Compile Include="Assets\ThirdParty\Extend\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\Serializers\MemberSpecifiedDecorator.cs" />
     <Compile Include="Assets\ThirdParty\Core\protobuf-net-v2-for-ILRuntime\protobuf-net\ServiceModel\XmlProtoSerializer.cs" />
+    <Compile Include="Assets\Resources\config\csharp\Pvp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Extend\JSONObject\readme.txt" />
-    <None Include="Assets\Resources\config\struct\side\NoSqlServer.xml" />
-    <None Include="Assets\Resources\config\ini\Player.xml" />
-    <None Include="Assets\HotScripts.dll" />
-    <None Include="Assets\Resources\config\struct\Group.xml" />
-    <None Include="Assets\Resources\config\ini\Server.xml" />
-    <None Include="Assets\Resources\config\struct\Player.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\5.xml" />
-    <None Include="Assets\Resources\config\ini\Navigation\5.xml" />
-    <None Include="Assets\ThirdParty\Extend\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\ThirdParty\Core\Protobuf\System.Buffers.dll" />
-    <None Include="Assets\HotUpdate\Other\Shaders\EyeLash.shader" />
-    <None Include="Assets\Resources\config\ini\Side\GM.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\3.xml" />
-    <None Include="Assets\HotUpdate\ScriptableObject\ScriptableObject.txt" />
-    <None Include="Assets\HotUpdate\AddOns\AddOn1\Others\test.txt" />
-    <None Include="Assets\HotUpdate\Material\Material.txt" />
-    <None Include="Assets\Resources\config\struct\side\Language.xml" />
-    <None Include="Assets\Resources\Config.xml" />
-    <None Include="Assets\Resources\config\struct\Scene.xml" />
-    <None Include="Assets\Resources\config\ini\Side\Security.xml" />
-    <None Include="Assets\Resources\config\ini\Scene.xml" />
-    <None Include="Assets\ThirdParty\Core\Protobuf\Google.Protobuf.dll" />
-    <None Include="Assets\ThirdParty\Core\Protobuf\System.Runtime.CompilerServices.Unsafe.dll" />
-    <None Include="Assets\Resources\config\ini\Side\Language.xml" />
-    <None Include="Assets\ThirdParty\Extend\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
-    <None Include="Assets\Resources\config\ini\common\IObject.xml" />
-    <None Include="Assets\Resources\config\ini\Side\NoSqlServer.xml" />
-    <None Include="Assets\Resources\config\ini\common\EffectData.xml" />
-    <None Include="Assets\Resources\config\ini\InitProperty.xml" />
-    <None Include="Assets\HotUpdate\Other\Shaders\EyeBallsHD.shader" />
-    <None Include="Assets\Resources\config\struct\side\GM.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\4.xml" />
-    <None Include="Assets\Resources\config\struct\side\Security.xml" />
-    <None Include="Assets\Resources\config\struct\logic_class.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\7.xml" />
-    <None Include="Assets\Resources\config\ini\Navigation\2.xml" />
-    <None Include="Assets\Resources\config\ini\Navigation\4.xml" />
-    <None Include="Assets\Resources\config\ini\Group.xml" />
-    <None Include="Assets\link.xml" />
     <None Include="Assets\Resources\config\ini\Navigation\3.xml" />
     <None Include="Assets\Resources\config\struct\Server.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\1.xml" />
-    <None Include="Assets\Resources\config\struct\Item.xml" />
-    <None Include="Assets\HotUpdate\Controller\Controller.txt" />
-    <None Include="Assets\Resources\config\ini\Scene\6.xml" />
-    <None Include="Assets\Resources\config\ini\Skill.xml" />
-    <None Include="Assets\HotUpdate\Other\Shaders\EnergyCore.shader" />
-    <None Include="Assets\HotUpdate\Other\Shaders\SculptedHair.shader" />
-    <None Include="Assets\Resources\config\ini\Item.xml" />
-    <None Include="Assets\Resources\config\struct\common\CooldownRecord.xml" />
-    <None Include="Assets\Resources\config\struct\Skill.xml" />
-    <None Include="Assets\Resources\config\struct\common\EffectData.xml" />
+    <None Include="Assets\HotScripts.dll" />
     <None Include="Assets\Resources\config\struct\InitProperty.xml" />
-    <None Include="Assets\Resources\config\ini\Scene\2.xml" />
+    <None Include="Assets\Resources\config\struct\side\NoSqlServer.xml" />
+    <None Include="Assets\Resources\config\ini\Skill.xml" />
+    <None Include="Assets\Resources\config\ini\Navigation\2.xml" />
     <None Include="Assets\Resources\config\struct\common\IObject.xml" />
-    <None Include="Assets\HotUpdate\Other\Shaders\ToonSkin.shader" />
-    <None Include="Assets\Resources\config\ini\Scene\8.xml" />
+    <None Include="Assets\Resources\config\struct\Skill.xml" />
+    <None Include="Assets\ThirdParty\Extend\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Resources\config\ini\Navigation\5.xml" />
+    <None Include="Assets\Resources\config\ini\side\NoSqlServer.xml" />
+    <None Include="Assets\ThirdParty\Core\Protobuf\System.Buffers.dll" />
+    <None Include="Assets\HotUpdate\Other\Shaders\EyeLash.shader" />
     <None Include="Assets\Resources\config\ini\NPC.xml" />
+    <None Include="Assets\HotUpdate\ScriptableObject\ScriptableObject.txt" />
+    <None Include="Assets\HotUpdate\AddOns\AddOn1\Others\test.txt" />
+    <None Include="Assets\Resources\config\struct\side\Language.xml" />
+    <None Include="Assets\HotUpdate\Material\Material.txt" />
+    <None Include="Assets\Resources\config\ini\Scene\1.xml" />
+    <None Include="Assets\Resources\Config.xml" />
+    <None Include="Assets\Resources\config\ini\Group.xml" />
+    <None Include="Assets\ThirdParty\Core\Protobuf\Google.Protobuf.dll" />
+    <None Include="Assets\Resources\config\struct\common\CooldownRecord.xml" />
+    <None Include="Assets\ThirdParty\Core\Protobuf\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="Assets\Resources\config\ini\Navigation\4.xml" />
+    <None Include="Assets\ThirdParty\Extend\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\Resources\config\ini\common\IObject.xml" />
+    <None Include="Assets\Resources\config\ini\common\EffectData.xml" />
+    <None Include="Assets\Resources\config\struct\Player.xml" />
+    <None Include="Assets\Resources\config\ini\side\GM.xml" />
+    <None Include="Assets\HotUpdate\Other\Shaders\EyeBallsHD.shader" />
+    <None Include="Assets\Resources\config\struct\Item.xml" />
+    <None Include="Assets\Resources\config\ini\side\Security.xml" />
+    <None Include="Assets\link.xml" />
+    <None Include="Assets\Resources\config\ini\Server.xml" />
+    <None Include="Assets\Resources\config\ini\side\Language.xml" />
+    <None Include="Assets\HotUpdate\Controller\Controller.txt" />
+    <None Include="Assets\HotUpdate\Other\Shaders\EnergyCore.shader" />
+    <None Include="Assets\Resources\config\struct\Scene.xml" />
+    <None Include="Assets\Resources\config\ini\InitProperty.xml" />
+    <None Include="Assets\Resources\config\struct\side\Security.xml" />
+    <None Include="Assets\Resources\config\ini\Scene.xml" />
+    <None Include="Assets\HotUpdate\Other\Shaders\SculptedHair.shader" />
+    <None Include="Assets\Resources\config\ini\Room.xml" />
+    <None Include="Assets\Resources\config\struct\Group.xml" />
+    <None Include="Assets\Resources\config\struct\side\GM.xml" />
+    <None Include="Assets\HotUpdate\Other\Shaders\ToonSkin.shader" />
+    <None Include="Assets\Resources\config\struct\logic_class.xml" />
     <None Include="Assets\Resources\config\struct\NPC.xml" />
+    <None Include="Assets\Resources\config\ini\Player.xml" />
+    <None Include="Assets\Resources\config\ini\Item.xml" />
+    <None Include="Assets\Resources\config\struct\common\EffectData.xml" />
     <None Include="Assets\ThirdParty\Extend\StandardAssets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\ThirdParty\Core\Protobuf\System.Memory.dll" />
     <None Include="Assets\HotUpdate\Other\Shaders\Dissolve.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsNativeModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityCurlModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.CoreModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GraphViewModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.PackageManagerUIModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SceneTemplateModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIElementsModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIElementsSamplesModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIServiceModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>Assets\ThirdParty\Core\Protobuf\Google.Protobuf.dll</HintPath>
@@ -1553,355 +1558,355 @@
       <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.AppContext">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Concurrent">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.NonGeneric">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Specialized">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
     </Reference>
     <Reference Include="System.Console">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Common">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Debug">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Process">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tools">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tracing">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Dynamic.Runtime">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Calendars">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Expressions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Parallel">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Queryable">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NameResolution">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NetworkInformation">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Ping">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Requests">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Security">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Sockets">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
     </Reference>
     <Reference Include="System.ObjectModel">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Extensions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Reader">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.ResourceManager">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Writer">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Handles">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Numerics">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Claims">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.SecureString">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.RegularExpressions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Overlapped">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Thread">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.ThreadPool">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Timer">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XDocument">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlDocument">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.Net">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Web">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Serialization">
-      <HintPath>E:\ProgramFiles\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+      <HintPath>D:\ProgramFiles\Unity\Editor\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
