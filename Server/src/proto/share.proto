@@ -1,0 +1,235 @@
+syntax = "proto3";
+
+package SquickStruct; 
+
+import "base.proto";
+
+//除去基础对象身上的属性外，这里全部游戏中的逻辑协议
+
+// 进入游戏
+message ReqEnterGameServer
+{
+	Ident 		id = 1;      // 角色ID
+	bytes 		account = 2; // 账号
+    int32 		game_id = 3; // 游戏服务器ID
+	bytes 		name = 4;    // 
+}
+
+message ReqAckEnterGameSuccess
+{
+    int32 		arg = 1;
+}
+
+message ReqHeartBeat
+{
+    int32 		arg = 1;
+}
+
+message ReqLeaveGameServer
+{
+    int32 		arg = 1;
+}
+
+message PlayerEntryInfo //对象出现基本信息
+{
+	Ident	object_guid = 1;
+	float	x = 2;
+	float	y = 3;
+	float	z = 4;
+	int32  career_type = 5;
+	int32  player_state = 6;
+	bytes  config_id = 7;
+	int32  scene_id = 8;
+	bytes  class_id = 9;
+}
+
+message AckPlayerEntryList //对象出现列表
+{
+	repeated PlayerEntryInfo object_list = 1;
+}
+
+message AckPlayerLeaveList //对象离去列表
+{
+	repeated Ident 	object_list = 1;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+message PosSyncUnit
+{	
+	enum EMoveType
+	{
+		EMT_WALK = 0;
+		EET_SPEEDY = 1;
+		EET_TELEPORT = 2;
+	}
+
+	Ident 	mover = 1;
+    Vector3 pos = 2;
+    Vector3 orientation = 3;
+    int32 status = 4;
+	EMoveType type = 5;
+}
+
+message ReqAckPlayerPosSync
+{
+    int32 sequence = 1;
+	repeated PosSyncUnit sync_unit = 2;
+}
+
+////////////////////////////
+
+message EffectData
+{
+	enum EResultType
+	{
+		EET_FAIL = 0;
+		EET_SUCCESS = 1;
+		EET_REFUSE = 2;
+		EET_MISS = 3;	
+		EET_CRIT = 4;	
+		EET_ULTI = 5;	
+	}
+	Ident 		effect_ident = 1;
+	int32  		effect_value = 2;
+	EResultType  effect_rlt = 3;
+}
+
+message ReqAckUseSkill
+{
+	Ident 	user = 1;
+	bytes skill_id = 2;
+	int32  client_index = 3;//因为客户端要先展示
+	int64  server_index = 4;//因为客户端要先展示
+	repeated EffectData 	effect_data = 5;
+}
+
+message ReqAckSwapScene
+{
+	int32 	transfer_type = 1;
+	int32	scene_id = 2;
+	int32	line_id = 3;
+	float 	x = 4;
+	float 	y = 5;
+	float 	z = 6;
+	bytes 	data = 7;
+}
+
+/////////////////////////////////////////
+message ReqAckPlayerChat
+{
+	enum EGameChatChannel
+	{
+		EGCC_GLOBAL = 0;
+		EGCC_CLAN = 1;
+		EGCC_ROOM = 2;
+		EGCC_TEAM = 3;
+	}
+	enum EGameChatType
+	{
+		EGCT_TEXT= 0;
+		EGCT_VOICE = 1;
+		EGCT_EMOJI = 2;
+	}
+
+	Ident	player_id = 1;
+	bytes 	player_name = 2;
+	EGameChatChannel  chat_channel = 3;
+	EGameChatType  chat_type = 4;
+	bytes chat_info = 5;
+}
+
+// 客户端请求创建房间
+message ReqRoomCreate
+{
+	bytes name = 1;
+}
+
+message AckRoomCreate
+{
+	int32 room_id = 1;
+}
+
+// 请求加入房间
+message ReqRoomJoin
+{
+	int32 room_id = 1;
+}
+
+message AckRoomJoin
+{
+	int32 code = 1;
+}
+
+enum RoomStatus {
+	ROOM_PLAYERS_PREPARE = 0; // 玩家准备中
+	ROOM_PLAYERS_GAME = 1;    // 已经开始游戏
+}
+
+message RoomSimple {
+	int32 id = 1;          // 房间id
+	bytes name = 2;        // 房间名称
+	bytes game_mode = 3;   // 游戏模式
+	RoomStatus status = 4; // 房间状态
+	int32 nplayers = 5;     // 当前房间内玩家人数
+	int32 max_players = 6; // 最多人数
+}
+
+message RoomDetails {
+	int32 id = 1;          // 房间id
+	bytes name = 2;        // 房间名称
+	bytes game_mode = 3;   // 游戏模式
+	RoomStatus status = 4; // 房间状态
+	int32 nplayers = 5;    // 当前房间内玩家人数
+	int32 max_players = 6; // 最多人数
+	Ident owner = 7;       // 房主
+	repeated Ident players = 8; // 房间内所有玩家
+}
+
+// 玩家获取房间列表
+message ReqRoomList {
+	int32 start = 1;
+	int32 limit = 2;
+}
+
+message AckRoomList {
+	repeated RoomSimple list = 1;
+}
+
+// 请求获取房间详细信息
+message ReqRoomDetails {
+	int32 room_id = 1;
+}
+
+message AckRoomDetails {
+	RoomDetails room = 1;
+}
+
+// 请求开始游戏
+message ReqStartGame {
+	int32 room_id = 1;
+}
+
+message AckStartGame {
+	int32 code = 1;
+}
+
+// 客户端加入房间后，通过房间id获取PVP服务器信息
+message ReqPlayerJoin {
+	int32 room_id = 1;
+}
+
+// PVP 服务器响应结构
+message PvpServer {
+	int32 instance_id = 1;
+	bytes name = 2;
+	bytes ip = 3;
+	int32 port = 4;
+	bytes key = 5;
+}
+
+// 如果是已经在房间里的人，开始游戏创建PVP服务器后，会自动通知房间里的其他玩家。
+message AckPlayerJoin {
+	int32 code = 1;
+	PvpServer server = 4;
+}

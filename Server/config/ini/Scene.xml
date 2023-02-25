@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<XML>
+	<Object Id="1" ActorID="0" FilePath="../config/ini/Scene/1.xml" LoadingUI="UI/ChronoBlade_forest_wallpaper" MaxGroup="99999" MaxGroupPlayers="1000" NavigationResPath="" RelivePos="0,0.5,0;1,0.5,1;2,0.5,3" RelivePosEx="10,10,10" ResPath="../config/ini/Navigation/1.xml" ResourcePos="10,10,10" SceneName="World" SceneShowName="世界" SoundList="Sources/Music/Town" SubType="0" Type="0" Width="500" />
+	<Object Id="2" ActorID="0" FilePath="../config/ini/Scene/1.xml" LoadingUI="UI/ChronoBlade_forest_wallpaper" MaxGroup="9999999" MaxGroupPlayers="1" NavigationResPath="" RelivePos="0,0.5,0;1,0.5,1;2,0.5,3" RelivePosEx="10,10,10" ResPath="../config/ini/Navigation/1.xml" ResourcePos="10,10,10" SceneName="Lobby" SceneShowName="玩家个人大厅" SoundList="Sources/Music/Town" SubType="1" Type="1" Width="500" />
+	<Object Id="3" ActorID="1" FilePath="../config/ini/Scene/1.xml" LoadingUI="" MaxGroup="99999" MaxGroupPlayers="10" NavigationResPath="" RelivePos="0,0.5,0;1,0.5,1;2,0.5,3" RelivePosEx="10,10,10" ResPath="" ResourcePos="10,10,10" SceneName="PvpRoom" SceneShowName="PVP对战房间" SoundList="" SubType="2" Type="2" Width="500" />
+</XML>

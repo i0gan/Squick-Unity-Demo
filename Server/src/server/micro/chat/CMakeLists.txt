@@ -1,0 +1,6 @@
+set(ProjectName "micro_chat")
+file(GLOB soruces *.cc)
+file(GLOB headers *.h)
+add_library(${ProjectName} SHARED ${soruces} ${headers})
+LinkSquick(${ProjectName})
+SquickOut(${ProjectName} "server/micro" ${SQUICK_BUILD_PLUGIN_SERVER_PATH}/micro "chat")

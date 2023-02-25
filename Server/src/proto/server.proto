@@ -1,0 +1,100 @@
+// 各服务器之间的通信
+
+syntax = "proto3";
+
+package SquickStruct;
+
+// 服务器类型
+// c++代码对应在 squick/plugin/net/i_net_module.h :  SQUICK_SERVER_TYPES
+enum ServerType
+{
+    SQUICK_ST_NONE          = 0;    // NONE
+    SQUICK_ST_REDIS         = 1;    // 
+    SQUICK_ST_MYSQL         = 2;    //
+    SQUICK_ST_MASTER        = 3;    // 不支持横向拓展
+    SQUICK_ST_LOGIN         = 4;    //
+    SQUICK_ST_PROXY         = 5;    // 支持横向拓展
+    SQUICK_ST_GAME          = 6;    // 支持横向拓展
+	SQUICK_ST_WORLD			= 7;    // 支持横向拓展
+	SQUICK_ST_DB			= 8;    // 暂不支持横向拓展
+	SQUICK_ST_MAX			= 9;    //
+	SQUICK_ST_GATEWAY		= 10;   // 支持横向拓展
+	SQUICK_ST_PVP_MANAGER	= 11;   // PVP实例管理服务器
+    SQUICK_ST_MICRO         = 12;   // 微服务，支持横向拓展
+};
+
+message RegisterServer {
+    int32       server_id       = 1;
+    ServerType  server_type     = 2;
+    string      public_addr     = 3;
+    int32       server_load     = 4;
+}
+
+message RegisterServerReply {
+    int32 error           = 1;
+}
+
+message OnServerDisconnected {
+    int32 server_id   = 1;
+    int32 server_type = 2;
+}
+
+message PingRequest {
+    int32       reserved        = 1;
+    int32       server_load     = 2;
+}
+
+message PingResponse {
+    int32       reserved        = 1;
+    int32       server_load     = 2;
+}
+
+// 新加入服务器通知
+message NewServerNotice {
+    repeated RegisterServer servers = 1;
+};
+
+// 请求服务器列表
+message ServerListRequest {
+    ServerType server_type      = 1;
+}
+
+// 服务器列表返回
+message ServerListResponse {
+    repeated RegisterServer servers = 1;
+}
+
+
+// PVP服务器在Pvp Manager服务器上 请求连接 Game Server
+// ACK_CONNECT_GAME_SERVER                = 61;
+message ReqConnectGameServer {
+    bytes instance_id = 1;
+    bytes instance_key = 2;
+    bytes name = 3;
+    bytes security_code = 4;
+    int32 platform_type = 5;
+    int32 game_id = 6;
+}
+
+// 
+message AckConnectGameServer {
+    int32 code = 1;
+}
+
+// 在Game服务器上请求 Pvp Manager服务器创建PVP服务器实例
+message ReqPvpInstanceCreate { 
+    bytes instance_id = 1;
+    bytes instance_key = 2;
+    int32 game_id = 3;
+}
+
+// 
+message AckPvpInstanceCreate {
+    int32 code = 1;
+}
+
+message ReqPvpGameInit {
+    bytes instance_id = 1;  // instance id
+    bytes instance_key = 2; 
+    int32 room_id = 3;
+}
